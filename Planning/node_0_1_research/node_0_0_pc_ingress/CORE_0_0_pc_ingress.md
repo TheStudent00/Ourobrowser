@@ -17,29 +17,46 @@ sub_nodes: []
 # CORE 0_0 — pc_ingress
 
 ## metadata
-
 - **id:** ourobrowser.root.research.pc_ingress
 - **level:** 2
 - **status:** draft
 - **designation:** pending
 - **settled_by:** Dee
-- **supersedes:** null
 
 ## super_node
-
 - [research](../CORE_0_1_research.md)
 
-## sub_nodes
-
-*(none yet)*
-
 ## definition
+Configure PseudoCoup (PC) to ingress the Chromium DOM-to-V8 bindings. We target `third_party/blink/renderer/bindings/` to map the C++ glue code into PC's UR-AST, explicitly severing all deep dependencies on the V8 JavaScript engine.
 
-**Goal:** Configure PseudoCoup (PC) to ingress the Chromium DOM-to-V8 bindings and WebIDL definitions.
+## design
 
-**Details:**
-- Target Chromium's `third_party/blink/renderer/bindings/` directory.
-- This directory contains the WebIDL definitions and auto-generated C++ code that bridges Blink's internal DOM representation to V8 JavaScript objects.
-- PC's `tree-sitter` parsers will map these bindings into the UR-AST. 
-- The Ledger must be strictly configured to recognize the boundary: we are not translating the rendering engine itself (Blink), but rather the *interface* surface where Blink exposes objects to external scripts.
-- We need to establish "stub points" where V8 specific types (`v8::Local`, `v8::Isolate`) are encountered, marking them as targets for replacement in the egress phase.
+**1. Ledger Configuration (`pc_ledger_v8_sever.yaml`)**
+We must define a strict PC Ledger file to guide the `tree-sitter` parser. It will map structural interfaces but classify all V8-specific engine types as abstract "Dead Ends".
+```yaml
+ingress:
+  source_lang: cpp
+  target_dirs:
+    - "third_party/blink/renderer/bindings/core/v8/"
+  dead_ends:
+    - "v8::Isolate"
+    - "v8::Local"
+    - "v8::HandleScope"
+    - "v8::Context"
+    - "v8::FunctionCallbackInfo"
+```
+
+**2. The Ingress Runner (`run_ingress.sh`)**
+A deterministic script to execute the PC pipeline and output the UR-AST.
+```bash
+python3 -m pseudocoup.cli \
+    --source third_party/blink/renderer/bindings/core/v8/ \
+    --source-lang cpp \
+    --ledger pc_ledger_v8_sever.yaml \
+    --stage ingress-only \
+    --out ur_ast_chromium_bindings.json
+```
+
+## settled rules
+- **Strict Boundary Enforcement:** PC must explicitly fail if it attempts to resolve a C++ `#include <v8.h>` that is not covered by the `dead_ends` ledger config. We do not want to accidentally map the internal V8 compiler into our UR-AST.
+- **Target Restriction:** We are strictly ingesting the `bindings/core/v8` directory. We are *not* ingesting the core Blink DOM logic (`third_party/blink/renderer/core/`), as the underlying DOM rendering math remains perfectly functional without modification.
