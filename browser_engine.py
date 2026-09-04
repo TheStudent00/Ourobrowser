@@ -43,8 +43,14 @@ PYTHON_CLICK_ATTRIBUTE = "data-python-onclick"
 DEFAULT_PAGE = "test_page.html"
 
 
+# The closing quote is a BACKREFERENCE to the opening one, not a second
+# character class.  With a class, `onclick="python:f('x')"` ended at the
+# first inner apostrophe and the handler was cut to `f(`, which is what a
+# python expression carrying a string argument always looks like.  Measured:
+# `[Bridge] Error executing python command 'ouro_opcode(': '(' was never
+# closed`.
 PYTHON_ONCLICK_PATTERN = re.compile(
-    r'\bonclick=["\']python:(.*?)["\']',
+    r'\bonclick=(["\'])python:(.*?)\1',
     re.IGNORECASE
 )
 
