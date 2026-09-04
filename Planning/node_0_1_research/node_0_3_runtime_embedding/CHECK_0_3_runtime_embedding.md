@@ -1,10 +1,10 @@
 ---
-id: ourobrowser.root.research.hub_integration.check
+id: ourobrowser.root.research.runtime_embedding.check
 ---
 
-# CHECK — 0_3_hub_integration
+# CHECK — 0_3_runtime_embedding
 
-Node `ourobrowser.root.research.hub_integration`. Status `draft`.
+Node `ourobrowser.root.research.runtime_embedding`. Status `draft`.
 
 ## check 1 — completeness
 
