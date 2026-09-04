@@ -78,7 +78,7 @@ def rewrite_python_onclick(html_text):
     ever reach the bridge.
     """
     def one(match):
-        expression = match.group(1)
+        expression = match.group(2)
         escaped = html_escaping.escape(expression, quote=True)
         return '%s="%s"' % (PYTHON_CLICK_ATTRIBUTE, escaped)
 
