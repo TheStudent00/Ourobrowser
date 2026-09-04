@@ -9,3 +9,5 @@ status: living
   `../PlanPlan/framework/generate_nodes.py` from the
   `nodes` register of `./Planning/CORE_0.md`. Skeleton only — definition,
   designation, and content pending.
+
+- 2026-09-03: **code landed** — unchanged by task 77, and proved unchanged: `git diff a5d8bee..HEAD -- test_page.html` is empty and the two renders are byte-identical. Its button now reaches python for the first time. Status: **done**. Evidence: `~/Programming/PseudoCoupHQ/DevComms/log_184_task77_dashboard_in_ourobrowser.md`, and `~/Programming/Ourobrowser/DevComms/log_001_python_renders_the_page.md`. `test_page.html` was run before and after against the engine at commit `a5d8bee` and the engine as it stands: the two renders are byte-identical (md5 `a18bfe33fef5d9131c06fb2f2bcb9015`), and the button went from Chromium's `Uncaught SyntaxError` to `[Bridge] Executing Python command: fetch_system_data()`.

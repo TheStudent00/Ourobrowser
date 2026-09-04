@@ -11,3 +11,5 @@ status: living
   designation, and content pending.
 
 - 2026-09-03: **design written** — the rollup of `html_pushed`, `set_html` and the injected rewriter was appended to `CORE_0_4_bridge.md` as `## design`. Provenance: `~/Programming/PseudoCoupHQ/DevComms/log_183_claude_code_task_briefs_round15.md` task 77 (Dee's own request, quoted there). Status: **in-progress** — the CORE states the shape; the code follows in the same lap. Evidence: this node's CORE, section `## design`.
+
+- 2026-09-03: **code landed** — `bridge.py` gained the `html_pushed` signal, the `set_html` method and the injected `rewriter`; `execute_python` is unchanged. Status: **done**. Evidence: `~/Programming/PseudoCoupHQ/DevComms/log_184_task77_dashboard_in_ourobrowser.md`, and `~/Programming/Ourobrowser/DevComms/log_001_python_renders_the_page.md`. `test_page.html` was run before and after against the engine at commit `a5d8bee` and the engine as it stands: the two renders are byte-identical (md5 `a18bfe33fef5d9131c06fb2f2bcb9015`), and the button went from Chromium's `Uncaught SyntaxError` to `[Bridge] Executing Python command: fetch_system_data()`.
