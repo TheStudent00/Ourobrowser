@@ -4,32 +4,46 @@ level: 1
 status: draft
 settled_by: Dee
 supersedes: null
-designation: pending
+designation: work
 node:
     name: research
     path: Planning/node_0_1_research/CORE_0_1_research.md
 super_node:
     name: Ourobrowser
     path: ../CORE_0.md
-sub_nodes: []
+sub_nodes:
+    - name: pc_ingress
+      path: node_0_0_pc_ingress/CORE_0_0_pc_ingress.md
+    - name: pc_egress
+      path: node_0_1_pc_egress/CORE_0_1_pc_egress.md
+    - name: chromium_compilation
+      path: node_0_2_chromium_compilation/CORE_0_2_chromium_compilation.md
+    - name: hub_integration
+      path: node_0_3_hub_integration/CORE_0_3_hub_integration.md
 ---
 
 # CORE 0_1 — research
 
 ## metadata
 
-*(pending)*
+- **id:** ourobrowser.root.research
+- **level:** 1
+- **status:** draft
+- **designation:** work
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [Ourobrowser](../CORE_0.md)
 
 ## sub_nodes
 
-*(none yet)*
+- [pc_ingress](node_0_0_pc_ingress/CORE_0_0_pc_ingress.md)
+- [pc_egress](node_0_1_pc_egress/CORE_0_1_pc_egress.md)
+- [chromium_compilation](node_0_2_chromium_compilation/CORE_0_2_chromium_compilation.md)
+- [hub_integration](node_0_3_hub_integration/CORE_0_3_hub_integration.md)
 
 ## definition
 
-*(pending — generated 2026-09-03 from the register in
-./Planning/CORE_0.md; the definition and `designation` are Dee's to
-write.)*
+This branch represents the physically separate research and execution plan for using PseudoCoup (PC) to systematically swap the V8 JavaScript engine for a Python execution engine inside the Chromium C++ codebase. It serves as the root planning research folder for the new native multi-language browser paradigm.

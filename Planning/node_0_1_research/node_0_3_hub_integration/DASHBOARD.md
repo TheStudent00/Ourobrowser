@@ -2,7 +2,7 @@
 <!-- Produced by ~/Programming/PlanPlan/framework/generate_dashboards.py from this node's own sub-tree. Hand edits are lost the -->
 <!-- next time the tool runs; re-run it instead of editing this file. -->
 
-# DASHBOARD — node_0_1_research
+# DASHBOARD — node_0_3_hub_integration
 
 A rollup over this node's own sub-tree (itself plus everything beneath it). Regenerated, not edited.
 
@@ -10,26 +10,25 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 
 | field | value |
 | --- | --- |
-| id | `ourobrowser.root.research` |
+| id | `ourobrowser.root.research.hub_integration` |
 | status | draft |
-| designation | work |
+| designation | pending |
 
 ## sub-tree
 
-sub-node count: 4
+sub-node count: 0
 
 ### status breakdown
 
 | status | count |
 | --- | --- |
-| draft | 5 |
+| draft | 1 |
 
 ### designation breakdown
 
 | designation | count |
 | --- | --- |
-| pending | 4 |
-| work | 1 |
+| pending | 1 |
 
 ## blocked
 
