@@ -1,42 +1,33 @@
-# PC Translation Strategy: Extracting a Standard Browser UI Skeleton
+# PC Strategy: Swapping V8 for Python in Chromium
 
-## 1. The Objective
-Our current `Ourobrowser` prototype uses a custom PyQt6 interface. While functional, it is missing decades of standard browser QoL features (Find-in-page, robust download managers, history trees, bookmark organizers, context menus, SSL certificate viewers, etc.). 
+## 1. The True Objective
+The goal is **not** to rewrite the browser into Python. The goal is to keep the entire mature C++ browser intact (its UI, its rendering engine, its network stack) but use PseudoCoup (PC) to surgically extract the JavaScript engine (V8) and wire a Python execution engine in its place.
 
-Instead of reinventing these from scratch, we will use **PseudoCoup (PC)** to ingest the C++ source code of a mature open-source browser, extract its UI framework, and transpile it into a native Python skeleton. This skeleton will serve as the frontend for the PCHQ Hub.
+We want a standard, fully-featured Chromium browser that natively executes `<script type="text/python">` and fundamentally does not understand JavaScript.
 
-## 2. Target Selection: Chromium
-**Target Codebase:** Chromium (`chrome/browser/ui/views/` and `ui/views/`)
-**Source Language:** C++
-**Target Language:** Python
+## 2. The Anatomy of the Entanglement (The Target)
+In Chromium, the rendering engine (Blink) and the JavaScript engine (V8) are separate entities, but they are glued together by a massive, complex layer called **V8 Bindings**. 
 
-*Why Chromium?* 
-Chromium's UI is written in a custom C++ framework called "Views" (Aura). Because it is strictly C++, it is an ideal target for PC's `tree-sitter` ingress. (Firefox's UI, by contrast, is a tangled mix of HTML, CSS, and JS, making direct translation to a native Python desktop app much messier).
+Every single DOM element (`document.getElementById`, `window.onload`, `HTMLButtonElement`) has a C++ binding that translates the internal Blink C++ object into a V8 JavaScript object. These bindings are largely auto-generated from **WebIDL** (Web Interface Definition Language) files.
 
-## 3. The PC Translation Pipeline
+If a human tried to manually sever V8 and write CPython bindings for the entire HTML5 DOM spec, it would take decades. 
 
-### Phase A: Isolation & Boundary Definition
-We cannot feed the entire 30GB Chromium repo into PC, or we will accidentally translate the V8 JavaScript engine into Python. We must define strict boundaries.
-- **Keep:** Code dealing with window management, tabs, address bars, buttons, and menus (`chrome/browser/ui/`).
-- **Sever:** Code dealing with DOM rendering, JavaScript execution, and network stacks (`third_party/blink`, `v8`, `net`).
-- **Action:** We will configure PC's `Ledger` to recognize calls to Blink/V8 as "Dead Ends". When PC encounters a call to the engine, it will wrap it in a stub/abstract method rather than trying to follow the reference.
+## 3. The PC Processing Pipeline
 
-### Phase B: Ingress (UR-AST Construction)
-PC will parse the C++ UI code. 
-- C++ classes like `BrowserView`, `TabStrip`, and `LocationBarView` will be mapped into the UR-AST.
-- PC's Ledger will resolve the massive C++ inheritance trees into concrete structural graphs.
+### Phase A: Ingress (Processing the Bindings)
+Instead of feeding PC the Chromium UI, we feed PC the **Blink-to-V8 Binding Layer** and the **WebIDL definitions**. 
+PC parses the structural intent of the DOM bindings: it learns exactly how Chromium exposes its internal C++ DOM to an external scripting engine.
 
-### Phase C: Egress (Python Emission)
-PC emits idiomatic Python. 
-- The C++ pointer management and memory allocation will be abstracted away by PC into standard Python object references.
-- We will be left with a massive, feature-complete Python module containing the entire visual logic and layout math of Google Chrome, completely decoupled from its web engine.
+### Phase B: Egress (Emitting Python Bindings)
+We configure PC to swap the target. Instead of generating C++ code that bridges Blink to V8, PC emits C++ code (like `pybind11` wrappers or native CPython C-API code) that bridges Blink directly to **Python**.
 
-### Phase D: Rewiring to the PCHQ Hub & QtWebEngine
-Once we have the translated Python UI skeleton, we plug it into our existing Ourobrowser backend:
-1. **The Canvas:** We take the area where Chrome normally paints Blink, and we drop our `QWebEngineView` into it.
-2. **The Logic:** When a user clicks the "Back" button, the translated Python `ToolbarView::BackButtonPressed()` method will fire. We wire that method to send an RPC signal to the **PCHQ Hub**.
-3. **The JS-Stripping:** We maintain our `OurobrowserSchemeHandler` so that anything rendered inside the canvas remains strictly JS-free.
+PC systematically traverses the entire W3C DOM spec within Chromium and auto-generates the exact equivalent Python bindings.
 
-## 4. Unsolved Questions for the Pipeline
-1. **UI Framework Translation:** Chromium's `ui/views` draws pixels directly using the Skia graphics library. When PC translates this C++ to Python, does PC map Skia drawing commands to PyQt6 equivalents (Map -> Wrap), or do we keep the Skia dependency and use `skia-python`?
-2. **Event Loop Integration:** Chromium has a highly custom C++ message loop. PC will need to map this to standard Python `asyncio` or the Qt Event Loop so the UI remains non-blocking.
+### Phase C: Hub Integration
+With the bindings swapped, Chromium's internal event loop no longer passes `<script>` tags or `onclick` events to V8. It passes them through the newly PC-generated bindings to an embedded CPython runtime (or streams them out to the **PCHQ Hub**).
+
+## 4. The Result
+We compile this processed version of Chromium.
+1. The user launches the application. It looks, feels, and operates exactly like Google Chrome, completely retaining the "basic UI skeleton" (downloads, history, tabs, address bar).
+2. The UI is still running natively in highly-optimized C++.
+3. But the moment the browser engine parses a webpage, JavaScript is dead on arrival. The entire DOM is strictly controllable via native Python.
