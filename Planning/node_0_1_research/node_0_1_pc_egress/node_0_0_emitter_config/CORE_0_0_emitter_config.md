@@ -1,0 +1,38 @@
+---
+id: ourobrowser.root.research.pc_egress.emitter_config
+level: 1
+status: draft
+settled_by: Dee
+supersedes: null
+designation: pending
+node:
+    name: emitter_config
+    path: node_0_1_pc_egress/node_0_0_emitter_config/CORE_0_0_emitter_config.md
+super_node:
+    name: pc_egress
+    path: ../CORE_0_1_pc_egress.md
+sub_nodes: []
+---
+
+# CORE 0_0 — emitter_config
+
+## metadata
+
+**Goal:** Define py_emitter_config.yaml
+
+**Details:**
+Create the mapping file instructing PC to transform V8 AST dead-ends into CPython API types (`PyObject*`, `PyInterpreterState*`) and inject explicit `Py_DECREF` mechanics.
+
+## super_node
+
+*(none)*
+
+## sub_nodes
+
+*(none — leaf node)*
+
+## definition
+
+*(pending — generated 2026-09-04 from the register in
+~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_1_pc_egress/CORE_0_1_pc_egress.md; the definition and `designation` are Dee's to
+write.)*

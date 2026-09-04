@@ -21,16 +21,25 @@ sub_nodes:
 # CORE 0_0 — pc_ingress
 
 ## metadata
+
 - **id:** ourobrowser.root.research.pc_ingress
 - **level:** 2
 - **status:** draft
 - **designation:** pending
 - **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
+
 - [research](../CORE_0_1_research.md)
 
+## sub_nodes
+
+- [ledger_config](node_0_0_ledger_config/CORE_0_0_ledger_config.md)
+- [runner_script](node_0_1_runner_script/CORE_0_1_runner_script.md)
+
 ## definition
+
 Configure PseudoCoup (PC) to ingress the Chromium DOM-to-V8 bindings. We target `third_party/blink/renderer/bindings/` to map the C++ glue code into PC's UR-AST, explicitly severing all deep dependencies on the V8 JavaScript engine.
 
 ## design

@@ -2,7 +2,7 @@
 <!-- Produced by ~/Programming/PlanPlan/framework/generate_dashboards.py from this node's own sub-tree. Hand edits are lost the -->
 <!-- next time the tool runs; re-run it instead of editing this file. -->
 
-# DASHBOARD — node_0_1_pc_egress
+# DASHBOARD — node_0_1_gil_wrapper
 
 A rollup over this node's own sub-tree (itself plus everything beneath it). Regenerated, not edited.
 
@@ -10,25 +10,25 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 
 | field | value |
 | --- | --- |
-| id | `ourobrowser.root.research.pc_egress` |
+| id | `ourobrowser.root.research.runtime_embedding.gil_wrapper` |
 | status | draft |
 | designation | pending |
 
 ## sub-tree
 
-sub-node count: 2
+sub-node count: 0
 
 ### status breakdown
 
 | status | count |
 | --- | --- |
-| draft | 3 |
+| draft | 1 |
 
 ### designation breakdown
 
 | designation | count |
 | --- | --- |
-| pending | 3 |
+| pending | 1 |
 
 ## blocked
 

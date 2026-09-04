@@ -21,16 +21,25 @@ sub_nodes:
 # CORE 0_3 — runtime_embedding
 
 ## metadata
+
 - **id:** ourobrowser.root.research.runtime_embedding
 - **level:** 2
 - **status:** draft
 - **designation:** pending
 - **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
+
 - [research](../CORE_0_1_research.md)
 
+## sub_nodes
+
+- [lifecycle_manager](node_0_0_lifecycle_manager/CORE_0_0_lifecycle_manager.md)
+- [gil_wrapper](node_0_1_gil_wrapper/CORE_0_1_gil_wrapper.md)
+
 ## definition
+
 Inject CPython lifecycle management into the Chromium renderer process, ensuring proper `Py_Initialize()` execution, Global Interpreter Lock (GIL) management, and per-tab execution context isolation.
 
 ## design

@@ -21,16 +21,25 @@ sub_nodes:
 # CORE 0_2 — chromium_compilation
 
 ## metadata
+
 - **id:** ourobrowser.root.research.chromium_compilation
 - **level:** 2
 - **status:** draft
 - **designation:** pending
 - **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
+
 - [research](../CORE_0_1_research.md)
 
+## sub_nodes
+
+- [gn_patch](node_0_0_gn_patch/CORE_0_0_gn_patch.md)
+- [build_runner](node_0_1_build_runner/CORE_0_1_build_runner.md)
+
 ## definition
+
 Modify the Chromium build system (GN/Ninja) to exclude V8 compilation, link the embedded CPython library, and compile our newly emitted `PyDOM` C++ bindings into the Blink renderer.
 
 ## design

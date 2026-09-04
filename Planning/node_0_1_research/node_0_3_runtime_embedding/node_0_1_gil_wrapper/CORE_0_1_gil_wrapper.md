@@ -1,0 +1,38 @@
+---
+id: ourobrowser.root.research.runtime_embedding.gil_wrapper
+level: 1
+status: draft
+settled_by: Dee
+supersedes: null
+designation: pending
+node:
+    name: gil_wrapper
+    path: node_0_3_runtime_embedding/node_0_1_gil_wrapper/CORE_0_1_gil_wrapper.md
+super_node:
+    name: runtime_embedding
+    path: ../CORE_0_3_runtime_embedding.md
+sub_nodes: []
+---
+
+# CORE 0_1 — gil_wrapper
+
+## metadata
+
+**Goal:** Implement ouro_gil_scope.h
+
+**Details:**
+Write the C++ RAII class `PyGILScope` that acquires and releases the Python Global Interpreter Lock during multithreaded DOM event callbacks.
+
+## super_node
+
+*(none)*
+
+## sub_nodes
+
+*(none — leaf node)*
+
+## definition
+
+*(pending — generated 2026-09-04 from the register in
+~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_3_runtime_embedding/CORE_0_3_runtime_embedding.md; the definition and `designation` are Dee's to
+write.)*

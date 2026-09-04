@@ -21,16 +21,25 @@ sub_nodes:
 # CORE 0_1 — pc_egress
 
 ## metadata
+
 - **id:** ourobrowser.root.research.pc_egress
 - **level:** 2
 - **status:** draft
 - **designation:** pending
 - **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
+
 - [research](../CORE_0_1_research.md)
 
+## sub_nodes
+
+- [emitter_config](node_0_0_emitter_config/CORE_0_0_emitter_config.md)
+- [runner_script](node_0_1_runner_script/CORE_0_1_runner_script.md)
+
 ## definition
+
 Configure PC to traverse the newly created UR-AST and emit Python C-API wrapper bindings in place of the original V8 bindings, generating native C++ files that seamlessly bridge Blink to CPython.
 
 ## design
