@@ -10,7 +10,7 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 
 | field | value |
 | --- | --- |
-| id | `pybrowser.root.api` |
+| id | `ourobrowser.root.api` |
 | status | draft |
 | designation | pending |
 

@@ -1,5 +1,5 @@
 ---
-id: pybrowser.root.research
+id: ourobrowser.root.research
 level: 1
 status: draft
 settled_by: Dee
@@ -9,7 +9,7 @@ node:
     name: research
     path: Planning/node_0_1_research/CORE_0_1_research.md
 super_node:
-    name: PyBrowser
+    name: Ourobrowser
     path: ../CORE_0.md
 sub_nodes: []
 ---

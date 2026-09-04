@@ -1,4 +1,4 @@
-# PyBrowser
+# Ourobrowser
 
 A custom browser wrapper using Python and PyQt6 that natively renders HTML and CSS while replacing standard JavaScript execution with a custom native Python execution engine.
 

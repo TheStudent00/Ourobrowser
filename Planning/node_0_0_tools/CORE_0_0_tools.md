@@ -1,5 +1,5 @@
 ---
-id: pybrowser.root.tools
+id: ourobrowser.root.tools
 level: 1
 status: draft
 settled_by: Dee
@@ -9,7 +9,7 @@ node:
     name: tools
     path: Planning/node_0_0_tools/CORE_0_0_tools.md
 super_node:
-    name: PyBrowser
+    name: Ourobrowser
     path: ../CORE_0.md
 sub_nodes: []
 ---

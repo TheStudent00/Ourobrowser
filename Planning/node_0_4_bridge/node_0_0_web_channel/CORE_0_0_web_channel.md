@@ -1,5 +1,5 @@
 ---
-id: pybrowser.root.bridge.web_channel
+id: ourobrowser.root.bridge.web_channel
 level: 1
 status: draft
 settled_by: Dee

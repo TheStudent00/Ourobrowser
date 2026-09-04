@@ -1,5 +1,5 @@
 ---
-id: pybrowser.root.bridge.progress
+id: ourobrowser.root.bridge.progress
 status: living
 ---
 

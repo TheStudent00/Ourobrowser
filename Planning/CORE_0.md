@@ -1,15 +1,15 @@
 ---
-id: pybrowser.root
+id: ourobrowser.root
 level: 0
 status: draft
 settled_by: Dee
 supersedes: null
 designation: work
 node:
-    name: PyBrowser
+    name: Ourobrowser
     path: Planning/CORE_0.md
-    repo: PyBrowser
-    remote: https://github.com/TheStudent00/PyBrowser.git
+    repo: Ourobrowser
+    remote: https://github.com/TheStudent00/Ourobrowser.git
 super_node: null
 sub_nodes:
     - name: tools
@@ -26,11 +26,11 @@ sub_nodes:
       path: node_0_5_test_page/CORE_0_5_test_page.md
 ---
 
-# CORE 0 — PyBrowser
+# CORE 0 — Ourobrowser
 
 ## metadata
 
-- **id:** pybrowser.root
+- **id:** ourobrowser.root
 - **level:** 0
 - **status:** draft
 - **designation:** work
@@ -52,4 +52,4 @@ sub_nodes:
 
 ## definition
 
-PyBrowser is a prototype browser wrapper using PyQt6 that natively parses HTML/CSS but intercepts and completely replaces standard JavaScript execution with a custom Python execution engine. It includes bidirectional DOM-to-Python bridging.
+Ourobrowser is a prototype browser wrapper using PyQt6 that natively parses HTML/CSS but intercepts and completely replaces standard JavaScript execution with a custom Python execution engine. It includes bidirectional DOM-to-Python bridging.

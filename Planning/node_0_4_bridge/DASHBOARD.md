@@ -10,7 +10,7 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 
 | field | value |
 | --- | --- |
-| id | `pybrowser.root.bridge` |
+| id | `ourobrowser.root.bridge` |
 | status | draft |
 | designation | code (module) |
 

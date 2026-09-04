@@ -1,5 +1,5 @@
 ---
-id: pybrowser.root.engine
+id: ourobrowser.root.engine
 level: 1
 status: draft
 settled_by: Dee
@@ -9,7 +9,7 @@ node:
     name: engine
     path: Planning/node_0_3_engine/CORE_0_3_engine.md
 super_node:
-    name: PyBrowser
+    name: Ourobrowser
     path: ../CORE_0.md
 sub_nodes:
     - name: browser_app
@@ -24,7 +24,7 @@ sub_nodes:
 
 ## metadata
 
-- **id:** pybrowser.root.engine
+- **id:** ourobrowser.root.engine
 - **level:** 1
 - **status:** draft
 - **designation:** code (module)
@@ -33,7 +33,7 @@ sub_nodes:
 
 ## super_node
 
-- [PyBrowser](../CORE_0.md)
+- [Ourobrowser](../CORE_0.md)
 
 ## sub_nodes
 

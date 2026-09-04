@@ -1,5 +1,5 @@
 ---
-id: pybrowser.root.bridge
+id: ourobrowser.root.bridge
 level: 1
 status: draft
 settled_by: Dee
@@ -9,7 +9,7 @@ node:
     name: bridge
     path: Planning/node_0_4_bridge/CORE_0_4_bridge.md
 super_node:
-    name: PyBrowser
+    name: Ourobrowser
     path: ../CORE_0.md
 sub_nodes:
     - name: web_channel
@@ -20,7 +20,7 @@ sub_nodes:
 
 ## metadata
 
-- **id:** pybrowser.root.bridge
+- **id:** ourobrowser.root.bridge
 - **level:** 1
 - **status:** draft
 - **designation:** code (module)
@@ -29,7 +29,7 @@ sub_nodes:
 
 ## super_node
 
-- [PyBrowser](../CORE_0.md)
+- [Ourobrowser](../CORE_0.md)
 
 ## sub_nodes
 

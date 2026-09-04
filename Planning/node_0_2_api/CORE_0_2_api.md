@@ -1,5 +1,5 @@
 ---
-id: pybrowser.root.api
+id: ourobrowser.root.api
 level: 1
 status: draft
 settled_by: Dee
@@ -9,7 +9,7 @@ node:
     name: api
     path: Planning/node_0_2_api/CORE_0_2_api.md
 super_node:
-    name: PyBrowser
+    name: Ourobrowser
     path: ../CORE_0.md
 sub_nodes: []
 ---

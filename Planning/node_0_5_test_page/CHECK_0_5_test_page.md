@@ -1,10 +1,10 @@
 ---
-id: pybrowser.root.test_page.check
+id: ourobrowser.root.test_page.check
 ---
 
 # CHECK — 0_5_test_page
 
-Node `pybrowser.root.test_page`. Status `draft`.
+Node `ourobrowser.root.test_page`. Status `draft`.
 
 ## check 1 — completeness
 

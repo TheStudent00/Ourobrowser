@@ -1,10 +1,10 @@
 ---
-id: pybrowser.root.engine.executor.check
+id: ourobrowser.root.engine.executor.check
 ---
 
 # CHECK — 0_2_executor
 
-Node `pybrowser.root.engine.executor`. Status `draft`.
+Node `ourobrowser.root.engine.executor`. Status `draft`.
 
 ## check 1 — completeness
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PyBrowser Test Page</title>
+    <title>Ourobrowser Test Page</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -49,10 +49,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to PyBrowser!</h1>
+        <h1>Welcome to Ourobrowser!</h1>
         <p>This page uses native HTML and CSS. The JavaScript engine has been bypassed. The button below communicates directly with a native Python function.</p>
         
-        <!-- Python execution block (will be executed and stripped by PyBrowser) -->
+        <!-- Python execution block (will be executed and stripped by Ourobrowser) -->
         <script type="text/python">
 import os
 import platform
@@ -63,7 +63,7 @@ def fetch_system_data():
     print(sys_info)
     print("---------------------------\\n")
 
-print("PyBrowser native context initialized. `fetch_system_data` is ready.")
+print("Ourobrowser native context initialized. `fetch_system_data` is ready.")
         </script>
 
         <!-- A standard JS script that will be stripped to prove JS is disabled -->
