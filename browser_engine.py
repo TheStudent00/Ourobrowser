@@ -222,6 +222,8 @@ def main():
     QWebEngineUrlScheme.registerScheme(scheme)
 
     app = QApplication(sys.argv)
+    app.setApplicationName("Ourobrowser")
+    app.setDesktopFileName("ourobrowser.desktop")
     window = OurobrowserWindow()
     window.show()
     sys.exit(app.exec())
