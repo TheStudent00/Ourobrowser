@@ -46,4 +46,4 @@ sub_nodes:
 
 ## definition
 
-This branch represents the physically separate research and execution plan for using PseudoCoup (PC) to systematically swap the V8 JavaScript engine for a Python execution engine inside the Chromium C++ codebase. It serves as the root planning research folder for the new native multi-language browser paradigm.
+This branch represents the physically separate research and execution plan for using PseudoCoup (PC) to systematically swap the V8 JavaScript engine for a local, embedded Python execution engine inside the Chromium C++ codebase. It serves as the root planning research folder for creating a standalone, Python-native browser that completely bypasses JavaScript execution.
