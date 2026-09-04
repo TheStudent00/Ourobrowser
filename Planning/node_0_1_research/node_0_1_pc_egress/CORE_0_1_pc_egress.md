@@ -1,13 +1,13 @@
 ---
 id: ourobrowser.root.research.pc_egress
-level: 1
+level: 2
 status: draft
 settled_by: Dee
 supersedes: null
 designation: pending
 node:
     name: pc_egress
-    path: node_0_1_research/node_0_1_pc_egress/CORE_0_1_pc_egress.md
+    path: Planning/node_0_1_research/node_0_1_pc_egress/CORE_0_1_pc_egress.md
 super_node:
     name: research
     path: ../CORE_0_1_research.md
@@ -18,11 +18,16 @@ sub_nodes: []
 
 ## metadata
 
-*(pending)*
+- **id:** ourobrowser.root.research.pc_egress
+- **level:** 2
+- **status:** draft
+- **designation:** pending
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [research](../CORE_0_1_research.md)
 
 ## sub_nodes
 
@@ -30,6 +35,10 @@ sub_nodes: []
 
 ## definition
 
-*(pending — generated 2026-09-04 from the register in
-~/Programming/Ourobrowser/Planning/node_0_1_research/CORE_0_1_research.md; the definition and `designation` are Dee's to
-write.)*
+**Goal:** Configure PC to emit CPython (or pybind11) wrappers in place of the original V8 bindings.
+
+**Details:**
+- Instruct PC to swap the target architecture from V8 to Python.
+- When PC traverses the UR-AST built during Ingress, it will emit new C++ binding code (`pybind11` or Python C-API native extensions) that mirror the exact DOM interface structure defined in the WebIDL.
+- E.g., `blink::HTMLButtonElement` binding code is rewritten from generating a V8 object to generating a `PyObject*`.
+- This ensures that Chromium's internal event loop and DOM tree seamlessly communicate with an embedded Python execution environment without realizing JavaScript is missing.
