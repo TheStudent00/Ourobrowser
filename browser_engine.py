@@ -4,7 +4,7 @@ from PyQt6.QtCore import QUrl, QBuffer, QIODevice, Qt
 from PyQt6.QtWidgets import (
     QApplication, QMainWindow, QToolBar, QLineEdit, QToolButton, QMenu
 )
-from PyQt6.QtGui import QAction, QKeySequence, QShortcut
+from PyQt6.QtGui import QAction, QKeySequence, QShortcut, QIcon
 from PyQt6.QtWebEngineCore import (
     QWebEngineUrlScheme,
     QWebEngineUrlSchemeHandler,
