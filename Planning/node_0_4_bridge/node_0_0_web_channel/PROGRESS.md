@@ -9,3 +9,5 @@ status: living
   `../PlanPlan/framework/generate_nodes.py` from the
   `nodes` register of `./Planning/node_0_4_bridge/CORE_0_4_bridge.md`. Skeleton only — definition,
   designation, and content pending.
+
+- 2026-09-03: **design written** — `## definition`, `## design` and `## settled rules` written for `PythonBridge.html_pushed` and `PythonBridge.set_html`, and for the rewriter being injected rather than imported. Provenance: `~/Programming/PseudoCoupHQ/DevComms/log_183_claude_code_task_briefs_round15.md` task 77 (Dee's own request, quoted there). Status: **in-progress** — the CORE states the shape; the code follows in the same lap. Evidence: this node's CORE, section `## design`.
