@@ -94,7 +94,7 @@
   <g
      id="#090909ff"
      style="fill:#00ff00"
-     transform="translate(-18,10.5)">
+     transform="matrix(1.026356,0,0,1.0236154,-23.370982,2.8360102)">
     <path
        fill="#090909"
        opacity="1"
@@ -624,7 +624,7 @@
      d="m 398.20922,525.60671 c 3.86,-3.18 8.35,-5.47 12.91,-7.48 -4.17,2.72 -8.52,5.14 -12.91,7.48 z" />
   <g
      id="#090909ff-1"
-     transform="translate(-13.323285,12.731238)"
+     transform="translate(-13.323285,11.231238)"
      style="fill:#520080;fill-opacity:1">
     <path
        fill="#090909"
