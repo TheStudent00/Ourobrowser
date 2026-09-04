@@ -1,10 +1,10 @@
 ---
-id: pybrowser.root.bridge.check
+id: ourobrowser.root.bridge.check
 ---
 
 # CHECK — 0_4_bridge
 
-Node `pybrowser.root.bridge`. Status `draft`.
+Node `ourobrowser.root.bridge`. Status `draft`.
 
 ## check 1 — completeness
 

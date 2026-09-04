@@ -1,5 +1,5 @@
 ---
-id: pybrowser.root.bridge.web_channel.progress
+id: ourobrowser.root.bridge.web_channel.progress
 status: living
 ---
 

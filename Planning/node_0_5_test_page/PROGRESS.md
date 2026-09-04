@@ -1,5 +1,5 @@
 ---
-id: pybrowser.root.test_page.progress
+id: ourobrowser.root.test_page.progress
 status: living
 ---
 

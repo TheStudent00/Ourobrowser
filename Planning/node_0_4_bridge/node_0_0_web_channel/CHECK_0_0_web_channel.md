@@ -1,10 +1,10 @@
 ---
-id: pybrowser.root.bridge.web_channel.check
+id: ourobrowser.root.bridge.web_channel.check
 ---
 
 # CHECK — 0_0_web_channel
 
-Node `pybrowser.root.bridge.web_channel`. Status `draft`.
+Node `ourobrowser.root.bridge.web_channel`. Status `draft`.
 
 ## check 1 — completeness
 

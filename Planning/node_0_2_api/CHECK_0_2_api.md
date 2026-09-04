@@ -1,10 +1,10 @@
 ---
-id: pybrowser.root.api.check
+id: ourobrowser.root.api.check
 ---
 
 # CHECK — 0_2_api
 
-Node `pybrowser.root.api`. Status `draft`.
+Node `ourobrowser.root.api`. Status `draft`.
 
 ## check 1 — completeness
 

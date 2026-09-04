@@ -1,10 +1,10 @@
 ---
-id: pybrowser.root.research.check
+id: ourobrowser.root.research.check
 ---
 
 # CHECK — 0_1_research
 
-Node `pybrowser.root.research`. Status `draft`.
+Node `ourobrowser.root.research`. Status `draft`.
 
 ## check 1 — completeness
 

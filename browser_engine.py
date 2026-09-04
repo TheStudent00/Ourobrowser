@@ -15,7 +15,7 @@ from PyQt6.QtWebChannel import QWebChannel
 from bridge import PythonBridge
 
 
-class PyBrowserSchemeHandler(QWebEngineUrlSchemeHandler):
+class OurobrowserSchemeHandler(QWebEngineUrlSchemeHandler):
     """
     Custom URL Scheme Handler that intercepts HTML loading,
     strips standard JS, executes embedded Python scripts, and
@@ -27,7 +27,7 @@ class PyBrowserSchemeHandler(QWebEngineUrlSchemeHandler):
 
     def requestStarted(self, request):
         url = request.requestUrl()
-        # Request should look like pybrowser://local/test_page.html
+        # Request should look like ourobrowser://local/test_page.html
         path = url.path().lstrip('/')
         if not path:
             path = "test_page.html"
@@ -96,10 +96,11 @@ class PyBrowserSchemeHandler(QWebEngineUrlSchemeHandler):
         request.reply(b"text/html", buffer)
 
 
-class PyBrowserWindow(QMainWindow):
+class OurobrowserWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("PyBrowser (Python Native)")
+        self.setWindowTitle("Ourobrowser (Python Native)")
+        self.setWindowIcon(QIcon("ouroboros.svg"))
         self.resize(1024, 768)
 
         # Shared execution context for the Python scripts and bridge
@@ -119,11 +120,11 @@ class PyBrowserWindow(QMainWindow):
         self.browser.page().setWebChannel(self.channel)
 
         # Set up the custom URL scheme handler
-        self.scheme_handler = PyBrowserSchemeHandler(
+        self.scheme_handler = OurobrowserSchemeHandler(
             context=self.python_context, 
             parent=self.browser.page().profile()
         )
-        self.browser.page().profile().installUrlSchemeHandler(b"pybrowser", self.scheme_handler)
+        self.browser.page().profile().installUrlSchemeHandler(b"ourobrowser", self.scheme_handler)
 
         # Developer Tools Setup
         self.devtools_window = None
@@ -131,7 +132,7 @@ class PyBrowserWindow(QMainWindow):
         self.shortcut_dev.activated.connect(self.toggle_devtools)
 
         # Load the test page via our custom scheme
-        self.browser.setUrl(QUrl("pybrowser://local/test_page.html"))
+        self.browser.setUrl(QUrl("ourobrowser://local/test_page.html"))
 
     def setup_ui(self):
         # Navigation Toolbar
@@ -180,14 +181,14 @@ class PyBrowserWindow(QMainWindow):
         self.addToolBar(self.bookmarks_bar)
 
         test_page_action = QAction("⭐ Test Page", self)
-        test_page_action.triggered.connect(lambda: self.browser.setUrl(QUrl("pybrowser://local/test_page.html")))
+        test_page_action.triggered.connect(lambda: self.browser.setUrl(QUrl("ourobrowser://local/test_page.html")))
         self.bookmarks_bar.addAction(test_page_action)
 
     def navigate_to_url(self):
         url_text = self.url_bar.text()
         # Ensure it always prepends our custom scheme if it's missing it
-        if not url_text.startswith("http") and not url_text.startswith("pybrowser://"):
-            url_text = "pybrowser://local/" + url_text
+        if not url_text.startswith("http") and not url_text.startswith("ourobrowser://"):
+            url_text = "ourobrowser://local/" + url_text
         self.browser.setUrl(QUrl(url_text))
 
     def update_url_bar(self, q):
@@ -210,7 +211,7 @@ class PyBrowserWindow(QMainWindow):
 
 def main():
     # Register the custom URL scheme before creating QApplication
-    scheme = QWebEngineUrlScheme(b"pybrowser")
+    scheme = QWebEngineUrlScheme(b"ourobrowser")
     scheme.setSyntax(QWebEngineUrlScheme.Syntax.HostAndPort)
 
     scheme.setFlags(
@@ -221,7 +222,7 @@ def main():
     QWebEngineUrlScheme.registerScheme(scheme)
 
     app = QApplication(sys.argv)
-    window = PyBrowserWindow()
+    window = OurobrowserWindow()
     window.show()
     sys.exit(app.exec())
 

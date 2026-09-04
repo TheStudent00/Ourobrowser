@@ -1,10 +1,10 @@
 ---
-id: pybrowser.root.engine.scheme_handler.check
+id: ourobrowser.root.engine.scheme_handler.check
 ---
 
 # CHECK — 0_1_scheme_handler
 
-Node `pybrowser.root.engine.scheme_handler`. Status `draft`.
+Node `ourobrowser.root.engine.scheme_handler`. Status `draft`.
 
 ## check 1 — completeness
 

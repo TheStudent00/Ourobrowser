@@ -1,10 +1,10 @@
 ---
-id: pybrowser.root.tools.check
+id: ourobrowser.root.tools.check
 ---
 
 # CHECK — 0_0_tools
 
-Node `pybrowser.root.tools`. Status `draft`.
+Node `ourobrowser.root.tools`. Status `draft`.
 
 ## check 1 — completeness
 
