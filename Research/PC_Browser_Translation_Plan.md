@@ -23,8 +23,8 @@ We configure PC to swap the target. Instead of generating C++ code that bridges 
 
 PC systematically traverses the entire W3C DOM spec within Chromium and auto-generates the exact equivalent Python bindings.
 
-### Phase C: Hub Integration
-With the bindings swapped, Chromium's internal event loop no longer passes `<script>` tags or `onclick` events to V8. It passes them through the newly PC-generated bindings to an embedded CPython runtime (or streams them out to the **PCHQ Hub**).
+### Phase C: Local Runtime Integration
+With the bindings swapped, Chromium's internal event loop no longer passes `<script>` tags or `onclick` events to V8. It passes them through the newly PC-generated bindings to a natively embedded CPython runtime. Each browser tab receives an isolated, sandboxed Python execution dictionary, mimicking the strict context isolation previously handled by V8.
 
 ## 4. The Result
 We compile this processed version of Chromium.
