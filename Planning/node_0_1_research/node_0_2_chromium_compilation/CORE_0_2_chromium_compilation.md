@@ -11,7 +11,11 @@ node:
 super_node:
     name: research
     path: ../CORE_0_1_research.md
-sub_nodes: []
+sub_nodes:
+    - name: gn_patch
+      path: node_0_0_gn_patch/CORE_0_0_gn_patch.md
+    - name: build_runner
+      path: node_0_1_build_runner/CORE_0_1_build_runner.md
 ---
 
 # CORE 0_2 — chromium_compilation
