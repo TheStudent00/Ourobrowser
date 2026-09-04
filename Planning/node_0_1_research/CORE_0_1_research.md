@@ -18,8 +18,8 @@ sub_nodes:
       path: node_0_1_pc_egress/CORE_0_1_pc_egress.md
     - name: chromium_compilation
       path: node_0_2_chromium_compilation/CORE_0_2_chromium_compilation.md
-    - name: hub_integration
-      path: node_0_3_hub_integration/CORE_0_3_hub_integration.md
+    - name: runtime_embedding
+      path: node_0_3_runtime_embedding/CORE_0_3_runtime_embedding.md
 ---
 
 # CORE 0_1 — research
@@ -39,10 +39,10 @@ sub_nodes:
 
 ## sub_nodes
 
-- [pc_ingress](node_0_0_pc_ingress/CORE_0_0_pc_ingress.md)
-- [pc_egress](node_0_1_pc_egress/CORE_0_1_pc_egress.md)
-- [chromium_compilation](node_0_2_chromium_compilation/CORE_0_2_chromium_compilation.md)
-- [hub_integration](node_0_3_hub_integration/CORE_0_3_hub_integration.md)
+- [pc_ingress](node_0_0_pc_ingress/CORE_0_0_pc_ingress.md) — **Goal:** Configure PseudoCoup (PC) to ingress the Chromium DOM-to-V8 bindings and WebIDL definitions.
+- [pc_egress](node_0_1_pc_egress/CORE_0_1_pc_egress.md) — **Goal:** Configure PC to emit CPython (or pybind11) wrappers in place of the original V8 bindings.
+- [chromium_compilation](node_0_2_chromium_compilation/CORE_0_2_chromium_compilation.md) — **Goal:** Modify the Chromium build system (GN/Ninja) to compile our PC-processed bindings.
+- [runtime_embedding](node_0_3_runtime_embedding/CORE_0_3_runtime_embedding.md)
 
 ## definition
 
