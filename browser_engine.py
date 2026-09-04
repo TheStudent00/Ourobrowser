@@ -282,6 +282,26 @@ class OurobrowserWindow(QMainWindow):
         self.browser.setUrl(QUrl("ourobrowser://local/" + self.start_page))
 
     def setup_ui(self):
+        # Application Menu Bar
+        menu_bar = self.menuBar()
+        
+        file_menu = menu_bar.addMenu("&File")
+        exit_action = QAction("E&xit", self)
+        exit_action.setShortcut("Ctrl+Q")
+        exit_action.triggered.connect(self.close)
+        file_menu.addAction(exit_action)
+        
+        view_menu = menu_bar.addMenu("&View")
+        invert_action = QAction("Toggle Color &Inversion", self)
+        invert_action.setShortcut("Ctrl+I")
+        invert_action.triggered.connect(self.toggle_color_inversion)
+        view_menu.addAction(invert_action)
+        
+        dev_action = QAction("Developer &Tools", self)
+        dev_action.setShortcut("F12")
+        dev_action.triggered.connect(self.toggle_devtools)
+        view_menu.addAction(dev_action)
+
         # Navigation Toolbar
         self.toolbar = QToolBar("Navigation")
         self.addToolBar(self.toolbar)
@@ -340,6 +360,10 @@ class OurobrowserWindow(QMainWindow):
 
     def update_url_bar(self, q):
         self.url_bar.setText(q.toString())
+
+    def toggle_color_inversion(self):
+        js = "document.documentElement.style.filter = document.documentElement.style.filter === 'invert(100%)' ? '' : 'invert(100%)';"
+        self.browser.page().runJavaScript(js)
 
     def toggle_devtools(self):
         if self.devtools_window is None:
