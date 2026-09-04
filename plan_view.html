@@ -1,0 +1,484 @@
+<!doctype html><html><head><meta charset='utf-8'>
+<title>plan — Planning</title>
+<style>
+:root { color-scheme: light dark; }
+body { font: 14px/1.5 ui-sans-serif, system-ui, -apple-system, sans-serif;
+       margin: 0; padding: 32px; max-width: 1000px;
+       background: Canvas; color: CanvasText; }
+h1 { font-size: 19px; margin: 0 0 4px; }
+.sub { color: GrayText; font-size: 13px; margin: 0 0 16px; }
+.row { display: flex; align-items: baseline; gap: 10px; padding: 6px 0; }
+.nm { font-weight: 600; }
+.id { color: GrayText; font-size: 12px; font-family: ui-monospace, monospace; }
+.def { color: GrayText; margin: 0 0 2px 0; font-size: 13px; }
+.pill { font-size: 11px; padding: 1px 7px; border-radius: 9px; white-space: nowrap;
+        border: 1px solid color-mix(in srgb, CanvasText 25%, transparent); }
+.thin { color: GrayText; font-style: italic; }
+.prog { border-color: #b3261e; color: #b3261e; }
+@media (prefers-color-scheme: dark) { .prog { border-color: #f2b8b5; color: #f2b8b5; } }
+.wc { color: GrayText; font-size: 12px; margin-left: auto; white-space: nowrap; }
+.prob { color: #b3261e; font-size: 12px; margin: 2px 0; }
+@media (prefers-color-scheme: dark) { .prob { color: #f2b8b5; } }
+.box { border: 1px solid color-mix(in srgb, CanvasText 15%, transparent);
+       border-radius: 8px; padding: 8px 16px 14px; margin-bottom: 24px; }
+.hdr { font-weight: 600; margin: 16px 0 8px; }
+.ok { color: GrayText; }
+
+/* the tree: nested <details>, so collapsing is native and needs no script */
+details > summary { cursor: pointer; list-style: none; border-radius: 5px;
+                    padding-left: 4px; }
+details > summary::-webkit-details-marker { display: none; }
+details > summary:hover { background: color-mix(in srgb, CanvasText 6%, transparent); }
+details > summary .nm::before { content: "\25B8 "; color: GrayText;
+                                display: inline-block; width: 1em; }
+details[open] > summary .nm::before { content: "\25BE "; }
+.leaf { padding-left: 4px; }
+.leaf .nm::before { content: ""; display: inline-block; width: 1em; }
+.kids { margin-left: 20px;
+        border-left: 1px solid color-mix(in srgb, CanvasText 12%, transparent);
+        padding-left: 10px; }
+.btn { font: inherit; font-size: 12px; padding: 3px 10px; margin-right: 6px;
+       border-radius: 6px; cursor: pointer; background: Canvas; color: CanvasText;
+       border: 1px solid color-mix(in srgb, CanvasText 25%, transparent); }
+
+/* what a CORE says about itself, below the folder tree: its sections,
+   and the bullet trees inside them. deliberately lighter than a node
+   row so a component is never read as a node folder. */
+.sech { font-size: 12px; color: GrayText; font-variant: small-caps;
+        letter-spacing: .04em; }
+details.sec > summary .sech::before,
+details.cmpfold > summary .cmp::before { content: "\25B8 "; color: GrayText;
+        display: inline-block; width: 1em; }
+details.sec[open] > summary .sech::before,
+details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
+.cmp { font-size: 13px; }
+.leafcmp { padding-left: calc(1em + 4px); }
+.prose { font-size: 13px; color: GrayText; margin: 3px 0; max-width: 72ch;
+         padding-left: 4px; }
+</style></head><body>
+<h1>Planning</h1>
+<p class='sub'>/home/lucas/Programming/Ourobrowser/Planning · 15 nodes · depth 2 · generated 2026-09-04 20:45 UTC</p>
+<p><button class='btn' onclick='setAll(true)'>expand all</button>
+<button class='btn' onclick='setAll(false)'>collapse all</button>
+<button class='btn' onclick='setDepth(1)'>level 1</button>
+<button class='btn' onclick='setDepth(2)'>level 2</button>
+<button class='btn' onclick='setDetail(true)'>all detail</button>
+<button class='btn' onclick='setDetail(false)'>no detail</button>
+</p>
+<div class='box'>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>Planning</span>
+<span class='id'>ourobrowser.root</span>
+<span class='pill'>draft</span>
+<span class='wc'>134 words</span>
+</div>
+<p class='prob'>no PROGRESS.md</p>
+</summary><div class='kids'>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_0_tools</span>
+<span class='id'>ourobrowser.root.tools</span>
+<span class='pill'>draft</span>
+<span class='wc'>60 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'>*(pending)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-03 from the register in ./Planning/CORE_0.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_1_research</span>
+<span class='id'>ourobrowser.root.research</span>
+<span class='pill'>draft</span>
+<span class='wc'>132 words</span>
+</div>
+</summary><div class='kids'>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_0_pc_ingress</span>
+<span class='id'>ourobrowser.root.research.pc_ingress</span>
+<span class='pill'>draft</span>
+<span class='wc'>169 words</span>
+</div>
+<p class='prob'>level 2 but folder depth 1</p>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.research.pc_ingress</div>
+<div class='cmp leafcmp'><strong>level:</strong> 2</div>
+<div class='cmp leafcmp'><strong>status:</strong> draft</div>
+<div class='cmp leafcmp'><strong>designation:</strong> pending</div>
+<div class='cmp leafcmp'><strong>settled_by:</strong> Dee</div>
+<div class='cmp leafcmp'><strong>supersedes:</strong> null</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<div class='cmp leafcmp'>research</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'><strong>Goal:</strong> Configure PseudoCoup (PC) to ingress the Chromium DOM-to-V8 bindings and WebIDL definitions.</p>
+<p class='prose'><strong>Details:</strong> - Target Chromium&#x27;s <code>third_party/blink/renderer/bindings/</code> directory. - This directory contains the WebIDL definitions and auto-generated C++ code that bridges Blink&#x27;s internal DOM representation to V8 JavaScript objects. - PC&#x27;s <code>tree-sitter</code> parsers will map these bindings into the UR-AST. - The Ledger must be strictly configured to recognize the boundary: we are not translating the rendering engine itself (Blink), but rather the *interface* surface where Blink exposes objects to external scripts. - We need to establish &quot;stub points&quot; where V8 specific types (<code>v8::Local</code>, <code>v8::Isolate</code>) are encountered, marking them as targets for replacement in the egress phase.</p>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_1_pc_egress</span>
+<span class='id'>ourobrowser.root.research.pc_egress</span>
+<span class='pill'>draft</span>
+<span class='wc'>163 words</span>
+</div>
+<p class='prob'>level 2 but folder depth 1</p>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.research.pc_egress</div>
+<div class='cmp leafcmp'><strong>level:</strong> 2</div>
+<div class='cmp leafcmp'><strong>status:</strong> draft</div>
+<div class='cmp leafcmp'><strong>designation:</strong> pending</div>
+<div class='cmp leafcmp'><strong>settled_by:</strong> Dee</div>
+<div class='cmp leafcmp'><strong>supersedes:</strong> null</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<div class='cmp leafcmp'>research</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'><strong>Goal:</strong> Configure PC to emit CPython (or pybind11) wrappers in place of the original V8 bindings.</p>
+<p class='prose'><strong>Details:</strong> - Instruct PC to swap the target architecture from V8 to Python. - When PC traverses the UR-AST built during Ingress, it will emit new C++ binding code (<code>pybind11</code> or Python C-API native extensions) that mirror the exact DOM interface structure defined in the WebIDL. - E.g., <code>blink::HTMLButtonElement</code> binding code is rewritten from generating a V8 object to generating a <code>PyObject*</code>. - This ensures that Chromium&#x27;s internal event loop and DOM tree seamlessly communicate with an embedded Python execution environment without realizing JavaScript is missing.</p>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_2_chromium_compilation</span>
+<span class='id'>ourobrowser.root.research.chromium_compilation</span>
+<span class='pill'>draft</span>
+<span class='wc'>155 words</span>
+</div>
+<p class='prob'>level 2 but folder depth 1</p>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.research.chromium_compilation</div>
+<div class='cmp leafcmp'><strong>level:</strong> 2</div>
+<div class='cmp leafcmp'><strong>status:</strong> draft</div>
+<div class='cmp leafcmp'><strong>designation:</strong> pending</div>
+<div class='cmp leafcmp'><strong>settled_by:</strong> Dee</div>
+<div class='cmp leafcmp'><strong>supersedes:</strong> null</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<div class='cmp leafcmp'>research</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'><strong>Goal:</strong> Modify the Chromium build system (GN/Ninja) to compile our PC-processed bindings.</p>
+<p class='prose'><strong>Details:</strong> - Chromium&#x27;s build system expects to compile V8. We need to patch the <code>.gn</code> build files to exclude V8 compilation. - Link the embedded Python runtime (e.g., <code>libpython3.so</code> or static equivalent) into the Chromium build. - Ensure the newly PC-emitted binding files are added to the source lists in the <code>blink/renderer/bindings</code> <code>BUILD.gn</code> targets. - The compiled artifact will be a fully functional web browser application that looks and behaves like Google Chrome, but whose DOM engine routes scripts strictly to Python.</p>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_3_hub_integration</span>
+<span class='id'>ourobrowser.root.research.hub_integration</span>
+<span class='pill'>draft</span>
+<span class='wc'>184 words</span>
+</div>
+<p class='prob'>level 2 but folder depth 1</p>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.research.hub_integration</div>
+<div class='cmp leafcmp'><strong>level:</strong> 2</div>
+<div class='cmp leafcmp'><strong>status:</strong> draft</div>
+<div class='cmp leafcmp'><strong>designation:</strong> pending</div>
+<div class='cmp leafcmp'><strong>settled_by:</strong> Dee</div>
+<div class='cmp leafcmp'><strong>supersedes:</strong> null</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<div class='cmp leafcmp'>research</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'><strong>Goal:</strong> Bridge the embedded Python DOM environment into the external PCHQ Hub.</p>
+<p class='prose'><strong>Details:</strong> - The new Chromium fork now natively runs <code>&lt;script type=&quot;text/python&quot;&gt;</code>. - However, we want this local Python runtime to act as a dumb relay to the broader PCHQ Hub, allowing multi-language processing. - We will inject an IPC mechanism (such as local WebSockets or a shared memory queue) into the embedded Python environment. - When an <code>onclick</code> DOM event fires in the browser, it is caught natively by the new Python bindings, and then relayed directly to the PCHQ Hub for evaluation. - The PCHQ Hub computes the result (in whatever language) and streams DOM mutations back to the browser&#x27;s Python execution layer, which executes them against the Blink renderer.</p>
+</div></details>
+</div></details>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.research</div>
+<div class='cmp leafcmp'><strong>level:</strong> 1</div>
+<div class='cmp leafcmp'><strong>status:</strong> draft</div>
+<div class='cmp leafcmp'><strong>designation:</strong> work</div>
+<div class='cmp leafcmp'><strong>settled_by:</strong> Dee</div>
+<div class='cmp leafcmp'><strong>supersedes:</strong> null</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<div class='cmp leafcmp'>Ourobrowser</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>This branch represents the physically separate research and execution plan for using PseudoCoup (PC) to systematically swap the V8 JavaScript engine for a Python execution engine inside the Chromium C++ codebase. It serves as the root planning research folder for the new native multi-language browser paradigm.</p>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_2_api</span>
+<span class='id'>ourobrowser.root.api</span>
+<span class='pill'>draft</span>
+<span class='wc'>60 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'>*(pending)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-03 from the register in ./Planning/CORE_0.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_3_engine</span>
+<span class='id'>ourobrowser.root.engine</span>
+<span class='pill'>draft</span>
+<span class='wc'>370 words</span>
+</div>
+</summary><div class='kids'>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_0_browser_app</span>
+<span class='id'>ourobrowser.root.engine.browser_app</span>
+<span class='pill'>draft</span>
+<span class='wc'>60 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'>*(pending)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-03 from the register in ./Planning/node_0_3_engine/CORE_0_3_engine.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_1_scheme_handler</span>
+<span class='id'>ourobrowser.root.engine.scheme_handler</span>
+<span class='pill'>draft</span>
+<span class='wc'>852 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'>*(pending)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<div class='cmp leafcmp'>engine</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'><code>OurobrowserSchemeHandler</code> in <code>browser_engine.py</code>. It answers every <code>ourobrowser://local/&lt;path&gt;</code> request: it opens the file named by the path, executes the page&#x27;s <code>&lt;script type=&quot;text/python&quot;&gt;</code> blocks in the shared context, strips every other <code>&lt;script&gt;</code>, rewrites the page&#x27;s <code>python:</code> click handlers into the bridge&#x27;s wire form, appends the engine&#x27;s own setup script, and replies with the result.</p>
+<p class='prose'>*(This paragraph describes code that already runs; it was written 2026-09-03 by the task-77 implementer so that the design below has a definition to sit under. The node&#x27;s <code>designation</code> is still Dee&#x27;s.)*</p>
+</div></details>
+<details open class='sec'><summary><span class='sech'>design</span></summary><div class='kids'>
+<p class='prose'>*(added 2026-09-03 by the task-77 implementer. Provenance: log_183 task 77, which quotes Dee&#x27;s own request —* &quot;the browser allows python to be run locally natively within the browser. id like to see the dashboard written to run in it&quot; *— and states the gap it runs into:* &quot;there is no path from Python back into the DOM. A <code>&lt;script type=&quot;text/python&quot;&gt;</code> cannot emit HTML (its text is replaced by the empty string) and the bridge cannot answer.&quot; *Every name below is a WORKING name, each defined in exactly one place, and every one of them is Dee&#x27;s to change.)*</p>
+<p class='prose'>Three additions and one repair. Each is stated as what the handler does, in the order the handler already does it.</p>
+<p class='prose'>``<code> class OurobrowserSchemeHandler attributes: context methods: requestStarted module names it owns, one definition each: PAGE_EMIT_NAME &quot;emit&quot; PAGE_PATH_NAME &quot;page_path&quot; PYTHON_CLICK_ATTRIBUTE &quot;data-python-onclick&quot; module functions: rewrite_python_onclick </code>``</p>
+<div class='cmp leafcmp'><strong>ADDITION 1 — a python block may emit HTML in place of itself.</strong> Before a block is executed the handler binds one name in the shared context, <code>PAGE_EMIT_NAME</code>, to a collector. The block calls it as many times as it likes; the concatenation of what it collected replaces the block&#x27;s own text in the HTML Chromium receives. A block that never calls it is replaced by the empty string, exactly as before, so every page written against the old behaviour is unaffected.</div>
+<div class='cmp leafcmp'><strong>ADDITION 2 — a block knows which file it is in.</strong> Before a block is executed the handler binds <code>PAGE_PATH_NAME</code> in the shared context to the absolute path of the file being served. Without it a page cannot reach anything that sits beside it, and the page would have to carry a machine-specific path in its own text.</div>
+<div class='cmp leafcmp'><strong>ADDITION 3 — the click handler&#x27;s wire form is an attribute, not inline code.</strong> <code>onclick=&quot;python:EXPR&quot;</code> is rewritten to <code>PYTHON_CLICK_ATTRIBUTE=&quot;EXPR&quot;</code>, with <code>EXPR</code> html-escaped. Nothing executable is written into the page. The engine&#x27;s own setup script carries ONE delegated click listener that reads the attribute and hands the expression to the bridge.</div>
+<div class='cmp leafcmp'><strong>THE REPAIR — the old rewrite emitted a page that could not run.</strong> The replacement template <code>...execute_python(\&#x27;\1\&#x27;)...</code> was a raw python string, so the backslashes reached Chromium literally. See the settled rule below for the literal and the browser&#x27;s own error.</div>
+<div class='cmp leafcmp'><strong>The rewrite is one function, <code>rewrite_python_onclick</code>, and the bridge uses the same one.</strong> HTML that Python pushes into the page after first paint never passes through <code>requestStarted</code>, so it would otherwise carry <code>python:</code> handlers nothing had rewritten. The engine hands the function to the bridge when it builds it; the bridge does not import the engine.</div>
+<div class='cmp leafcmp'><strong>Order is unchanged and load-bearing.</strong> Blocks are executed and replaced first, other scripts are stripped second, the click rewrite runs third, the setup script is appended fourth. Because the rewrite runs after the emission, HTML a block emits gets its <code>python:</code> handlers rewritten like any other; because the strip runs before it, emitted HTML cannot smuggle JavaScript in.</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled rules</span></summary><div class='kids'>
+<p class='prose'>*(added 2026-09-03 by the task-77 implementer; each carries its decision source, per PROTOCOL §5.)*</p>
+<div class='cmp leafcmp'><strong>A block that emits nothing behaves exactly as it did.</strong> The substitution is the empty string when the collector is empty. Decision: this CORE, 2026-09-03, from log_183 task 77&#x27;s requirement &quot;Keep <code>test_page.html</code> working&quot;.</div>
+<div class='cmp leafcmp'><strong>No executable text is written into a page by the engine except its own setup script.</strong> The click wire form is an attribute; the listener lives in the setup script. Decision: this CORE, 2026-09-03, extending the project&#x27;s own stated feature — README.md, <code>~/Programming/Ourobrowser/README.md</code>: &quot;Standard <code>&lt;script&gt;</code> tags are completely stripped and ignored.&quot;</div>
+<div class='cmp leafcmp'><strong>The old inline rewrite was broken, measured, not asserted.</strong> The literal the old code served to Chromium, printed by running the same regular expression over <code>~/Programming/Ourobrowser/test_page.html</code>:</div>
+<p class='prose'>``<code> &lt;button onclick=&quot;if(window.pyBridge) { window.pyBridge.execute_python(\&#x27;fetch_system_data()\&#x27;); }&quot;&gt;Fetch System Data (Python)&lt;/button&gt; </code>``</p>
+<p class='prose'>and Chromium&#x27;s own answer when that button is clicked:</p>
+<p class='prose'>``<code> js: Uncaught SyntaxError: Failed to execute &#x27;click&#x27; on &#x27;HTMLElement&#x27;: Invalid or unexpected token </code>``</p>
+<p class='prose'>So the bridge never fired from a page. Decision: this CORE, 2026-09-03; evidence class <strong>forced by construction</strong> (the served text and the browser&#x27;s refusal of it). - <strong>Every name introduced here is provisional and lives in one place.</strong> <code>PAGE_EMIT_NAME</code>, <code>PAGE_PATH_NAME</code> and <code>PYTHON_CLICK_ATTRIBUTE</code> are module-level names in <code>browser_engine.py</code>; changing a name is one edit. Decision: log_183&#x27;s standing rule that architecture, ontology and naming are Dee&#x27;s.</p>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_2_executor</span>
+<span class='id'>ourobrowser.root.engine.executor</span>
+<span class='pill'>draft</span>
+<span class='wc'>487 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'>*(pending)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<div class='cmp leafcmp'>engine</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>The one shared Python execution context, and the two ways code enters it. A page&#x27;s <code>&lt;script type=&quot;text/python&quot;&gt;</code> blocks enter it at REQUEST time, before Chromium has seen any HTML. A click&#x27;s expression enters it later, through the bridge, while the page is on screen. Both <code>exec</code> into the same dictionary, so a function a block defined is callable by a click.</p>
+<p class='prose'>*(This paragraph describes code that already runs; it was written 2026-09-03 by the task-77 implementer so that the design below has a definition to sit under. The node&#x27;s <code>designation</code> is still Dee&#x27;s.)*</p>
+</div></details>
+<details open class='sec'><summary><span class='sech'>design</span></summary><div class='kids'>
+<p class='prose'>*(added 2026-09-03 by the task-77 implementer. Provenance: log_183 task 77. Working names; Dee settles them.)*</p>
+<div class='cmp leafcmp'><strong>The context is one dictionary, <code>OurobrowserWindow.python_context</code>, passed to both the scheme handler and the bridge.</strong> Unchanged.</div>
+<details open class='cmpfold'><summary><span class='cmp'><strong>A block runs BEFORE the DOM exists; a click runs AFTER it.</strong> That is the whole reason two additions are needed rather than one:</span></summary><div class='kids'>
+<div class='cmp leafcmp'>at request time there is no element to push HTML into, so a block puts its HTML in its own place — <code>emit</code>, defined in the scheme_handler node;</div>
+<div class='cmp leafcmp'>at click time the block&#x27;s text is long gone, so the only way to change the page is to push into an element that is already there — <code>set_html</code>, defined in the bridge node.</div>
+</div></details>
+<div class='cmp leafcmp'><strong>Both names are bound in the same context, so a page reads as one program.</strong> A block calls <code>emit</code> for the first paint and defines the functions the buttons call; those functions call <code>set_html</code>. Values in motion, on the dashboard page this was built for:</div>
+<p class='prose'>``` request time block runs defines ouro_pane(n) calls emit(&quot;&lt;div id=pane&gt;…pane 5…&lt;/div&gt;&quot;) handler substitutes that html for the block handler rewrites onclick=&quot;python:ouro_pane(2)&quot; to data-python-onclick=&quot;ouro_pane(2)&quot; Chromium paints</p>
+<p class='prose'>click on the pane-2 button setup script reads the attribute bridge exec&#x27;s &quot;ouro_pane(2)&quot; in the same context ouro_pane builds pane 2&#x27;s html in python ouro_pane calls set_html(&quot;pane&quot;, html) bridge emits html_pushed(&quot;pane&quot;, html) setup script sets that element&#x27;s innerHTML ```</p>
+<div class='cmp leafcmp'><strong>A block&#x27;s exception is printed and the page still loads.</strong> The existing behaviour, unchanged: a failed block leaves the page standing rather than failing the request.</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled rules</span></summary><div class='kids'>
+<p class='prose'>*(added 2026-09-03 by the task-77 implementer; each carries its decision source.)*</p>
+<div class='cmp leafcmp'><strong>One context, two entry times, never two contexts.</strong> Decision: the code as it already stands — <code>~/Programming/Ourobrowser/browser_engine.py</code> builds <code>self.python_context = {}</code> once and hands the same object to <code>PythonBridge</code> and to <code>OurobrowserSchemeHandler</code>.</div>
+<div class='cmp leafcmp'><strong>A name the engine binds into the context is bound at the moment it can work, and not before.</strong> <code>emit</code> exists only while a block is running, because after that there is no block for it to fill. Decision: this CORE, 2026-09-03.</div>
+</div></details>
+</div></details>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.engine</div>
+<div class='cmp leafcmp'><strong>level:</strong> 1</div>
+<div class='cmp leafcmp'><strong>status:</strong> draft</div>
+<div class='cmp leafcmp'><strong>designation:</strong> code (module)</div>
+<div class='cmp leafcmp'><strong>settled_by:</strong> Dee</div>
+<div class='cmp leafcmp'><strong>supersedes:</strong> null</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<div class='cmp leafcmp'>Ourobrowser</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>The core <code>browser_engine.py</code> module. It sets up the QtWebEngine application, parses HTML to remove standard JS, extracts custom Python scripts, and executes them in a secure local environment.</p>
+</div></details>
+<details open class='sec'><summary><span class='sech'>design</span></summary><div class='kids'>
+<p class='prose'>*(APPENDED 2026-09-03 by the task-77 implementer, on the instruction of log_183 task 77. PROTOCOL §2 says a level-1 CORE changes only through Dee, so this section is a ROLLUP of what the two sub-nodes below now state, added so that a reader who stops here still has a correct picture. Dee settles it; nothing here contradicts what stood before.)*</p>
+<p class='prose'>The engine gains a way for Python to put HTML on the page. Two additions, at the two moments Python runs, plus one repair.</p>
+<p class='prose'>| addition | when it runs | where it is stated | |---|---|---| | <code>emit</code> — a python block puts HTML in its own place | request time, before Chromium sees the page | scheme_handler | | <code>page_path</code> — a block knows the file it is in | request time | scheme_handler | | <code>set_html</code> — python fills a named element | after first paint, on a click | web_channel | | the click wire form becomes an attribute, and the old inline rewrite is repaired | request time | scheme_handler |</p>
+<div class='cmp leafcmp'><strong>Why two and not one.</strong> A block runs before there is a DOM, so it cannot fill an element; a click runs after the block&#x27;s text is gone, so it cannot fill a block. The two additions cover the two moments, and neither substitutes for the other. The reasoning is walked, with values in motion, in executor.</div>
+<div class='cmp leafcmp'><strong>Nothing that worked stops working.</strong> A block that emits nothing is still replaced by the empty string; <code>execute_python</code> is unchanged; the JavaScript strip is unchanged.</div>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_4_bridge</span>
+<span class='id'>ourobrowser.root.bridge</span>
+<span class='pill'>draft</span>
+<span class='wc'>266 words</span>
+</div>
+</summary><div class='kids'>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_0_web_channel</span>
+<span class='id'>ourobrowser.root.bridge.web_channel</span>
+<span class='pill'>draft</span>
+<span class='wc'>508 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'>*(pending)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<div class='cmp leafcmp'>bridge</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>The <code>QWebChannel</code> wiring: <code>PythonBridge</code> is registered on the channel under the name <code>pyBridge</code>, the page&#x27;s setup script builds the matching <code>QWebChannel</code> object, and the two ends talk. Today the traffic runs one way — the page calls <code>PythonBridge.execute_python</code>, whose return value is discarded.</p>
+<p class='prose'>*(This paragraph describes code that already runs; it was written 2026-09-03 by the task-77 implementer so that the design below has a definition to sit under. The node&#x27;s <code>designation</code> is still Dee&#x27;s.)*</p>
+</div></details>
+<details open class='sec'><summary><span class='sech'>design</span></summary><div class='kids'>
+<p class='prose'>*(added 2026-09-03 by the task-77 implementer. Provenance: log_183 task 77 —* &quot;there is no path from Python back into the DOM … the bridge cannot answer&quot; *. Working names; Dee settles them.)*</p>
+<p class='prose'>``<code> class PythonBridge attributes: context rewriter signals: html_pushed(str, str) methods: execute_python set_html </code>``</p>
+<div class='cmp leafcmp'><strong>ADDITION — a Qt signal is the return path.</strong> <code>html_pushed</code> carries two strings: the <code>id</code> of the element to fill, and the HTML to put in it. QWebChannel already publishes a registered object&#x27;s signals to the page, so the setup script subscribes to it in one line and no new transport is invented.</div>
+<div class='cmp leafcmp'><strong><code>set_html(target, html)</code> is what Python calls.</strong> It runs the engine&#x27;s click rewrite over the html and then emits <code>html_pushed</code>. It is a method rather than a bare <code>emit</code> so that the rewrite can never be forgotten by a caller.</div>
+<div class='cmp leafcmp'><strong>The rewrite is INJECTED, not imported.</strong> <code>PythonBridge.__init__</code> takes a <code>rewriter</code> callable and defaults it to the identity. The engine passes its own <code>rewrite_python_onclick</code> when it builds the bridge. The bridge therefore never imports the engine, and the engine&#x27;s existing import of the bridge stays one-directional.</div>
+<div class='cmp leafcmp'><strong>Nothing about <code>execute_python</code> changes.</strong> It still <code>exec</code>s in the shared context and still discards the return value. The answer comes back as a signal instead, which is why the discarded return value never had to become a returned one.</div>
+<div class='cmp leafcmp'><strong>Values in motion.</strong> <code>set_html(&quot;pane&quot;, &quot;&lt;b onclick=\&quot;python:go()\&quot;&gt;x&lt;/b&gt;&quot;)</code> runs the rewrite, producing <code>&lt;b data-python-onclick=&quot;go()&quot;&gt;x&lt;/b&gt;</code>, emits <code>html_pushed(&quot;pane&quot;, that string)</code>, and the setup script assigns it to <code>document.getElementById(&quot;pane&quot;).innerHTML</code>. The delegated click listener is on <code>document</code>, so the element that has just arrived is already live — nothing re-wires it.</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled rules</span></summary><div class='kids'>
+<p class='prose'>*(added 2026-09-03 by the task-77 implementer; each carries its decision source.)*</p>
+<div class='cmp leafcmp'><strong>The bridge answers with a signal, never with a return value.</strong> Decision: this CORE, 2026-09-03. Reason recorded: QWebChannel delivers a slot&#x27;s return value only to an asynchronous callback in the page, which would put page-authored JavaScript back into the design the project exists to remove.</div>
+<div class='cmp leafcmp'><strong>HTML that Python pushes is rewritten by the same function the scheme handler uses.</strong> One implementation, two callers. Decision: this CORE, 2026-09-03.</div>
+<div class='cmp leafcmp'><strong>The bridge does not import the engine.</strong> The rewrite arrives as a constructor argument. Decision: this CORE, 2026-09-03; the engine already imports the bridge, so the other direction would be a cycle.</div>
+</div></details>
+</div></details>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.bridge</div>
+<div class='cmp leafcmp'><strong>level:</strong> 1</div>
+<div class='cmp leafcmp'><strong>status:</strong> draft</div>
+<div class='cmp leafcmp'><strong>designation:</strong> code (module)</div>
+<div class='cmp leafcmp'><strong>settled_by:</strong> Dee</div>
+<div class='cmp leafcmp'><strong>supersedes:</strong> null</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<div class='cmp leafcmp'>Ourobrowser</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>The <code>bridge.py</code> module establishes the bidirectional communication channel between the DOM and the Python backend using QWebChannel. It exposes Python objects to the web engine and forwards UI events to the native Python execution context.</p>
+</div></details>
+<details open class='sec'><summary><span class='sech'>design</span></summary><div class='kids'>
+<p class='prose'>*(APPENDED 2026-09-03 by the task-77 implementer, on the instruction of log_183 task 77. PROTOCOL §2 says a level-1 CORE changes only through Dee, so this section is a ROLLUP of what the sub-node below now states. Dee settles it.)*</p>
+<p class='prose'>The definition above says the channel is &quot;bidirectional&quot;. It was not: the page could call Python and Python could not answer, and the click rewrite that was supposed to carry the one direction that existed emitted a page Chromium refused to run.</p>
+<div class='cmp leafcmp'><strong><code>PythonBridge.html_pushed</code></strong> — a Qt signal carrying an element id and a string of HTML. QWebChannel already publishes a registered object&#x27;s signals, so this is the return path with no new transport.</div>
+<div class='cmp leafcmp'><strong><code>PythonBridge.set_html(target, html)</code></strong> — what Python calls. It runs the engine&#x27;s click rewrite over the html, then emits the signal.</div>
+<div class='cmp leafcmp'><strong><code>PythonBridge(context=…, rewriter=…)</code></strong> — the rewrite is injected by the engine, so the bridge never imports the engine.</div>
+<p class='prose'>Stated in full, with the values moving through it, in web_channel.</p>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_5_test_page</span>
+<span class='id'>ourobrowser.root.test_page</span>
+<span class='pill'>draft</span>
+<span class='wc'>76 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>The <code>test_page.html</code> file acts as the primary demonstration for the Ourobrowser. It contains a <code>&lt;script type=&quot;text/python&quot;&gt;</code> tag that fetches local system data, and a button that calls a native Python function to verify the bidirectional bridge.</p>
+</div></details>
+</div></details>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root</div>
+<div class='cmp leafcmp'><strong>level:</strong> 0</div>
+<div class='cmp leafcmp'><strong>status:</strong> draft</div>
+<div class='cmp leafcmp'><strong>designation:</strong> work</div>
+<div class='cmp leafcmp'><strong>settled_by:</strong> Dee</div>
+<div class='cmp leafcmp'><strong>supersedes:</strong> null</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none — tree root)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>Ourobrowser is a prototype browser wrapper using PyQt6 that natively parses HTML/CSS but intercepts and completely replaces standard JavaScript execution with a custom Python execution engine. It includes bidirectional DOM-to-Python bridging.</p>
+</div></details>
+</div></details>
+</div>
+<div class='hdr'>grammar</div><div class='box'>
+<p class='prob'>Planning — no PROGRESS.md</p>
+<p class='prob'>node_0_0_pc_ingress — level 2 but folder depth 1</p>
+<p class='prob'>node_0_1_pc_egress — level 2 but folder depth 1</p>
+<p class='prob'>node_0_2_chromium_compilation — level 2 but folder depth 1</p>
+<p class='prob'>node_0_3_hub_integration — level 2 but folder depth 1</p>
+</div>
+
+<script>
+function setAll(open) {
+  document.querySelectorAll('details').forEach(d => d.open = open);
+}
+// depth counts node folders only, so component nesting does not shift
+// what "level 2" means
+function setDepth(n) {
+  document.querySelectorAll('details.nodefold').forEach(d => {
+    let depth = 0, p = d.parentElement;
+    while (p) {
+      if (p.matches && p.matches('details.nodefold')) depth++;
+      p = p.parentElement;
+    }
+    d.open = depth < n;
+  });
+}
+function setDetail(open) {
+  document.querySelectorAll('details.sec, details.cmpfold')
+          .forEach(d => d.open = open);
+}
+</script>
+
+</body></html>
