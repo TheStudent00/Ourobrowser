@@ -11,7 +11,11 @@ node:
 super_node:
     name: research
     path: ../CORE_0_1_research.md
-sub_nodes: []
+sub_nodes:
+    - name: emitter_config
+      path: node_0_0_emitter_config/CORE_0_0_emitter_config.md
+    - name: runner_script
+      path: node_0_1_runner_script/CORE_0_1_runner_script.md
 ---
 
 # CORE 0_1 — pc_egress
