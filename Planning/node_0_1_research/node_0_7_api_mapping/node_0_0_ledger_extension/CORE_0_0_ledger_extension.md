@@ -11,7 +11,11 @@ node:
 super_node:
     name: api_mapping
     path: ../CORE_0_7_api_mapping.md
-sub_nodes: []
+sub_nodes:
+    - name: schema_update
+      path: node_0_0_schema_update/CORE_0_0_schema_update.md
+    - name: resolve_method
+      path: node_0_1_resolve_method/CORE_0_1_resolve_method.md
 ---
 
 # CORE 0_7_0 — ledger_extension
@@ -31,7 +35,8 @@ sub_nodes: []
 
 ## sub_nodes
 
-*(none)*
+- [schema_update](node_0_0_schema_update/CORE_0_0_schema_update.md) — Update the Ledger initialization to accept the 'functions' mapping schema block.
+- [resolve_method](node_0_1_resolve_method/CORE_0_1_resolve_method.md) — Implement the `resolve_function(fqdn)` logic to query the function mapping dictionary.
 
 ## definition
 

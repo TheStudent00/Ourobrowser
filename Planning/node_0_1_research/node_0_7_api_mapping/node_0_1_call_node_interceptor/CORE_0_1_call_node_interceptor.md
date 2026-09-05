@@ -11,7 +11,11 @@ node:
 super_node:
     name: api_mapping
     path: ../CORE_0_7_api_mapping.md
-sub_nodes: []
+sub_nodes:
+    - name: fqdn_resolver
+      path: node_0_0_fqdn_resolver/CORE_0_0_fqdn_resolver.md
+    - name: format_evaluator
+      path: node_0_1_format_evaluator/CORE_0_1_format_evaluator.md
 ---
 
 # CORE 0_7_1 — call_node_interceptor
@@ -31,7 +35,8 @@ sub_nodes: []
 
 ## sub_nodes
 
-*(none)*
+- [fqdn_resolver](node_0_0_fqdn_resolver/CORE_0_0_fqdn_resolver.md) — Flatten complex `AttributeNode` and `IdentifierNode` combinations into a single FQDN string before querying.
+- [format_evaluator](node_0_1_format_evaluator/CORE_0_1_format_evaluator.md) — Evaluate parameter string formatting so the transpiler can drop or rearrange arguments (e.g. mapping `{1}` to drop `{0}`).
 
 ## definition
 
