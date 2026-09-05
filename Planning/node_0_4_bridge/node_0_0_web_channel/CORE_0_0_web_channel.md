@@ -11,7 +11,12 @@ node:
 super_node:
     name: bridge
     path: ../CORE_0_4_bridge.md
-sub_nodes: []
+sub_nodes:
+    - name: execute_python
+      designation: code (method)
+    - name: set_html
+      designation: code (method)
+
 ---
 
 # CORE 0_0 — web_channel
