@@ -27,7 +27,9 @@ def parse_ninja_log(filepath):
         # Extract the file that actually threw the error
         file_match = re.search(r"^(.*?):\d+:\d+: (?:fatal )?error:", line)
         if file_match:
-            failed_files.add(file_match.group(1))
+            fpath = file_match.group(1)
+            if "third_party/blink" in fpath or "v8/" in fpath:
+                failed_files.add(fpath)
 
     print("\n--- Failed Source Files ---")
     for file in sorted(failed_files):
