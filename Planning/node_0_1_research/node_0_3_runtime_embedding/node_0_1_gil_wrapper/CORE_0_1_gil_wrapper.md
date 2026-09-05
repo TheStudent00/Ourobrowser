@@ -1,10 +1,11 @@
 ---
 id: ourobrowser.root.research.runtime_embedding.gil_wrapper
 level: 1
-status: draft
+status: settled
 settled_by: Dee
 supersedes: null
-designation: pending
+designation: code (class)
+decision: node_0_1_gil_wrapper/CORE_0_1_gil_wrapper.md#settled
 node:
     name: gil_wrapper
     path: node_0_3_runtime_embedding/node_0_1_gil_wrapper/CORE_0_1_gil_wrapper.md
@@ -36,3 +37,7 @@ Write the C++ RAII class `PyGILScope` that acquires and releases the Python Glob
 *(pending — generated 2026-09-04 from the register in
 ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_3_runtime_embedding/CORE_0_3_runtime_embedding.md; the definition and `designation` are Dee's to
 write.)*
+
+## settled
+
+- **Implementation:** Created `Research/runtime_embedding/ouro_gil_scope.h`.
