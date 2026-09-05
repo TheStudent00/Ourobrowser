@@ -1,5 +1,5 @@
 <!-- GENERATED FILE — do not hand-edit. -->
-<!-- Produced by ../PlanPlan/framework/generate_dashboards.py from this node's own sub-tree. Hand edits are lost the -->
+<!-- Produced by ~/Programming/PlanPlan/framework/generate_dashboards.py from this node's own sub-tree. Hand edits are lost the -->
 <!-- next time the tool runs; re-run it instead of editing this file. -->
 
 # DASHBOARD — Planning
@@ -16,21 +16,21 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 
 ## sub-tree
 
-sub-node count: 10
+sub-node count: 22
 
 ### status breakdown
 
 | status | count |
 | --- | --- |
-| draft | 11 |
+| draft | 23 |
 
 ### designation breakdown
 
 | designation | count |
 | --- | --- |
 | code (module) | 3 |
-| pending | 7 |
-| work | 1 |
+| pending | 18 |
+| work | 2 |
 
 ## blocked
 
@@ -43,8 +43,8 @@ counted by scanning every PROGRESS.md bullet in this sub-tree for these words; a
 | status word | bullet count |
 | --- | --- |
 | planned | 0 |
-| in-progress | 0 |
-| done | 0 |
+| in-progress | 5 |
+| done | 6 |
 | blocked | 0 |
 | deferred | 0 |
 

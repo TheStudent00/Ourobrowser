@@ -11,7 +11,14 @@ node:
 super_node:
     name: engine
     path: ../CORE_0_3_engine.md
-sub_nodes: []
+sub_nodes:
+    - name: requestStarted
+      designation: code (method)
+    - name: rewrite_python_onclick
+      designation: code (function)
+    - name: PAGE_EMIT_NAME
+      designation: code (constant)
+
 ---
 
 # CORE 0_1 — scheme_handler

@@ -11,7 +11,14 @@ node:
 super_node:
     name: engine
     path: ../CORE_0_3_engine.md
-sub_nodes: []
+sub_nodes:
+    - name: setup_ui
+      designation: code (method)
+    - name: navigate_to_url
+      designation: code (method)
+    - name: toggle_color_inversion
+      designation: code (method)
+
 ---
 
 # CORE 0_0 — browser_app
