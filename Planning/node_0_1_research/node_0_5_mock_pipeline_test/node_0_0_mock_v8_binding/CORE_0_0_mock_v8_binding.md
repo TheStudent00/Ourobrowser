@@ -1,7 +1,7 @@
 ---
 id: ourobrowser.root.research.mock_pipeline_test.mock_v8_binding
 level: 1
-status: draft
+status: settled
 settled_by: Dee
 supersedes: null
 designation: code (module)
@@ -33,3 +33,7 @@ sub_nodes: []
 *(pending — generated 2026-09-04 from the register in
 ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_5_mock_pipeline_test/CORE_0_5_mock_pipeline_test.md; the definition and `designation` are Dee's to
 write.)*
+
+## settled
+
+- **Implementation:** Created `Research/mock_pipeline_test/v8_html_button_element.cc` simulating a real Blink-to-V8 DOM callback.
