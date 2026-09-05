@@ -2,7 +2,7 @@
 <!-- Produced by ~/Programming/PlanPlan/framework/generate_dashboards.py from this node's own sub-tree. Hand edits are lost the -->
 <!-- next time the tool runs; re-run it instead of editing this file. -->
 
-# DASHBOARD — node_0_4_source_acquisition
+# DASHBOARD — node_0_0_depot_tools_setup
 
 A rollup over this node's own sub-tree (itself plus everything beneath it). Regenerated, not edited.
 
@@ -10,26 +10,25 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 
 | field | value |
 | --- | --- |
-| id | `ourobrowser.root.research.source_acquisition` |
+| id | `ourobrowser.root.research.source_acquisition.depot_tools_setup` |
 | status | draft |
-| designation | work |
+| designation | code (module) |
 
 ## sub-tree
 
-sub-node count: 2
+sub-node count: 0
 
 ### status breakdown
 
 | status | count |
 | --- | --- |
-| draft | 3 |
+| draft | 1 |
 
 ### designation breakdown
 
 | designation | count |
 | --- | --- |
-| code (module) | 2 |
-| work | 1 |
+| code (module) | 1 |
 
 ## blocked
 

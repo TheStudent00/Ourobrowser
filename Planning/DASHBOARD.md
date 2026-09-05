@@ -16,21 +16,25 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 
 ## sub-tree
 
-sub-node count: 22
+sub-node count: 31
 
 ### status breakdown
 
 | status | count |
 | --- | --- |
-| draft | 23 |
+| draft | 24 |
+| settled | 8 |
 
 ### designation breakdown
 
 | designation | count |
 | --- | --- |
-| code (module) | 3 |
-| pending | 18 |
-| work | 2 |
+| code (class) | 1 |
+| code (config) | 2 |
+| code (module) | 13 |
+| code (patch) | 1 |
+| pending | 10 |
+| work | 5 |
 
 ## blocked
 
