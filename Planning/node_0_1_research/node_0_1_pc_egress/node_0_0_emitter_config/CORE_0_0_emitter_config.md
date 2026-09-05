@@ -1,10 +1,11 @@
 ---
 id: ourobrowser.root.research.pc_egress.emitter_config
 level: 1
-status: draft
+status: settled
 settled_by: Dee
 supersedes: null
-designation: pending
+designation: code (config)
+decision: node_0_0_emitter_config/CORE_0_0_emitter_config.md#settled
 node:
     name: emitter_config
     path: node_0_1_pc_egress/node_0_0_emitter_config/CORE_0_0_emitter_config.md
@@ -36,3 +37,7 @@ Create the mapping file instructing PC to transform V8 AST dead-ends into CPytho
 *(pending — generated 2026-09-04 from the register in
 ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_1_pc_egress/CORE_0_1_pc_egress.md; the definition and `designation` are Dee's to
 write.)*
+
+## settled
+
+- **Implementation:** Created `Research/pc_egress/py_emitter_config.yaml` with PyObject mappings and Py_XDECREF memory hooks.

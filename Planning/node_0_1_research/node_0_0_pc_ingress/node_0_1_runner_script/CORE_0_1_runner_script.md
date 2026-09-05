@@ -1,13 +1,14 @@
 ---
 id: ourobrowser.root.research.pc_ingress.runner_script
 level: 1
-status: draft
+status: settled
 settled_by: Dee
 supersedes: null
-designation: pending
+designation: code (module)
+decision: node_0_1_runner_script/CORE_0_1_runner_script.md#settled
 node:
     name: runner_script
-    path: node_0_0_pc_ingress/node_0_1_runner_script/CORE_0_1_runner_script.md
+    path: Planning/node_0_1_research/node_0_0_pc_ingress/node_0_1_runner_script/CORE_0_1_runner_script.md
 super_node:
     name: pc_ingress
     path: ../CORE_0_0_pc_ingress.md
@@ -36,3 +37,7 @@ Create the bash script executing `python3 -m pseudocoup.cli` with `--stage ingre
 *(pending — generated 2026-09-04 from the register in
 ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_0_pc_ingress/CORE_0_0_pc_ingress.md; the definition and `designation` are Dee's to
 write.)*
+
+## settled
+
+- **Implementation:** Created `Research/pc_ingress/run_ingress.sh` which invokes the PseudoCoup CLI to generate the UR-AST.

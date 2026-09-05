@@ -1,10 +1,11 @@
 ---
 id: ourobrowser.root.research.chromium_compilation.build_runner
 level: 1
-status: draft
+status: settled
 settled_by: Dee
 supersedes: null
-designation: pending
+designation: code (module)
+decision: node_0_1_build_runner/CORE_0_1_build_runner.md#settled
 node:
     name: build_runner
     path: node_0_2_chromium_compilation/node_0_1_build_runner/CORE_0_1_build_runner.md
@@ -36,3 +37,7 @@ Draft the shell script wrapping `gn gen` (with `use_v8=false`) and `autoninja` t
 *(pending — generated 2026-09-04 from the register in
 ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_2_chromium_compilation/CORE_0_2_chromium_compilation.md; the definition and `designation` are Dee's to
 write.)*
+
+## settled
+
+- **Implementation:** Created `Research/chromium_compilation/build_chromium.sh` to run GN and Ninja.
