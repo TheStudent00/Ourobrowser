@@ -1,0 +1,10 @@
+{
+    "types": {
+        ".ReturnV8String": "PyObject*",
+        "ReturnV8String.isolate": "PyInterpreterState*",
+        "ReturnV8String.str": "const char*",
+        "ReturnV8String.v8_str": "PyObject*"
+    },
+    "wrappers": [],
+    "memory_erasure": {}
+}
