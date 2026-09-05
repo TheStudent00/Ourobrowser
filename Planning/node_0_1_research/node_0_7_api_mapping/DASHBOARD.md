@@ -2,7 +2,7 @@
 <!-- Produced by PlanPlan/framework/generate_dashboards.py from this node's own sub-tree. Hand edits are lost the -->
 <!-- next time the tool runs; re-run it instead of editing this file. -->
 
-# DASHBOARD — Planning
+# DASHBOARD — node_0_7_api_mapping
 
 A rollup over this node's own sub-tree (itself plus everything beneath it). Regenerated, not edited.
 
@@ -10,31 +10,25 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 
 | field | value |
 | --- | --- |
-| id | `ourobrowser.root` |
+| id | `ourobrowser.root.research.api_mapping` |
 | status | draft |
 | designation | work |
 
 ## sub-tree
 
-sub-node count: 33
+sub-node count: 0
 
 ### status breakdown
 
 | status | count |
 | --- | --- |
-| draft | 20 |
-| settled | 14 |
+| draft | 1 |
 
 ### designation breakdown
 
 | designation | count |
 | --- | --- |
-| code (class) | 1 |
-| code (config) | 2 |
-| code (module) | 13 |
-| code (patch) | 1 |
-| pending | 11 |
-| work | 6 |
+| work | 1 |
 
 ## blocked
 
@@ -47,8 +41,8 @@ counted by scanning every PROGRESS.md bullet in this sub-tree for these words; a
 | status word | bullet count |
 | --- | --- |
 | planned | 4 |
-| in-progress | 5 |
-| done | 6 |
+| in-progress | 0 |
+| done | 0 |
 | blocked | 0 |
 | deferred | 0 |
 
