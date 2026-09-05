@@ -11,7 +11,10 @@ node:
 super_node:
     name: Ourobrowser
     path: ../CORE_0.md
-sub_nodes: []
+sub_nodes:
+    - name: index.html
+      designation: code (markup)
+
 ---
 
 # CORE 0_5 — test_page
