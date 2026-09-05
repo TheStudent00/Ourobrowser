@@ -6,9 +6,9 @@ import shutil
 import re
 
 # Use /projects/ paths since this runs inside the Airlock container
-CHROMIUM_SRC = "/projects/chromium_src/src"
-PC_V3_CLI = "/projects/Ourobrowser/Tools/PCv3.1/pseudocoup/cli.py"
-PC_V3_PYTHONPATH = "/projects/Ourobrowser/Tools/PCv3.1"
+CHROMIUM_SRC = os.environ.get("CHROMIUM_SRC", "/projects/chromium_src/src")
+PC_V3_CLI = os.environ.get("PC_V3_CLI", "/projects/Ourobrowser/Tools/PCv3.1/pseudocoup/cli.py")
+PC_V3_PYTHONPATH = os.environ.get("PC_V3_PYTHONPATH", "/projects/Ourobrowser/Tools/PCv3.1")
 
 GLOBAL_TYPES = {
     "v8::Local<v8::Context>": "PyDictObject*",
