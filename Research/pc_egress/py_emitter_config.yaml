@@ -1,0 +1,12 @@
+egress:
+  target_lang: cpp
+  type_maps:
+    "v8::Isolate*": "PyInterpreterState*"
+    "v8::Local<v8::Value>": "PyObject*"
+    "v8::Local<v8::Context>": "PyDictObject*"
+    "v8::FunctionCallbackInfo": "PyObject* args"
+  class_rename_regex:
+    pattern: "^V8(.*)"
+    replacement: "Py\\1"
+  memory_hooks:
+    destructor: "Py_XDECREF(this->py_obj_);"
