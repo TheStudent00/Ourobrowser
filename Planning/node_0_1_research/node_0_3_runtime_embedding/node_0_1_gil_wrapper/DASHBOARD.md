@@ -11,8 +11,8 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 | field | value |
 | --- | --- |
 | id | `ourobrowser.root.research.runtime_embedding.gil_wrapper` |
-| status | draft |
-| designation | pending |
+| status | settled |
+| designation | code (class) |
 
 ## sub-tree
 
@@ -22,13 +22,13 @@ sub-node count: 0
 
 | status | count |
 | --- | --- |
-| draft | 1 |
+| settled | 1 |
 
 ### designation breakdown
 
 | designation | count |
 | --- | --- |
-| pending | 1 |
+| code (class) | 1 |
 
 ## blocked
 

@@ -11,8 +11,8 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 | field | value |
 | --- | --- |
 | id | `ourobrowser.root.research.pc_ingress.runner_script` |
-| status | draft |
-| designation | pending |
+| status | settled |
+| designation | code (module) |
 
 ## sub-tree
 
@@ -22,13 +22,13 @@ sub-node count: 0
 
 | status | count |
 | --- | --- |
-| draft | 1 |
+| settled | 1 |
 
 ### designation breakdown
 
 | designation | count |
 | --- | --- |
-| pending | 1 |
+| code (module) | 1 |
 
 ## blocked
 
