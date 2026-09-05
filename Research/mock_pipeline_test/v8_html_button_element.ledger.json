@@ -1,7 +1,13 @@
 {
     "types": {
         "blink.isolate": "PyInterpreterState*",
-        "blink.context": "PyDictObject*"
+        "blink.context": "PyDictObject*",
+        ".ClickMethodCallback": "void",
+        "ClickMethodCallback.info": "v8::FunctionCallbackInfo<v8::Value>",
+        "ClickMethodCallback.isolate": "v8::Isolate",
+        "ClickMethodCallback.handle_scope": "v8::HandleScope",
+        "ClickMethodCallback.context": "v8::Local<v8::Context>",
+        "ClickMethodCallback.impl": "HTMLButtonElement"
     },
     "wrappers": [
         "v8::Isolate",
