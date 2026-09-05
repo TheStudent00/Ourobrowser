@@ -22,7 +22,8 @@ sub-node count: 2
 
 | status | count |
 | --- | --- |
-| draft | 3 |
+| draft | 1 |
+| settled | 2 |
 
 ### designation breakdown
 
