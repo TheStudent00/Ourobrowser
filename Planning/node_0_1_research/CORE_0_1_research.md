@@ -26,6 +26,8 @@ sub_nodes:
       path: node_0_5_mock_pipeline_test/CORE_0_5_mock_pipeline_test.md
     - name: incremental_compilation
       path: node_0_6_incremental_compilation/CORE_0_6_incremental_compilation.md
+    - name: api_mapping
+      path: node_0_7_api_mapping/CORE_0_7_api_mapping.md
 ---
 
 # CORE 0_1 — research
@@ -52,6 +54,7 @@ sub_nodes:
 - [source_acquisition](node_0_4_source_acquisition/CORE_0_4_source_acquisition.md)
 - [mock_pipeline_test](node_0_5_mock_pipeline_test/CORE_0_5_mock_pipeline_test.md)
 - [incremental_compilation](node_0_6_incremental_compilation/CORE_0_6_incremental_compilation.md)
+- [api_mapping](node_0_7_api_mapping/CORE_0_7_api_mapping.md) — Extend PCv3.1 to map V8 API function calls to CPython C-API functions.
 
 ## definition
 
