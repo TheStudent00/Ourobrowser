@@ -19,6 +19,13 @@ GLOBAL_TYPES = {
     "v8::Local<v8::String>": "PyObject*"
 }
 
+GLOBAL_FUNCTIONS = {
+    "v8::String::NewFromUtf8": "PyUnicode_FromString({1})",
+    "v8::Isolate::GetCurrent": "PyInterpreterState_Get",
+    "v8::Exception::Error": "PyErr_SetString(PyExc_RuntimeError, {0})",
+    "v8::Exception::TypeError": "PyErr_SetString(PyExc_TypeError, {0})"
+}
+
 def get_failed_files():
     files = set()
     try:
@@ -56,6 +63,8 @@ def transpile_file(rel_path):
     ledger_data = {"types": {}}
     for v8_type, py_type in GLOBAL_TYPES.items():
         ledger_data["types"][f".{v8_type}"] = py_type
+        
+    ledger_data["functions"] = GLOBAL_FUNCTIONS
         
     with open(ledger_path, 'w') as f:
         json.dump(ledger_data, f, indent=4)
