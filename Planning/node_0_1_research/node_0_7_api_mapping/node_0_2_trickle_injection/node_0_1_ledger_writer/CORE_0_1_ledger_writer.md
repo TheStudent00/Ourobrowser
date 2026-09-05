@@ -1,7 +1,7 @@
 ---
 id: ourobrowser.root.research.api_mapping.trickle_injection.ledger_writer
 level: 4
-status: draft
+status: settled
 settled_by: Dee
 supersedes: null
 designation: code (patch)

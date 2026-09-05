@@ -1,7 +1,7 @@
 ---
 id: ourobrowser.root.research.api_mapping.call_node_interceptor
 level: 3
-status: draft
+status: settled
 settled_by: Dee
 supersedes: null
 designation: code (module)

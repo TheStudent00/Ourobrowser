@@ -1,7 +1,7 @@
 ---
 id: ourobrowser.root.research.api_mapping
 level: 2
-status: draft
+status: settled
 settled_by: Dee
 supersedes: null
 designation: work

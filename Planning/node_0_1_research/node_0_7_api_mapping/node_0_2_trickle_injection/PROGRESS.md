@@ -1,3 +1,3 @@
 # PROGRESS 0_7_2 — trickle_injection
 
-- [ ] **planned** — Implement trickle_injection.
+- [x] **done** — Implement trickle_injection.

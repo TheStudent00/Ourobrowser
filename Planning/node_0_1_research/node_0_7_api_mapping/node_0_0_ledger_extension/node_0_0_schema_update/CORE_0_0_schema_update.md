@@ -1,7 +1,7 @@
 ---
 id: ourobrowser.root.research.api_mapping.ledger_extension.schema_update
 level: 4
-status: draft
+status: settled
 settled_by: Dee
 supersedes: null
 designation: code (patch)

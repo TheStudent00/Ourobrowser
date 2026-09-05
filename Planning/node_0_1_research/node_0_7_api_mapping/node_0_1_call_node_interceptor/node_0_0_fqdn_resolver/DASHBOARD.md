@@ -11,7 +11,7 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 | field | value |
 | --- | --- |
 | id | `ourobrowser.root.research.api_mapping.call_node_interceptor.fqdn_resolver` |
-| status | draft |
+| status | settled |
 | designation | code (module) |
 
 ## sub-tree
@@ -22,7 +22,7 @@ sub-node count: 0
 
 | status | count |
 | --- | --- |
-| draft | 1 |
+| settled | 1 |
 
 ### designation breakdown
 
@@ -40,9 +40,9 @@ counted by scanning every PROGRESS.md bullet in this sub-tree for these words; a
 
 | status word | bullet count |
 | --- | --- |
-| planned | 1 |
+| planned | 0 |
 | in-progress | 0 |
-| done | 0 |
+| done | 1 |
 | blocked | 0 |
 | deferred | 0 |
 

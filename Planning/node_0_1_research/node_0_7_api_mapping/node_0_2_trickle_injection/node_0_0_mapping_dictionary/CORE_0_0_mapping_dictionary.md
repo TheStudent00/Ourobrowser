@@ -1,7 +1,7 @@
 ---
 id: ourobrowser.root.research.api_mapping.trickle_injection.mapping_dictionary
 level: 4
-status: draft
+status: settled
 settled_by: Dee
 supersedes: null
 designation: code (config)

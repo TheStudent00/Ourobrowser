@@ -11,7 +11,7 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 | field | value |
 | --- | --- |
 | id | `ourobrowser.root.research.api_mapping` |
-| status | draft |
+| status | settled |
 | designation | work |
 
 ## sub-tree
@@ -22,7 +22,7 @@ sub-node count: 9
 
 | status | count |
 | --- | --- |
-| draft | 10 |
+| settled | 10 |
 
 ### designation breakdown
 
@@ -43,9 +43,9 @@ counted by scanning every PROGRESS.md bullet in this sub-tree for these words; a
 
 | status word | bullet count |
 | --- | --- |
-| planned | 13 |
+| planned | 0 |
 | in-progress | 0 |
-| done | 0 |
+| done | 13 |
 | blocked | 0 |
 | deferred | 0 |
 
