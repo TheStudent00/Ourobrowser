@@ -22,8 +22,8 @@ sub-node count: 32
 
 | status | count |
 | --- | --- |
-| draft | 19 |
-| settled | 14 |
+| draft | 9 |
+| settled | 24 |
 
 ### designation breakdown
 
@@ -46,9 +46,9 @@ counted by scanning every PROGRESS.md bullet in this sub-tree for these words; a
 
 | status word | bullet count |
 | --- | --- |
-| planned | 13 |
+| planned | 0 |
 | in-progress | 0 |
-| done | 0 |
+| done | 13 |
 | blocked | 0 |
 | deferred | 0 |
 
