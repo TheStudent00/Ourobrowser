@@ -1,3 +1,4 @@
+import sys
 import os
 import subprocess
 import json
@@ -53,7 +54,7 @@ def transpile_file(rel_path):
     # 3. Transpile!
     print(f"Transpiling {rel_path}...")
     try:
-        subprocess.run(["python3", PC_V3_CLI, "--source", abs_path, "--source-lang", "cpp", "--target-lang", "cpp"], check=True, env={"PYTHONPATH": os.path.expanduser("~/Programming/Ourobrowser/Tools/PCv3.1")})
+        subprocess.run([sys.executable, PC_V3_CLI, "--source", abs_path, "--source-lang", "cpp", "--target-lang", "cpp"], check=True, env={"PYTHONPATH": os.path.expanduser("~/Programming/Ourobrowser/Tools/PCv3.1")})
     except subprocess.CalledProcessError:
         print(f"Failed to transpile {rel_path}")
         return
