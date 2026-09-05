@@ -2,7 +2,7 @@
 <!-- Produced by PlanPlan/framework/generate_dashboards.py from this node's own sub-tree. Hand edits are lost the -->
 <!-- next time the tool runs; re-run it instead of editing this file. -->
 
-# DASHBOARD — Planning
+# DASHBOARD — node_0_0_ninja_error_parser
 
 A rollup over this node's own sub-tree (itself plus everything beneath it). Regenerated, not edited.
 
@@ -10,31 +10,25 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 
 | field | value |
 | --- | --- |
-| id | `ourobrowser.root` |
+| id | `ourobrowser.root.research.incremental_compilation.ninja_error_parser` |
 | status | draft |
-| designation | work |
+| designation | code (module) |
 
 ## sub-tree
 
-sub-node count: 31
+sub-node count: 0
 
 ### status breakdown
 
 | status | count |
 | --- | --- |
-| draft | 24 |
-| settled | 8 |
+| draft | 1 |
 
 ### designation breakdown
 
 | designation | count |
 | --- | --- |
-| code (class) | 1 |
-| code (config) | 2 |
-| code (module) | 13 |
-| code (patch) | 1 |
-| pending | 10 |
-| work | 5 |
+| code (module) | 1 |
 
 ## blocked
 
@@ -47,8 +41,8 @@ counted by scanning every PROGRESS.md bullet in this sub-tree for these words; a
 | status word | bullet count |
 | --- | --- |
 | planned | 0 |
-| in-progress | 5 |
-| done | 6 |
+| in-progress | 0 |
+| done | 0 |
 | blocked | 0 |
 | deferred | 0 |
 
