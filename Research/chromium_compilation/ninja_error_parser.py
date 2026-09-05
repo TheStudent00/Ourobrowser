@@ -25,7 +25,7 @@ def parse_ninja_log(filepath):
             undefined_symbols[undef_match.group(1)] += 1
             
         # Extract the file that actually threw the error
-        file_match = re.search(r"^(.*?):\d+:\d+: fatal error:", line)
+        file_match = re.search(r"^(.*?):\d+:\d+: (?:fatal )?error:", line)
         if file_match:
             failed_files.add(file_match.group(1))
 
