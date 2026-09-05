@@ -37,3 +37,5 @@ write.)*
 ## settled
 
 - **Implementation:** Created `mock_test_runner.sh` to run the ingress and egress phases on the isolated mock file.
+
+- **Blocker:** `mock_test_runner.sh` fails because `~/Programming/PseudoIR/pseudoir/emit` is empty on disk, preventing PseudoCoup from importing `get_emitter`.
