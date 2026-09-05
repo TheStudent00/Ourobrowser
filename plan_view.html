@@ -57,11 +57,12 @@ details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
          padding-left: 4px; }
 </style></head><body>
 <h1>Planning</h1>
-<p class='sub'>/home/lucas/Programming/Ourobrowser/Planning · 15 nodes · depth 2 · generated 2026-09-04 20:45 UTC</p>
+<p class='sub'>/home/lucas/Programming/Ourobrowser/Planning · 34 nodes · depth 3 · generated 2026-09-05 15:00 UTC</p>
 <p><button class='btn' onclick='setAll(true)'>expand all</button>
 <button class='btn' onclick='setAll(false)'>collapse all</button>
 <button class='btn' onclick='setDepth(1)'>level 1</button>
 <button class='btn' onclick='setDepth(2)'>level 2</button>
+<button class='btn' onclick='setDepth(3)'>level 3</button>
 <button class='btn' onclick='setDetail(true)'>all detail</button>
 <button class='btn' onclick='setDetail(false)'>no detail</button>
 </p>
@@ -98,18 +99,64 @@ details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
 <span class='nm'>node_0_1_research</span>
 <span class='id'>ourobrowser.root.research</span>
 <span class='pill'>draft</span>
-<span class='wc'>132 words</span>
+<span class='wc'>273 words</span>
 </div>
+<p class='prob'>sub-node node_0_2_pc_tools not listed in the CORE</p>
+<p class='prob'>sub-node listing is not among the leading sections (first is &#x27;metadata&#x27;; node_0_2_pc_tools listed later)</p>
 </summary><div class='kids'>
 <details open class='nodefold'><summary>
 <div class='row'>
 <span class='nm'>node_0_0_pc_ingress</span>
 <span class='id'>ourobrowser.root.research.pc_ingress</span>
 <span class='pill'>draft</span>
-<span class='wc'>169 words</span>
+<span class='wc'>267 words</span>
 </div>
 <p class='prob'>level 2 but folder depth 1</p>
 </summary><div class='kids'>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_0_ledger_config</span>
+<span class='id'>ourobrowser.root.research.pc_ingress.ledger_config</span>
+<span class='pill'>settled</span>
+<span class='wc'>99 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'><strong>Goal:</strong> Define pc_ledger_v8_sever.yaml</p>
+<p class='prose'><strong>Details:</strong> Create the yaml configuration file mapping <code>third_party/blink/renderer/bindings/core/v8/</code> and establishing exact dead-ends for V8 datatypes (e.g., <code>v8::Isolate</code>).</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_0_pc_ingress/CORE_0_0_pc_ingress.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Implementation:</strong> Created <code>Research/pc_ingress/pc_ledger_v8_sever.yaml</code> defining strict V8 dead-ends for the PseudoCoup ingress parser.</div>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_1_runner_script</span>
+<span class='id'>ourobrowser.root.research.pc_ingress.runner_script</span>
+<span class='pill'>settled</span>
+<span class='wc'>97 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'><strong>Goal:</strong> Define run_ingress.sh</p>
+<p class='prose'><strong>Details:</strong> Create the bash script executing <code>python3 -m pseudocoup.cli</code> with <code>--stage ingress-only</code> to output <code>ur_ast_chromium_bindings.json</code>.</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_0_pc_ingress/CORE_0_0_pc_ingress.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Implementation:</strong> Created <code>Research/pc_ingress/run_ingress.sh</code> which invokes the PseudoCoup CLI to generate the UR-AST.</div>
+</div></details>
+</div></details>
 <details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
 <div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.research.pc_ingress</div>
 <div class='cmp leafcmp'><strong>level:</strong> 2</div>
@@ -122,8 +169,15 @@ details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
 <div class='cmp leafcmp'>research</div>
 </div></details>
 <details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
-<p class='prose'><strong>Goal:</strong> Configure PseudoCoup (PC) to ingress the Chromium DOM-to-V8 bindings and WebIDL definitions.</p>
-<p class='prose'><strong>Details:</strong> - Target Chromium&#x27;s <code>third_party/blink/renderer/bindings/</code> directory. - This directory contains the WebIDL definitions and auto-generated C++ code that bridges Blink&#x27;s internal DOM representation to V8 JavaScript objects. - PC&#x27;s <code>tree-sitter</code> parsers will map these bindings into the UR-AST. - The Ledger must be strictly configured to recognize the boundary: we are not translating the rendering engine itself (Blink), but rather the *interface* surface where Blink exposes objects to external scripts. - We need to establish &quot;stub points&quot; where V8 specific types (<code>v8::Local</code>, <code>v8::Isolate</code>) are encountered, marking them as targets for replacement in the egress phase.</p>
+<p class='prose'>Configure PseudoCoup (PC) to ingress the Chromium DOM-to-V8 bindings. We target <code>third_party/blink/renderer/bindings/</code> to map the C++ glue code into PC&#x27;s UR-AST, explicitly severing all deep dependencies on the V8 JavaScript engine.</p>
+</div></details>
+<details open class='sec'><summary><span class='sech'>design</span></summary><div class='kids'>
+<p class='prose'><strong>1. Ledger Configuration (<code>pc_ledger_v8_sever.yaml</code>)</strong> We must define a strict PC Ledger file to guide the <code>tree-sitter</code> parser. It will map structural interfaces but classify all V8-specific engine types as abstract &quot;Dead Ends&quot;. ``<code>yaml ingress: source_lang: cpp target_dirs: - &quot;third_party/blink/renderer/bindings/core/v8/&quot; dead_ends: - &quot;v8::Isolate&quot; - &quot;v8::Local&quot; - &quot;v8::HandleScope&quot; - &quot;v8::Context&quot; - &quot;v8::FunctionCallbackInfo&quot; </code>``</p>
+<p class='prose'><strong>2. The Ingress Runner (<code>run_ingress.sh</code>)</strong> A deterministic script to execute the PC pipeline and output the UR-AST. ``<code>bash python3 -m pseudocoup.cli \ --source third_party/blink/renderer/bindings/core/v8/ \ --source-lang cpp \ --ledger pc_ledger_v8_sever.yaml \ --stage ingress-only \ --out ur_ast_chromium_bindings.json </code>``</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled rules</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Strict Boundary Enforcement:</strong> PC must explicitly fail if it attempts to resolve a C++ <code>#include &lt;v8.h&gt;</code> that is not covered by the <code>dead_ends</code> ledger config. We do not want to accidentally map the internal V8 compiler into our UR-AST.</div>
+<div class='cmp leafcmp'><strong>Target Restriction:</strong> We are strictly ingesting the <code>bindings/core/v8</code> directory. We are *not* ingesting the core Blink DOM logic (<code>third_party/blink/renderer/core/</code>), as the underlying DOM rendering math remains perfectly functional without modification.</div>
 </div></details>
 </div></details>
 <details open class='nodefold'><summary>
@@ -131,10 +185,54 @@ details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
 <span class='nm'>node_0_1_pc_egress</span>
 <span class='id'>ourobrowser.root.research.pc_egress</span>
 <span class='pill'>draft</span>
-<span class='wc'>163 words</span>
+<span class='wc'>284 words</span>
 </div>
 <p class='prob'>level 2 but folder depth 1</p>
 </summary><div class='kids'>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_0_emitter_config</span>
+<span class='id'>ourobrowser.root.research.pc_egress.emitter_config</span>
+<span class='pill'>settled</span>
+<span class='wc'>103 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'><strong>Goal:</strong> Define py_emitter_config.yaml</p>
+<p class='prose'><strong>Details:</strong> Create the mapping file instructing PC to transform V8 AST dead-ends into CPython API types (<code>PyObject*</code>, <code>PyInterpreterState*</code>) and inject explicit <code>Py_DECREF</code> mechanics.</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_1_pc_egress/CORE_0_1_pc_egress.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Implementation:</strong> Created <code>Research/pc_egress/py_emitter_config.yaml</code> with PyObject mappings and Py_XDECREF memory hooks.</div>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_1_runner_script</span>
+<span class='id'>ourobrowser.root.research.pc_egress.runner_script</span>
+<span class='pill'>settled</span>
+<span class='wc'>97 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'><strong>Goal:</strong> Define run_egress.sh</p>
+<p class='prose'><strong>Details:</strong> Create the bash script taking the UR-AST and outputting natively compilable C++ bindings to <code>third_party/blink/renderer/bindings/core/python/</code>.</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_1_pc_egress/CORE_0_1_pc_egress.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Implementation:</strong> Created <code>Research/pc_egress/run_egress.sh</code> to invoke PC and output the PyDOM bindings.</div>
+</div></details>
+</div></details>
 <details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
 <div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.research.pc_egress</div>
 <div class='cmp leafcmp'><strong>level:</strong> 2</div>
@@ -147,8 +245,16 @@ details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
 <div class='cmp leafcmp'>research</div>
 </div></details>
 <details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
-<p class='prose'><strong>Goal:</strong> Configure PC to emit CPython (or pybind11) wrappers in place of the original V8 bindings.</p>
-<p class='prose'><strong>Details:</strong> - Instruct PC to swap the target architecture from V8 to Python. - When PC traverses the UR-AST built during Ingress, it will emit new C++ binding code (<code>pybind11</code> or Python C-API native extensions) that mirror the exact DOM interface structure defined in the WebIDL. - E.g., <code>blink::HTMLButtonElement</code> binding code is rewritten from generating a V8 object to generating a <code>PyObject*</code>. - This ensures that Chromium&#x27;s internal event loop and DOM tree seamlessly communicate with an embedded Python execution environment without realizing JavaScript is missing.</p>
+<p class='prose'>Configure PC to traverse the newly created UR-AST and emit Python C-API wrapper bindings in place of the original V8 bindings, generating native C++ files that seamlessly bridge Blink to CPython.</p>
+</div></details>
+<details open class='sec'><summary><span class='sech'>design</span></summary><div class='kids'>
+<p class='prose'><strong>1. Target Mapping Strategy (<code>py_emitter_config.yaml</code>)</strong> We instruct PC&#x27;s emitter to structurally map the V8 &quot;Dead Ends&quot; (from the Ingress Ledger) to their concrete CPython API equivalents. ``<code>yaml egress: target_lang: cpp type_maps: &quot;v8::Isolate*&quot;: &quot;PyInterpreterState*&quot; &quot;v8::Local&lt;v8::Value&gt;&quot;: &quot;PyObject*&quot; &quot;v8::Local&lt;v8::Context&gt;&quot;: &quot;PyDictObject*&quot; # Frame execution context &quot;v8::FunctionCallbackInfo&quot;: &quot;PyObject* args&quot; # Standard *args tuple class_rename_regex: pattern: &quot;^V8(.*)&quot; replacement: &quot;Py\\1&quot; </code>``</p>
+<p class='prose'><strong>2. The Egress Runner (<code>run_egress.sh</code>)</strong> The script to consume the UR-AST and emit the massive <code>PyDOM</code> wrapper directory. ``<code>bash python3 -m pseudocoup.cli \ --ast-input ur_ast_chromium_bindings.json \ --target-lang cpp \ --emitter-config py_emitter_config.yaml \ --outdir third_party/blink/renderer/bindings/core/python/ </code>``</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled rules</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Memory Management Handoff:</strong> V8 uses Garbage Collection, which Chromium integrates with via <code>cppgc</code>. Python uses Reference Counting (<code>Py_INCREF</code> / <code>Py_DECREF</code>). PC must emit explicit <code>Py_XDECREF</code> calls in the C++ destructors of the generated wrapper classes to prevent memory leaks when DOM elements are destroyed.</div>
+<div class='cmp leafcmp'><strong>Header Emission:</strong> No emitted file may <code>#include &lt;v8.h&gt;</code>. All emitted C++ files must strictly <code>#include &lt;Python.h&gt;</code>.</div>
+<div class='cmp leafcmp'><strong>Naming Convention:</strong> All auto-generated V8 files (e.g., <code>v8_html_button_element.cc</code>) must be deterministically emitted as <code>py_html_button_element.cc</code> to ensure clean integration with the GN build system later.</div>
 </div></details>
 </div></details>
 <details open class='nodefold'><summary>
@@ -156,10 +262,54 @@ details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
 <span class='nm'>node_0_2_chromium_compilation</span>
 <span class='id'>ourobrowser.root.research.chromium_compilation</span>
 <span class='pill'>draft</span>
-<span class='wc'>155 words</span>
+<span class='wc'>246 words</span>
 </div>
 <p class='prob'>level 2 but folder depth 1</p>
 </summary><div class='kids'>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_0_gn_patch</span>
+<span class='id'>ourobrowser.root.research.chromium_compilation.gn_patch</span>
+<span class='pill'>settled</span>
+<span class='wc'>91 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'><strong>Goal:</strong> Write build_v8_to_python.patch</p>
+<p class='prose'><strong>Details:</strong> Draft the unified diff modifying Chromium&#x27;s <code>BUILD.gn</code> to remove <code>//v8</code> dependencies and inject <code>//build/config/python:embed</code>.</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_2_chromium_compilation/CORE_0_2_chromium_compilation.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Implementation:</strong> Created <code>Research/chromium_compilation/build_v8_to_python.patch</code> to remove V8.</div>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_1_build_runner</span>
+<span class='id'>ourobrowser.root.research.chromium_compilation.build_runner</span>
+<span class='pill'>settled</span>
+<span class='wc'>96 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'><strong>Goal:</strong> Write build_chromium.sh</p>
+<p class='prose'><strong>Details:</strong> Draft the shell script wrapping <code>gn gen</code> (with <code>use_v8=false</code>) and <code>autoninja</code> to compile the final browser binary.</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_2_chromium_compilation/CORE_0_2_chromium_compilation.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Implementation:</strong> Created <code>Research/chromium_compilation/build_chromium.sh</code> to run GN and Ninja.</div>
+</div></details>
+</div></details>
 <details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
 <div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.research.chromium_compilation</div>
 <div class='cmp leafcmp'><strong>level:</strong> 2</div>
@@ -172,21 +322,87 @@ details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
 <div class='cmp leafcmp'>research</div>
 </div></details>
 <details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
-<p class='prose'><strong>Goal:</strong> Modify the Chromium build system (GN/Ninja) to compile our PC-processed bindings.</p>
-<p class='prose'><strong>Details:</strong> - Chromium&#x27;s build system expects to compile V8. We need to patch the <code>.gn</code> build files to exclude V8 compilation. - Link the embedded Python runtime (e.g., <code>libpython3.so</code> or static equivalent) into the Chromium build. - Ensure the newly PC-emitted binding files are added to the source lists in the <code>blink/renderer/bindings</code> <code>BUILD.gn</code> targets. - The compiled artifact will be a fully functional web browser application that looks and behaves like Google Chrome, but whose DOM engine routes scripts strictly to Python.</p>
+<p class='prose'>Modify the Chromium build system (GN/Ninja) to exclude V8 compilation, link the embedded CPython library, and compile our newly emitted <code>PyDOM</code> C++ bindings into the Blink renderer.</p>
+</div></details>
+<details open class='sec'><summary><span class='sech'>design</span></summary><div class='kids'>
+<p class='prose'><strong>1. GN Build Patch (<code>build_v8_to_python.patch</code>)</strong> A patch file applied to Chromium&#x27;s GN configuration to alter the dependency graph. - Modify <code>third_party/blink/renderer/bindings/BUILD.gn</code>: Remove <code>//v8</code> from <code>deps</code>. - Add a new custom target <code>//build/config/python:embed</code> which dynamically links <code>libpython3.so</code> (or statically compiles Python if cross-platform distribution is required). - Instruct GN to glob <code>third_party/blink/renderer/bindings/core/python/*.cc</code> instead of <code>core/v8/*.cc</code>.</p>
+<p class='prose'><strong>2. Compilation Runner (<code>build_chromium.sh</code>)</strong> ```bash # Generate Ninja files with V8 explicitly disabled in args.gn gn gen out/Ourobrowser --args=&quot;use_v8=false enable_nacl=false is_component_build=true&quot;</p>
+<p class='prose'># Compile the full browser frontend autoninja -C out/Ourobrowser chrome ```</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled rules</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Zero V8 Footprint:</strong> The final compiled binary (<code>chrome</code> or <code>ourobrowser</code>) must not link against <code>v8.dll</code> or <code>libv8.so</code>. If V8 symbols are required for linkage, the build is considered poisoned and must fail.</div>
+<div class='cmp leafcmp'><strong>Dynamic Python Linking:</strong> For prototyping, we will dynamically link the system&#x27;s <code>libpython3</code>. Static compilation will be deferred to a later deployment node.</div>
 </div></details>
 </div></details>
 <details open class='nodefold'><summary>
 <div class='row'>
-<span class='nm'>node_0_3_hub_integration</span>
-<span class='id'>ourobrowser.root.research.hub_integration</span>
+<span class='nm'>node_0_2_pc_tools</span>
+<span class='id'>—</span>
+<span class='pill'>settled</span>
+<span class='pill thin'>definition only</span>
+<span class='wc'>47 words</span>
+</div>
+<p class='prob'>no PROGRESS.md</p>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>settled</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Implementation:</strong> Cloned \<code>PseudoCoup_v3\</code> into \<code>Tools/PCv3.1\</code> and patched \<code>core.ledger\</code> and \<code>egress.cpp\</code> to correctly parse and respect ledger mappings (derived from PCHQ research concepts). This serves as our isolated working transpiler for the Chromium bindings swap!</div>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_3_runtime_embedding</span>
+<span class='id'>ourobrowser.root.research.runtime_embedding</span>
 <span class='pill'>draft</span>
-<span class='wc'>184 words</span>
+<span class='wc'>309 words</span>
 </div>
 <p class='prob'>level 2 but folder depth 1</p>
 </summary><div class='kids'>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_0_lifecycle_manager</span>
+<span class='id'>ourobrowser.root.research.runtime_embedding.lifecycle_manager</span>
+<span class='pill'>settled</span>
+<span class='wc'>93 words</span>
+</div>
+</summary><div class='kids'>
 <details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
-<div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.research.hub_integration</div>
+<p class='prose'><strong>Goal:</strong> Implement ouro_python_runtime.cc</p>
+<p class='prose'><strong>Details:</strong> Write the C++ source file hooking <code>Py_Initialize()</code> into <code>RenderProcessImpl::Create</code> and setting up isolated <code>PyDictObject*</code> namespaces for individual Blink LocalFrames.</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_3_runtime_embedding/CORE_0_3_runtime_embedding.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Implementation:</strong> Created <code>Research/runtime_embedding/ouro_python_runtime.cc</code>.</div>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_1_gil_wrapper</span>
+<span class='id'>ourobrowser.root.research.runtime_embedding.gil_wrapper</span>
+<span class='pill'>settled</span>
+<span class='wc'>94 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'><strong>Goal:</strong> Implement ouro_gil_scope.h</p>
+<p class='prose'><strong>Details:</strong> Write the C++ RAII class <code>PyGILScope</code> that acquires and releases the Python Global Interpreter Lock during multithreaded DOM event callbacks.</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_3_runtime_embedding/CORE_0_3_runtime_embedding.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Implementation:</strong> Created <code>Research/runtime_embedding/ouro_gil_scope.h</code>.</div>
+</div></details>
+</div></details>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.research.runtime_embedding</div>
 <div class='cmp leafcmp'><strong>level:</strong> 2</div>
 <div class='cmp leafcmp'><strong>status:</strong> draft</div>
 <div class='cmp leafcmp'><strong>designation:</strong> pending</div>
@@ -197,8 +413,235 @@ details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
 <div class='cmp leafcmp'>research</div>
 </div></details>
 <details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
-<p class='prose'><strong>Goal:</strong> Bridge the embedded Python DOM environment into the external PCHQ Hub.</p>
-<p class='prose'><strong>Details:</strong> - The new Chromium fork now natively runs <code>&lt;script type=&quot;text/python&quot;&gt;</code>. - However, we want this local Python runtime to act as a dumb relay to the broader PCHQ Hub, allowing multi-language processing. - We will inject an IPC mechanism (such as local WebSockets or a shared memory queue) into the embedded Python environment. - When an <code>onclick</code> DOM event fires in the browser, it is caught natively by the new Python bindings, and then relayed directly to the PCHQ Hub for evaluation. - The PCHQ Hub computes the result (in whatever language) and streams DOM mutations back to the browser&#x27;s Python execution layer, which executes them against the Blink renderer.</p>
+<p class='prose'>Inject CPython lifecycle management into the Chromium renderer process, ensuring proper <code>Py_Initialize()</code> execution, Global Interpreter Lock (GIL) management, and per-tab execution context isolation.</p>
+</div></details>
+<details open class='sec'><summary><span class='sech'>design</span></summary><div class='kids'>
+<p class='prose'><strong>1. Lifecycle Initialization (<code>ouro_python_runtime.cc</code>)</strong> Chromium typically initializes V8 in <code>RenderProcessImpl::Create</code>. We must write a patch to initialize Python instead. ```cpp void RenderProcessImpl::InitializePythonRuntime() { if (!Py_IsInitialized()) { Py_Initialize(); PyEval_InitThreads(); // Ensure GIL is active for multi-threading</p>
+<p class='prose'>// Setup base sys.path or injected modules PyRun_SimpleString(&quot;import sys; sys.path.append(&#x27;/opt/ourobrowser/lib&#x27;)&quot;); } } ```</p>
+<p class='prose'><strong>2. Context Isolation (The Frame Dict)</strong> V8 uses <code>v8::Context</code> to ensure different iframes/tabs cannot access each other&#x27;s global variables. In Python, we will replicate this by assigning a unique <code>PyDictObject*</code> (a namespace dict) to each Blink <code>LocalFrame</code>. Every script executed by that frame runs exclusively against its isolated dict.</p>
+<p class='prose'><strong>3. GIL Wrappers (<code>ouro_gil_scope.h</code>)</strong> Blink fires DOM events (like clicks) asynchronously across multiple threads. Every C++ function generated by PC Egress must wrap its execution in the GIL. ``<code>cpp class PyGILScope { public: PyGILScope() { gstate = PyGILState_Ensure(); } ~PyGILScope() { PyGILState_Release(gstate); } private: PyGILState_STATE gstate; }; </code>``</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled rules</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Thread Safety:</strong> Every entry point from Blink into Python *must* acquire the GIL. The browser will segfault instantly if multiple Blink threads attempt to execute Python script tags concurrently without the lock.</div>
+<div class='cmp leafcmp'><strong>Strict Isolation:</strong> <code>window.A</code> in Tab 1 must absolutely not be accessible as <code>window.A</code> in Tab 2. The global <code>__main__</code> module must be bypassed in favor of explicit, per-frame <code>PyDict</code> namespaces.</div>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_4_source_acquisition</span>
+<span class='id'>ourobrowser.root.research.source_acquisition</span>
+<span class='pill'>draft</span>
+<span class='wc'>89 words</span>
+</div>
+</summary><div class='kids'>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_0_depot_tools_setup</span>
+<span class='id'>ourobrowser.root.research.source_acquisition.depot_tools_setup</span>
+<span class='pill'>settled</span>
+<span class='wc'>70 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'>*(pending)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_4_source_acquisition/CORE_0_4_source_acquisition.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Implementation:</strong> Successfully cloned <code>https://chromium.googlesource.com/chromium/tools/depot_tools.git</code> to <code>~/Programming/depot_tools</code>.</div>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_1_fetch_chromium</span>
+<span class='id'>ourobrowser.root.research.source_acquisition.fetch_chromium</span>
+<span class='pill'>settled</span>
+<span class='wc'>84 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'>*(pending)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_4_source_acquisition/CORE_0_4_source_acquisition.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Implementation:</strong> Created <code>fetch_chromium.sh</code> using <code>--no-history</code> to optimize disk space, and initiated the background task to pull the source into <code>~/Programming/chromium_src</code>.</div>
+</div></details>
+</div></details>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.research.source_acquisition</div>
+<div class='cmp leafcmp'><strong>level:</strong> 1</div>
+<div class='cmp leafcmp'><strong>status:</strong> draft</div>
+<div class='cmp leafcmp'><strong>designation:</strong> work</div>
+<div class='cmp leafcmp'><strong>settled_by:</strong> Dee</div>
+<div class='cmp leafcmp'><strong>supersedes:</strong> null</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<div class='cmp leafcmp'>research</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/CORE_0_1_research.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_5_mock_pipeline_test</span>
+<span class='id'>ourobrowser.root.research.mock_pipeline_test</span>
+<span class='pill'>draft</span>
+<span class='wc'>89 words</span>
+</div>
+</summary><div class='kids'>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_0_mock_v8_binding</span>
+<span class='id'>ourobrowser.root.research.mock_pipeline_test.mock_v8_binding</span>
+<span class='pill'>settled</span>
+<span class='wc'>73 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'>*(pending)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_5_mock_pipeline_test/CORE_0_5_mock_pipeline_test.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Implementation:</strong> Created <code>Research/mock_pipeline_test/v8_html_button_element.cc</code> simulating a real Blink-to-V8 DOM callback.</div>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_1_mock_test_runner</span>
+<span class='id'>ourobrowser.root.research.mock_pipeline_test.mock_test_runner</span>
+<span class='pill'>settled</span>
+<span class='wc'>136 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'>*(pending)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_5_mock_pipeline_test/CORE_0_5_mock_pipeline_test.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Implementation:</strong> Created <code>mock_test_runner.sh</code> to run the ingress and egress phases on the isolated mock file.</div>
+<div class='cmp leafcmp'><strong>Blocker:</strong> <code>mock_test_runner.sh</code> fails because <code>~/Programming/PseudoIR/pseudoir/emit</code> is empty on disk, preventing PseudoCoup from importing <code>get_emitter</code>.</div>
+<div class='cmp leafcmp'><strong>Resolved:</strong> Switched to <code>PseudoCoup_v3</code> because v4 was broken due to missing <code>PseudoIR</code> dependencies. The mock pipeline ran successfully with PCv3, though the <code>CppEmitter</code> in v3 requires upgrading to fully respect the Ledger type maps before applying to the full Chromium codebase.</div>
+</div></details>
+</div></details>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.research.mock_pipeline_test</div>
+<div class='cmp leafcmp'><strong>level:</strong> 1</div>
+<div class='cmp leafcmp'><strong>status:</strong> draft</div>
+<div class='cmp leafcmp'><strong>designation:</strong> work</div>
+<div class='cmp leafcmp'><strong>settled_by:</strong> Dee</div>
+<div class='cmp leafcmp'><strong>supersedes:</strong> null</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<div class='cmp leafcmp'>research</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/CORE_0_1_research.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_6_incremental_compilation</span>
+<span class='id'>ourobrowser.root.research.incremental_compilation</span>
+<span class='pill'>draft</span>
+<span class='wc'>89 words</span>
+</div>
+</summary><div class='kids'>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_0_ninja_error_parser</span>
+<span class='id'>ourobrowser.root.research.incremental_compilation.ninja_error_parser</span>
+<span class='pill'>settled</span>
+<span class='wc'>85 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'>*(pending)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_6_incremental_compilation/CORE_0_6_incremental_compilation.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>settled</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>Implementation:</strong> Created <code>Research/chromium_compilation/ninja_error_parser.py</code> to deduplicate and bucket C++ errors when we inevitably rip out the V8 dependencies and break the build.</div>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_1_emitter_adjustment_loop</span>
+<span class='id'>ourobrowser.root.research.incremental_compilation.emitter_adjustment_loop</span>
+<span class='pill'>draft</span>
+<span class='wc'>61 words</span>
+</div>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<p class='prose'>*(pending)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<p class='prose'>*(none)*</p>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_6_incremental_compilation/CORE_0_6_incremental_compilation.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+</div></details>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.research.incremental_compilation</div>
+<div class='cmp leafcmp'><strong>level:</strong> 1</div>
+<div class='cmp leafcmp'><strong>status:</strong> draft</div>
+<div class='cmp leafcmp'><strong>designation:</strong> work</div>
+<div class='cmp leafcmp'><strong>settled_by:</strong> Dee</div>
+<div class='cmp leafcmp'><strong>supersedes:</strong> null</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<div class='cmp leafcmp'>research</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>*(pending — generated 2026-09-04 from the register in ~/Programming/Ourobrowser/Planning/node_0_1_research/CORE_0_1_research.md; the definition and <code>designation</code> are Dee&#x27;s to write.)*</p>
+</div></details>
+</div></details>
+<details open class='nodefold'><summary>
+<div class='row'>
+<span class='nm'>node_0_7_api_mapping</span>
+<span class='id'>ourobrowser.root.research.api_mapping</span>
+<span class='pill'>draft</span>
+<span class='wc'>89 words</span>
+</div>
+<p class='prob'>level 2 but folder depth 1</p>
+</summary><div class='kids'>
+<details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
+<div class='cmp leafcmp'><strong>id:</strong> ourobrowser.root.research.api_mapping</div>
+<div class='cmp leafcmp'><strong>level:</strong> 2</div>
+<div class='cmp leafcmp'><strong>status:</strong> draft</div>
+<div class='cmp leafcmp'><strong>designation:</strong> work</div>
+<div class='cmp leafcmp'><strong>settled_by:</strong> Dee</div>
+<div class='cmp leafcmp'><strong>supersedes:</strong> null</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>super_node</span></summary><div class='kids'>
+<div class='cmp leafcmp'>research</div>
+</div></details>
+<details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
+<p class='prose'>Extend <code>PCv3.1</code> to support API function call mappings (modeled after PCHQ&#x27;s <code>op_pipeline</code> manifest). The transpiler must swap underlying function calls like <code>v8::String::NewFromUtf8</code> with <code>PyUnicode_FromString</code> and restructure arguments as necessary.</p>
 </div></details>
 </div></details>
 <details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
@@ -213,7 +656,7 @@ details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
 <div class='cmp leafcmp'>Ourobrowser</div>
 </div></details>
 <details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
-<p class='prose'>This branch represents the physically separate research and execution plan for using PseudoCoup (PC) to systematically swap the V8 JavaScript engine for a Python execution engine inside the Chromium C++ codebase. It serves as the root planning research folder for the new native multi-language browser paradigm.</p>
+<p class='prose'>This branch represents the physically separate research and execution plan for using PseudoCoup (PC) to systematically swap the V8 JavaScript engine for a local, embedded Python execution engine inside the Chromium C++ codebase. It serves as the root planning research folder for creating a standalone, Python-native browser that completely bypasses JavaScript execution.</p>
 </div></details>
 </div></details>
 <details open class='nodefold'><summary>
@@ -247,7 +690,7 @@ details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
 <span class='nm'>node_0_0_browser_app</span>
 <span class='id'>ourobrowser.root.engine.browser_app</span>
 <span class='pill'>draft</span>
-<span class='wc'>60 words</span>
+<span class='wc'>77 words</span>
 </div>
 </summary><div class='kids'>
 <details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
@@ -265,7 +708,7 @@ details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
 <span class='nm'>node_0_1_scheme_handler</span>
 <span class='id'>ourobrowser.root.engine.scheme_handler</span>
 <span class='pill'>draft</span>
-<span class='wc'>852 words</span>
+<span class='wc'>869 words</span>
 </div>
 </summary><div class='kids'>
 <details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
@@ -371,7 +814,7 @@ details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
 <span class='nm'>node_0_0_web_channel</span>
 <span class='id'>ourobrowser.root.bridge.web_channel</span>
 <span class='pill'>draft</span>
-<span class='wc'>508 words</span>
+<span class='wc'>519 words</span>
 </div>
 </summary><div class='kids'>
 <details class='sec'><summary><span class='sech'>metadata</span></summary><div class='kids'>
@@ -428,7 +871,7 @@ details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
 <span class='nm'>node_0_5_test_page</span>
 <span class='id'>ourobrowser.root.test_page</span>
 <span class='pill'>draft</span>
-<span class='wc'>76 words</span>
+<span class='wc'>81 words</span>
 </div>
 </summary><div class='kids'>
 <details class='sec'><summary><span class='sech'>definition</span></summary><div class='kids'>
@@ -453,10 +896,14 @@ details.cmpfold[open] > summary .cmp::before { content: "\25BE "; }
 </div>
 <div class='hdr'>grammar</div><div class='box'>
 <p class='prob'>Planning — no PROGRESS.md</p>
+<p class='prob'>node_0_1_research — sub-node node_0_2_pc_tools not listed in the CORE</p>
+<p class='prob'>node_0_1_research — sub-node listing is not among the leading sections (first is &#x27;metadata&#x27;; node_0_2_pc_tools listed later)</p>
 <p class='prob'>node_0_0_pc_ingress — level 2 but folder depth 1</p>
 <p class='prob'>node_0_1_pc_egress — level 2 but folder depth 1</p>
 <p class='prob'>node_0_2_chromium_compilation — level 2 but folder depth 1</p>
-<p class='prob'>node_0_3_hub_integration — level 2 but folder depth 1</p>
+<p class='prob'>node_0_2_pc_tools — no PROGRESS.md</p>
+<p class='prob'>node_0_3_runtime_embedding — level 2 but folder depth 1</p>
+<p class='prob'>node_0_7_api_mapping — level 2 but folder depth 1</p>
 </div>
 
 <script>
