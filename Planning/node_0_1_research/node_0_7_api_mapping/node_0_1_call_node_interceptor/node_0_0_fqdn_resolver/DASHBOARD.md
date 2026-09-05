@@ -2,7 +2,7 @@
 <!-- Produced by PlanPlan/framework/generate_dashboards.py from this node's own sub-tree. Hand edits are lost the -->
 <!-- next time the tool runs; re-run it instead of editing this file. -->
 
-# DASHBOARD — node_0_0_ledger_extension
+# DASHBOARD — node_0_0_fqdn_resolver
 
 A rollup over this node's own sub-tree (itself plus everything beneath it). Regenerated, not edited.
 
@@ -10,26 +10,25 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 
 | field | value |
 | --- | --- |
-| id | `ourobrowser.root.research.api_mapping.ledger_extension` |
+| id | `ourobrowser.root.research.api_mapping.call_node_interceptor.fqdn_resolver` |
 | status | draft |
 | designation | code (module) |
 
 ## sub-tree
 
-sub-node count: 2
+sub-node count: 0
 
 ### status breakdown
 
 | status | count |
 | --- | --- |
-| draft | 3 |
+| draft | 1 |
 
 ### designation breakdown
 
 | designation | count |
 | --- | --- |
-| code (module) | 2 |
-| code (patch) | 1 |
+| code (module) | 1 |
 
 ## blocked
 
@@ -41,7 +40,7 @@ counted by scanning every PROGRESS.md bullet in this sub-tree for these words; a
 
 | status word | bullet count |
 | --- | --- |
-| planned | 3 |
+| planned | 1 |
 | in-progress | 0 |
 | done | 0 |
 | blocked | 0 |
