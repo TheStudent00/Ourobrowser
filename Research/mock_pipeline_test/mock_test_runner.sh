@@ -5,8 +5,10 @@ MOCK_FILE="v8_html_button_element.cc"
 AST_OUT="mock_ur_ast.json"
 CPP_OUT_DIR="python_bindings_output"
 
+PC_V3_DIR="$HOME/Programming/0_Archive/PseudoCoup_v3"
+
 echo "=== 1. Running PseudoCoup Ingress (Mock) ==="
-PYTHONPATH="$HOME/Programming/PseudoCoup" /home/lucas/anaconda3/bin/python3 -m pseudocoup.cli \
+PYTHONPATH="$PC_V3_DIR" python3 -m pseudocoup.cli \
     --source "$MOCK_FILE" \
     --source-lang cpp \
     --ledger "../pc_ingress/pc_ledger_v8_sever.yaml" \
@@ -15,7 +17,7 @@ PYTHONPATH="$HOME/Programming/PseudoCoup" /home/lucas/anaconda3/bin/python3 -m p
 
 echo "=== 2. Running PseudoCoup Egress (Mock) ==="
 mkdir -p "$CPP_OUT_DIR"
-PYTHONPATH="$HOME/Programming/PseudoCoup" /home/lucas/anaconda3/bin/python3 -m pseudocoup.cli \
+PYTHONPATH="$PC_V3_DIR" python3 -m pseudocoup.cli \
     --ast-input "$AST_OUT" \
     --target-lang cpp \
     --emitter-config "../pc_egress/py_emitter_config.yaml" \
