@@ -11,25 +11,33 @@ node:
 super_node:
     name: research
     path: ../CORE_0_1_research.md
-sub_nodes: []
+sub_nodes:
+    - name: depot_tools_setup
+      path: node_0_0_depot_tools_setup/CORE_0_0_depot_tools_setup.md
+    - name: fetch_chromium
+      path: node_0_1_fetch_chromium/CORE_0_1_fetch_chromium.md
+
 ---
 
 # CORE 0_4 — source_acquisition
 
 ## metadata
 
-**Goal:** Acquire and configure the Chromium source tree.
-
-**Details:**
-Install Google's `depot_tools`, configure `.gclient`, and perform a shallow fetch of the ~30GB Chromium source code. This is an operational prerequisite before any translation can occur.
+- **id:** ourobrowser.root.research.source_acquisition
+- **level:** 1
+- **status:** draft
+- **designation:** work
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [research](../CORE_0_1_research.md)
 
 ## sub_nodes
 
-*(none yet)*
+- [depot_tools_setup](node_0_0_depot_tools_setup/CORE_0_0_depot_tools_setup.md)
+- [fetch_chromium](node_0_1_fetch_chromium/CORE_0_1_fetch_chromium.md)
 
 ## definition
 

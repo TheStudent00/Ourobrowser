@@ -11,25 +11,33 @@ node:
 super_node:
     name: research
     path: ../CORE_0_1_research.md
-sub_nodes: []
+sub_nodes:
+    - name: ninja_error_parser
+      path: node_0_0_ninja_error_parser/CORE_0_0_ninja_error_parser.md
+    - name: emitter_adjustment_loop
+      path: node_0_1_emitter_adjustment_loop/CORE_0_1_emitter_adjustment_loop.md
+
 ---
 
 # CORE 0_6 — incremental_compilation
 
 ## metadata
 
-**Goal:** Execute iterative build-and-debug cycles on the Chromium codebase.
-
-**Details:**
-Apply the GN patch, run Ninja, and capture compiler errors. PC's egress templates will likely miss edge cases in Blink's massive DOM surface. We will incrementally update the `py_emitter_config.yaml` and re-run PC until the browser links successfully.
+- **id:** ourobrowser.root.research.incremental_compilation
+- **level:** 1
+- **status:** draft
+- **designation:** work
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [research](../CORE_0_1_research.md)
 
 ## sub_nodes
 
-*(none yet)*
+- [ninja_error_parser](node_0_0_ninja_error_parser/CORE_0_0_ninja_error_parser.md)
+- [emitter_adjustment_loop](node_0_1_emitter_adjustment_loop/CORE_0_1_emitter_adjustment_loop.md)
 
 ## definition
 

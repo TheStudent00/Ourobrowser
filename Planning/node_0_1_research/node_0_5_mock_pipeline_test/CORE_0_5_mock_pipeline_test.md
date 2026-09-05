@@ -11,25 +11,33 @@ node:
 super_node:
     name: research
     path: ../CORE_0_1_research.md
-sub_nodes: []
+sub_nodes:
+    - name: mock_v8_binding
+      path: node_0_0_mock_v8_binding/CORE_0_0_mock_v8_binding.md
+    - name: mock_test_runner
+      path: node_0_1_mock_test_runner/CORE_0_1_mock_test_runner.md
+
 ---
 
 # CORE 0_5 — mock_pipeline_test
 
 ## metadata
 
-**Goal:** Validate the PC pipeline against a single, isolated C++ file.
-
-**Details:**
-Before running PC against the entire Chromium bindings directory, extract a single file (e.g., `v8_html_button_element.cc`). Run `pc_ingress` and `pc_egress` against it locally. Iteratively adjust the Ledger and Emitter configs until the resulting Python C-API wrapper compiles flawlessly in isolation.
+- **id:** ourobrowser.root.research.mock_pipeline_test
+- **level:** 1
+- **status:** draft
+- **designation:** work
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [research](../CORE_0_1_research.md)
 
 ## sub_nodes
 
-*(none yet)*
+- [mock_v8_binding](node_0_0_mock_v8_binding/CORE_0_0_mock_v8_binding.md)
+- [mock_test_runner](node_0_1_mock_test_runner/CORE_0_1_mock_test_runner.md)
 
 ## definition
 
