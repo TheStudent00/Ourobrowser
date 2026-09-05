@@ -22,13 +22,18 @@ sub-node count: 12
 
 | status | count |
 | --- | --- |
-| draft | 13 |
+| draft | 5 |
+| settled | 8 |
 
 ### designation breakdown
 
 | designation | count |
 | --- | --- |
-| pending | 12 |
+| code (class) | 1 |
+| code (config) | 2 |
+| code (module) | 4 |
+| code (patch) | 1 |
+| pending | 4 |
 | work | 1 |
 
 ## blocked
