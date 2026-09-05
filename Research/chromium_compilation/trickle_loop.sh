@@ -23,7 +23,7 @@ for ((i=1; i<=MAX_ITERATIONS; i++)); do
     fi
     
     echo "Transpiling failed files..."
-    /home/lucas/anaconda3/bin/python3 /projects/Ourobrowser/Research/chromium_compilation/transpiler_loop.py
+    python3 /projects/Ourobrowser/Research/chromium_compilation/transpiler_loop.py
     
     echo "Iteration $i complete. Looping..."
 done
