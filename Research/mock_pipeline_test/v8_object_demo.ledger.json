@@ -1,0 +1,12 @@
+{
+    "types": {
+        ".CreateV8Object": "void",
+        "CreateV8Object.isolate": "PyInterpreterState*",
+        "CreateV8Object.context": "PyDictObject*",
+        "CreateV8Object.obj": "PyObject*",
+        "CreateV8Object.key": "PyObject*",
+        "CreateV8Object.value": "PyObject*"
+    },
+    "wrappers": [],
+    "memory_erasure": {}
+}
