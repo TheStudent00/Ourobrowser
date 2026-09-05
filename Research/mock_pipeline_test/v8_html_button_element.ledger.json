@@ -1,11 +1,11 @@
 {
     "types": {
-        ".ClickMethodCallback": "void",
-        "ClickMethodCallback.info": "v8::FunctionCallbackInfo<v8::Value>",
-        "ClickMethodCallback.isolate": "v8::Isolate",
-        "ClickMethodCallback.handle_scope": "v8::HandleScope",
-        "ClickMethodCallback.context": "v8::Local<v8::Context>",
-        "ClickMethodCallback.impl": "HTMLButtonElement"
+        ".ClickMethodCallback": "PyObject*",
+        "ClickMethodCallback.info": "PyObject*",
+        "ClickMethodCallback.isolate": "PyInterpreterState*",
+        "ClickMethodCallback.handle_scope": "PyObject*",
+        "ClickMethodCallback.context": "PyDictObject*",
+        "ClickMethodCallback.impl": "HTMLButtonElement*"
     },
     "wrappers": [
         "v8::Isolate",
