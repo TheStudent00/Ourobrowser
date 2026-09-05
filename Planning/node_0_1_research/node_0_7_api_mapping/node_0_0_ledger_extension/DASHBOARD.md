@@ -2,7 +2,7 @@
 <!-- Produced by ~/Programming/PlanPlan/framework/generate_dashboards.py from this node's own sub-tree. Hand edits are lost the -->
 <!-- next time the tool runs; re-run it instead of editing this file. -->
 
-# DASHBOARD — Planning
+# DASHBOARD — node_0_0_ledger_extension
 
 A rollup over this node's own sub-tree (itself plus everything beneath it). Regenerated, not edited.
 
@@ -10,31 +10,25 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 
 | field | value |
 | --- | --- |
-| id | `ourobrowser.root` |
+| id | `ourobrowser.root.research.api_mapping.ledger_extension` |
 | status | draft |
-| designation | work |
+| designation | code (module) |
 
 ## sub-tree
 
-sub-node count: 36
+sub-node count: 0
 
 ### status breakdown
 
 | status | count |
 | --- | --- |
-| draft | 23 |
-| settled | 14 |
+| draft | 1 |
 
 ### designation breakdown
 
 | designation | count |
 | --- | --- |
-| code (class) | 1 |
-| code (config) | 2 |
-| code (module) | 16 |
-| code (patch) | 1 |
-| pending | 11 |
-| work | 6 |
+| code (module) | 1 |
 
 ## blocked
 
@@ -46,9 +40,9 @@ counted by scanning every PROGRESS.md bullet in this sub-tree for these words; a
 
 | status word | bullet count |
 | --- | --- |
-| planned | 7 |
-| in-progress | 5 |
-| done | 6 |
+| planned | 1 |
+| in-progress | 0 |
+| done | 0 |
 | blocked | 0 |
 | deferred | 0 |
 
