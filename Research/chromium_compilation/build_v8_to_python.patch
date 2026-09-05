@@ -1,0 +1,15 @@
+--- third_party/blink/renderer/bindings/BUILD.gn
++++ third_party/blink/renderer/bindings/BUILD.gn
+@@ -10,7 +10,7 @@
+ component("bindings") {
+   deps = [
+-    "//v8",
++    "//build/config/python:embed",
+     "//third_party/blink/renderer/core",
+   ]
+ 
+   sources = [
+-    "core/v8/v8_initializer.cc",
++    "core/python/py_initializer.cc",
+   ]
+ }
