@@ -1,7 +1,5 @@
 {
     "types": {
-        "blink.isolate": "PyInterpreterState*",
-        "blink.context": "PyDictObject*",
         ".ClickMethodCallback": "void",
         "ClickMethodCallback.info": "v8::FunctionCallbackInfo<v8::Value>",
         "ClickMethodCallback.isolate": "v8::Isolate",
