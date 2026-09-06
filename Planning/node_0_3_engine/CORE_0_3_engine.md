@@ -10,7 +10,7 @@ node:
     path: Planning/node_0_3_engine/CORE_0_3_engine.md
 super_node:
     name: Ourobrowser
-    path: ../CORE_0.md
+    path: ../CORE_0_planning.md
 sub_nodes:
     - name: browser_app
       path: node_0_3_0_browser_app/CORE_0_3_0_browser_app.md
@@ -33,7 +33,7 @@ sub_nodes:
 
 ## super_node
 
-- [Ourobrowser](../CORE_0.md)
+- [Ourobrowser](../CORE_0_planning.md)
 
 ## sub_nodes
 

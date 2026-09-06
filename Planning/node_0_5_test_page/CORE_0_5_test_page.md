@@ -10,7 +10,7 @@ node:
     path: Planning/node_0_5_test_page/CORE_0_5_test_page.md
 super_node:
     name: Ourobrowser
-    path: ../CORE_0.md
+    path: ../CORE_0_planning.md
 sub_nodes:
     - name: index.html
       designation: code (markup)
