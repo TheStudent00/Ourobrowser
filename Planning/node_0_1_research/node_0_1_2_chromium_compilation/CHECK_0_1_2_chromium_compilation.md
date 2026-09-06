@@ -2,7 +2,7 @@
 id: ourobrowser.root.research.chromium_compilation.check
 ---
 
-# CHECK — 0_2_chromium_compilation
+# CHECK — 0_1_2_chromium_compilation
 
 Node `ourobrowser.root.research.chromium_compilation`. Status `draft`.
 

@@ -7,14 +7,14 @@ supersedes: null
 designation: code (config)
 node:
     name: mapping_dictionary
-    path: Planning/node_0_1_research/node_0_7_api_mapping/node_0_2_trickle_injection/node_0_0_mapping_dictionary/CORE_0_0_mapping_dictionary.md
+    path: Planning/node_0_1_research/node_0_1_8_api_mapping/node_0_1_8_2_trickle_injection/node_0_1_8_2_0_mapping_dictionary/CORE_0_1_8_2_0_mapping_dictionary.md
 super_node:
     name: trickle_injection
     path: ../CORE_0_2_trickle_injection.md
 sub_nodes: []
 ---
 
-# CORE 0_0 — mapping_dictionary
+# CORE 0_1_8_2_0 — mapping_dictionary
 
 ## metadata
 

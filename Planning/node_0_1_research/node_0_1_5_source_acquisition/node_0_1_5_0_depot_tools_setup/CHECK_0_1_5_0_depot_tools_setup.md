@@ -2,7 +2,7 @@
 id: ourobrowser.root.research.source_acquisition.depot_tools_setup.check
 ---
 
-# CHECK — 0_0_depot_tools_setup
+# CHECK — 0_1_5_0_depot_tools_setup
 
 Node `ourobrowser.root.research.source_acquisition.depot_tools_setup`. Status `draft`.
 

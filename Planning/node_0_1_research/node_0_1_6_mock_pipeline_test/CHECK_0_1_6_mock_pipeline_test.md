@@ -2,7 +2,7 @@
 id: ourobrowser.root.research.mock_pipeline_test.check
 ---
 
-# CHECK — 0_5_mock_pipeline_test
+# CHECK — 0_1_6_mock_pipeline_test
 
 Node `ourobrowser.root.research.mock_pipeline_test`. Status `draft`.
 

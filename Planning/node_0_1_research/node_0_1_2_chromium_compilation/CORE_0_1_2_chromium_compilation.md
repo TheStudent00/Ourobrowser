@@ -7,7 +7,7 @@ supersedes: null
 designation: pending
 node:
     name: chromium_compilation
-    path: Planning/node_0_1_research/node_0_2_chromium_compilation/CORE_0_2_chromium_compilation.md
+    path: Planning/node_0_1_research/node_0_1_2_chromium_compilation/CORE_0_1_2_chromium_compilation.md
 super_node:
     name: research
     path: ../CORE_0_1_research.md
@@ -18,7 +18,7 @@ sub_nodes:
       path: node_0_1_build_runner/CORE_0_1_build_runner.md
 ---
 
-# CORE 0_2 — chromium_compilation
+# CORE 0_1_2 — chromium_compilation
 
 ## metadata
 

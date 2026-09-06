@@ -2,7 +2,7 @@
 id: ourobrowser.root.research.source_acquisition.check
 ---
 
-# CHECK — 0_4_source_acquisition
+# CHECK — 0_1_5_source_acquisition
 
 Node `ourobrowser.root.research.source_acquisition`. Status `draft`.
 
