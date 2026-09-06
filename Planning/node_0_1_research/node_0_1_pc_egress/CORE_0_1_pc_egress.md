@@ -1,10 +1,10 @@
 ---
 id: ourobrowser.root.research.pc_egress
 level: 2
-status: draft
+status: settled
 settled_by: Dee
 supersedes: null
-designation: pending
+designation: settled
 node:
     name: pc_egress
     path: Planning/node_0_1_research/node_0_1_pc_egress/CORE_0_1_pc_egress.md
