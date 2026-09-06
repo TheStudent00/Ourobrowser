@@ -19,20 +19,18 @@ sub_nodes: []
 
 ## metadata
 
-- **id:** ourobrowser.root.research.pc_egress.emitter_config
-- **level:** 1
-- **status:** settled
-- **designation:** code (config)
-- **settled_by:** Dee
-- **supersedes:** null
+**Goal:** Define py_emitter_config.yaml
+
+**Details:**
+Create the mapping file instructing PC to transform V8 AST dead-ends into CPython API types (`PyObject*`, `PyInterpreterState*`) and inject explicit `Py_DECREF` mechanics.
 
 ## super_node
 
-- [pc_egress](../CORE_0_1_pc_egress.md)
+*(none)*
 
 ## sub_nodes
 
-*(none yet)*
+*(none — leaf node)*
 
 ## definition
 

@@ -19,20 +19,18 @@ sub_nodes: []
 
 ## metadata
 
-- **id:** ourobrowser.root.research.runtime_embedding.lifecycle_manager
-- **level:** 1
-- **status:** settled
-- **designation:** code (module)
-- **settled_by:** Dee
-- **supersedes:** null
+**Goal:** Implement ouro_python_runtime.cc
+
+**Details:**
+Write the C++ source file hooking `Py_Initialize()` into `RenderProcessImpl::Create` and setting up isolated `PyDictObject*` namespaces for individual Blink LocalFrames.
 
 ## super_node
 
-- [runtime_embedding](../CORE_0_3_runtime_embedding.md)
+*(none)*
 
 ## sub_nodes
 
-*(none yet)*
+*(none — leaf node)*
 
 ## definition
 

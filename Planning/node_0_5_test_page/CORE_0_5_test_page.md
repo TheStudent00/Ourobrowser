@@ -14,7 +14,7 @@ super_node:
 sub_nodes:
     - name: index.html
       designation: code (markup)
-nodes: []
+
 ---
 
 # CORE 0_5 — test_page

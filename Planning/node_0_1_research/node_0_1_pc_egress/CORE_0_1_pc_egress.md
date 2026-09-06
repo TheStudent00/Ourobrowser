@@ -24,8 +24,8 @@ sub_nodes:
 
 - **id:** ourobrowser.root.research.pc_egress
 - **level:** 2
-- **status:** settled
-- **designation:** settled
+- **status:** draft
+- **designation:** pending
 - **settled_by:** Dee
 - **supersedes:** null
 
@@ -35,7 +35,8 @@ sub_nodes:
 
 ## sub_nodes
 
-*(none yet)*
+- [emitter_config](node_0_0_emitter_config/CORE_0_0_emitter_config.md)
+- [runner_script](node_0_1_runner_script/CORE_0_1_runner_script.md)
 
 ## definition
 

@@ -24,7 +24,7 @@ sub_nodes:
 
 - **id:** ourobrowser.root.research.api_mapping.trickle_injection
 - **level:** 3
-- **status:** settled
+- **status:** draft
 - **designation:** code (module)
 - **settled_by:** Dee
 - **supersedes:** null
@@ -35,7 +35,8 @@ sub_nodes:
 
 ## sub_nodes
 
-*(none yet)*
+- [mapping_dictionary](node_0_0_mapping_dictionary/CORE_0_0_mapping_dictionary.md) — Create the `GLOBAL_FUNCTIONS` constant dictionary holding all known V8 to CPython C-API mappings.
+- [ledger_writer](node_0_1_ledger_writer/CORE_0_1_ledger_writer.md) — Patch `transpiler_loop.py` to seamlessly bake the `GLOBAL_FUNCTIONS` into the dynamically generated `.ledger.json`.
 
 ## definition
 

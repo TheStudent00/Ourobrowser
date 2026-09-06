@@ -20,7 +20,7 @@ sub_nodes: []
 
 - **id:** ourobrowser.root.research.api_mapping.trickle_injection.ledger_writer
 - **level:** 4
-- **status:** settled
+- **status:** draft
 - **designation:** code (patch)
 - **settled_by:** Dee
 - **supersedes:** null
@@ -31,7 +31,7 @@ sub_nodes: []
 
 ## sub_nodes
 
-*(none yet)*
+*(none)*
 
 ## definition
 

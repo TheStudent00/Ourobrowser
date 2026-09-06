@@ -47,7 +47,14 @@ sub_nodes:
 
 ## sub_nodes
 
-*(none yet)*
+- [pc_ingress](node_0_0_pc_ingress/CORE_0_0_pc_ingress.md) — Configure PseudoCoup (PC) to ingress the Chromium DOM-to-V8 bindings.
+- [pc_egress](node_0_1_pc_egress/CORE_0_1_pc_egress.md) — Configure PC to traverse the newly created UR-AST and emit Python C-API wrapper bindings in place of the original V8 bindings, generating native C++ files that seamlessly bridge Blink to CPython.
+- [chromium_compilation](node_0_2_chromium_compilation/CORE_0_2_chromium_compilation.md) — Modify the Chromium build system (GN/Ninja) to exclude V8 compilation, link the embedded CPython library, and compile our newly emitted `PyDOM` C++ bindings into the Blink renderer.
+- [runtime_embedding](node_0_3_runtime_embedding/CORE_0_3_runtime_embedding.md) — Inject CPython lifecycle management into the Chromium renderer process, ensuring proper `Py_Initialize()` execution, Global Interpreter Lock (GIL) management, and per-tab execution context isolation.
+- [source_acquisition](node_0_4_source_acquisition/CORE_0_4_source_acquisition.md)
+- [mock_pipeline_test](node_0_5_mock_pipeline_test/CORE_0_5_mock_pipeline_test.md)
+- [incremental_compilation](node_0_6_incremental_compilation/CORE_0_6_incremental_compilation.md)
+- [api_mapping](node_0_7_api_mapping/CORE_0_7_api_mapping.md) — Extend PCv3.1 to map V8 API function calls to CPython C-API functions.
 
 ## definition
 

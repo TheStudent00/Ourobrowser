@@ -18,12 +18,7 @@ sub_nodes: []
 
 ## metadata
 
-- **id:** ourobrowser.root.engine.executor
-- **level:** 1
-- **status:** draft
-- **designation:** pending
-- **settled_by:** Dee
-- **supersedes:** null
+*(pending)*
 
 ## super_node
 
