@@ -18,7 +18,7 @@ sub_nodes:
       designation: code (function)
     - name: PAGE_EMIT_NAME
       designation: code (constant)
-
+nodes: []
 ---
 
 # CORE 0_1 — scheme_handler

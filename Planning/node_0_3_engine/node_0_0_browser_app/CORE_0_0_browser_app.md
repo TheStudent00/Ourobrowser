@@ -18,7 +18,7 @@ sub_nodes:
       designation: code (method)
     - name: toggle_color_inversion
       designation: code (method)
-
+nodes: []
 ---
 
 # CORE 0_0 — browser_app
