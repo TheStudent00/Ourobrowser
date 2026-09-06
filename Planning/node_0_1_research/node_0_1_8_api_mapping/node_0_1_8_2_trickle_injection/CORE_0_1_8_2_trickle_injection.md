@@ -10,12 +10,12 @@ node:
     path: Planning/node_0_1_research/node_0_1_8_api_mapping/node_0_1_8_2_trickle_injection/CORE_0_1_8_2_trickle_injection.md
 super_node:
     name: api_mapping
-    path: ../CORE_0_7_api_mapping.md
+    path: ../CORE_0_1_8_api_mapping.md
 sub_nodes:
     - name: mapping_dictionary
-      path: node_0_0_mapping_dictionary/CORE_0_0_mapping_dictionary.md
+      path: node_0_1_8_2_0_mapping_dictionary/CORE_0_1_8_2_0_mapping_dictionary.md
     - name: ledger_writer
-      path: node_0_1_ledger_writer/CORE_0_1_ledger_writer.md
+      path: node_0_1_8_2_1_ledger_writer/CORE_0_1_8_2_1_ledger_writer.md
 ---
 
 # CORE 0_1_8_2 — trickle_injection
@@ -31,7 +31,7 @@ sub_nodes:
 
 ## super_node
 
-- [api_mapping](../CORE_0_7_api_mapping.md)
+- [api_mapping](../CORE_0_1_8_api_mapping.md)
 
 ## sub_nodes
 

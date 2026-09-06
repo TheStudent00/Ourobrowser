@@ -13,9 +13,9 @@ super_node:
     path: ../CORE_0_1_research.md
 sub_nodes:
     - name: ninja_error_parser
-      path: node_0_0_ninja_error_parser/CORE_0_0_ninja_error_parser.md
+      path: node_0_1_7_0_ninja_error_parser/CORE_0_1_7_0_ninja_error_parser.md
     - name: emitter_adjustment_loop
-      path: node_0_1_emitter_adjustment_loop/CORE_0_1_emitter_adjustment_loop.md
+      path: node_0_1_7_1_emitter_adjustment_loop/CORE_0_1_7_1_emitter_adjustment_loop.md
 
 ---
 

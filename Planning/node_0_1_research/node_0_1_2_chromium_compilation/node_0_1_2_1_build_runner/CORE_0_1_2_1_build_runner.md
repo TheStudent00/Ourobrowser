@@ -11,7 +11,7 @@ node:
     path: Planning/node_0_1_research/node_0_1_2_chromium_compilation/node_0_1_2_1_build_runner/CORE_0_1_2_1_build_runner.md
 super_node:
     name: chromium_compilation
-    path: ../CORE_0_2_chromium_compilation.md
+    path: ../CORE_0_1_2_chromium_compilation.md
 sub_nodes: []
 ---
 
@@ -28,7 +28,7 @@ sub_nodes: []
 
 ## super_node
 
-- [chromium_compilation](../CORE_0_2_chromium_compilation.md)
+- [chromium_compilation](../CORE_0_1_2_chromium_compilation.md)
 
 ## sub_nodes
 
