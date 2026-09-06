@@ -15,3 +15,12 @@ venv.bak/
 
 # Internal
 DevComms/
+
+# Repos that live inside this one and have their own remotes. Recorded as a
+# bare gitlink they would be a commit id with no url — a clone gets an empty
+# folder — and committed as content they would put another project's history
+# in this one. Both are cloned, not authored here.
+#   Tools/PCv3.1            -> github.com/TheStudent00/PseudoCoup_v3
+#   Research/Qutebrowser_Fork -> github.com/qutebrowser/qutebrowser
+Tools/PCv3.1/
+Research/Qutebrowser_Fork/
