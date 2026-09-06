@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitSpaceTime Backup Navigator</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background-color: #f5f5f5; }
+        .container { background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); max-width: 800px; margin: 0 auto; }
+        .alert { background-color: #fff3cd; color: #856404; padding: 15px; border-radius: 4px; border: 1px solid #ffeeba; margin-top: 20px; }
+        .danger-zone { border: 1px solid #dc3545; padding: 15px; border-radius: 4px; margin-top: 20px; }
+        .danger-zone h3 { color: #dc3545; margin-top: 0; }
+        button { padding: 8px 16px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 4px; }
+        button.danger { background: #dc3545; }
+    </style>
+    <script type="text/python">
+import json
+import os
+import subprocess
+
+TARGET_MOUNT = "/mnt/gitspacetime"
+TIMELINE_PATH = os.path.join(TARGET_MOUNT, "timeline.json")
+
+def fetch_system_data():
+    print('[DEBUG] fetch_system_data was called!')
+    try:
+        if os.path.exists(TIMELINE_PATH):
+            with open(TIMELINE_PATH, 'r') as f:
+                timeline = json.load(f)
+            
+            if not timeline:
+                set_html("file-tree", "<p>No backup snapshots found.</p>")
+                return
+            
+            latest_commit = timeline[0]
+            msg = latest_commit.get("message", "Unknown")
+            ts = latest_commit.get("timestamp", "Unknown")
+            files = latest_commit.get("files", [])
+            
+            html = f"<h4>Latest Snapshot: {msg}</h4>"
+            html += f"<p><strong>Time:</strong> {ts} | <strong>Total Files:</strong> {len(files)}</p>"
+            html += "<ul>"
+            
+            count = 0
+            for file_path in files:
+                if count > 25:
+                    html += "<li><em>...and more</em></li>"
+                    break
+                html += f"<li>{file_path}</li>"
+                count += 1
+            html += "</ul>"
+            set_html("file-tree", html)
+        else:
+            set_html("file-tree", "<p>No timeline.json found.</p>")
+    except Exception as e:
+        set_html("file-tree", f"<p style='color:red;'>Error parsing timeline: {str(e)}</p>")
+        
+def step_timeline():
+    print("[Bridge] Executing Python command: step_timeline()")
+    return "Timeline stepped."
+    
+def check_disk_space():
+    if not os.path.ismount(TARGET_MOUNT):
+        return "Drive is not mounted."
+    stat = os.statvfs(TARGET_MOUNT)
+    total = (stat.f_blocks * stat.f_frsize) / (1024**3)
+    free = (stat.f_bfree * stat.f_frsize) / (1024**3)
+    used = total - free
+    return f"{used:.1f} GB used of {total:.1f} GB"
+
+def squash_history():
+    print("Squashing history to reclaim space...")
+    subprocess.run(["git", "checkout", "--orphan", "squash_temp"], cwd=TARGET_MOUNT)
+    subprocess.run(["git", "add", "-A"], cwd=TARGET_MOUNT)
+    subprocess.run(["git", "commit", "-m", "Squashed history to reclaim space"], cwd=TARGET_MOUNT)
+    subprocess.run(["git", "branch", "-D", "master"], cwd=TARGET_MOUNT)
+    subprocess.run(["git", "branch", "-m", "master"], cwd=TARGET_MOUNT)
+    
+    print("Running garbage collection...")
+    subprocess.run(["git", "reflog", "expire", "--expire=now", "--all"], cwd=TARGET_MOUNT)
+    subprocess.run(["git", "gc", "--prune=now", "--aggressive"], cwd=TARGET_MOUNT)
+    
+    print("Regenerating timeline...")
+    from src.git_bridge import Bridge
+    bridge = Bridge(TARGET_MOUNT)
+    bridge.generate_timeline(TIMELINE_PATH)
+    
+    print("Squash complete! Reclaimed space.")
+    return "History squashed. Space reclaimed!"
+    
+def init():
+    print("GitSpaceTime Ourobrowser GUI initialized.")
+    print("Disk Status:", check_disk_space())
+    
+init()
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>GitSpaceTime Time-Machine</h1>
+        <p>Navigate your LUKS-encrypted, Git-versioned file backups.</p>
+        
+        <div>
+            <button onclick="python:step_timeline()">Step Timeline Forward</button>
+            <button onclick="python:fetch_system_data()">Refresh Ledger</button>
+        </div>
+        
+        <div id="file-tree" style="margin-top: 20px; border: 1px solid #ccc; padding: 10px; min-height: 200px;">
+            <em>File tree will render here...</em>
+        </div>
+
+        <div class="danger-zone">
+            <h3>Maintenance Options</h3>
+            <p>If your disk is nearing capacity and you receive a system alert, you can reclaim space by squashing your older history into a single snapshot. <em>Warning: You will lose the ability to rewind to specific seconds prior to the squash.</em></p>
+            <button class="danger" onclick="python:squash_history()">Option B: Squash History & Reclaim Space</button>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        setTimeout(function() {
+            console.log("Auto-clicking Refresh Ledger button");
+            var btn = document.querySelector("button");
+            btn.click();
+        }, 1500);
+    });
+    </script>
+</body>
+
+</html>
