@@ -2,7 +2,7 @@
 id: ourobrowser.root.bridge.web_channel.check
 ---
 
-# CHECK — 0_0_web_channel
+# CHECK — 0_4_0_web_channel
 
 Node `ourobrowser.root.bridge.web_channel`. Status `draft`.
 

@@ -2,7 +2,7 @@
 id: ourobrowser.root.engine.scheme_handler.check
 ---
 
-# CHECK — 0_1_scheme_handler
+# CHECK — 0_3_1_scheme_handler
 
 Node `ourobrowser.root.engine.scheme_handler`. Status `draft`.
 

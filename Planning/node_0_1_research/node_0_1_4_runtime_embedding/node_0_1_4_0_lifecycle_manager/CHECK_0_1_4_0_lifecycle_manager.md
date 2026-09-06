@@ -2,7 +2,7 @@
 id: ourobrowser.root.research.runtime_embedding.lifecycle_manager.check
 ---
 
-# CHECK — 0_0_lifecycle_manager
+# CHECK — 0_1_4_0_lifecycle_manager
 
 Node `ourobrowser.root.research.runtime_embedding.lifecycle_manager`. Status `draft`.
 

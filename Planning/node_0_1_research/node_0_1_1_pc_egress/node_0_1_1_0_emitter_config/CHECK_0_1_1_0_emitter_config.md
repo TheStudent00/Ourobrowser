@@ -2,7 +2,7 @@
 id: ourobrowser.root.research.pc_egress.emitter_config.check
 ---
 
-# CHECK — 0_0_emitter_config
+# CHECK — 0_1_1_0_emitter_config
 
 Node `ourobrowser.root.research.pc_egress.emitter_config`. Status `draft`.
 

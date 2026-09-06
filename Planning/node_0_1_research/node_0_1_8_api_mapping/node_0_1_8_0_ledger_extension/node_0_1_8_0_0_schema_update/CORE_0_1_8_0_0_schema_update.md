@@ -7,14 +7,14 @@ supersedes: null
 designation: code (patch)
 node:
     name: schema_update
-    path: Planning/node_0_1_research/node_0_7_api_mapping/node_0_0_ledger_extension/node_0_0_schema_update/CORE_0_0_schema_update.md
+    path: Planning/node_0_1_research/node_0_1_8_api_mapping/node_0_1_8_0_ledger_extension/node_0_1_8_0_0_schema_update/CORE_0_1_8_0_0_schema_update.md
 super_node:
     name: ledger_extension
     path: ../CORE_0_0_ledger_extension.md
 sub_nodes: []
 ---
 
-# CORE 0_0 — schema_update
+# CORE 0_1_8_0_0 — schema_update
 
 ## metadata
 

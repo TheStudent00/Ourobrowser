@@ -7,14 +7,14 @@ supersedes: null
 designation: code (module)
 node:
     name: fqdn_resolver
-    path: Planning/node_0_1_research/node_0_7_api_mapping/node_0_1_call_node_interceptor/node_0_0_fqdn_resolver/CORE_0_0_fqdn_resolver.md
+    path: Planning/node_0_1_research/node_0_1_8_api_mapping/node_0_1_8_1_call_node_interceptor/node_0_1_8_1_0_fqdn_resolver/CORE_0_1_8_1_0_fqdn_resolver.md
 super_node:
     name: call_node_interceptor
     path: ../CORE_0_1_call_node_interceptor.md
 sub_nodes: []
 ---
 
-# CORE 0_0 — fqdn_resolver
+# CORE 0_1_8_1_0 — fqdn_resolver
 
 ## metadata
 
