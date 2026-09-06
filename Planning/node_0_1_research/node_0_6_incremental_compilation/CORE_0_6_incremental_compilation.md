@@ -36,7 +36,8 @@ sub_nodes:
 
 ## sub_nodes
 
-*(none yet)*
+- [ninja_error_parser](node_0_0_ninja_error_parser/CORE_0_0_ninja_error_parser.md)
+- [emitter_adjustment_loop](node_0_1_emitter_adjustment_loop/CORE_0_1_emitter_adjustment_loop.md)
 
 ## definition
 

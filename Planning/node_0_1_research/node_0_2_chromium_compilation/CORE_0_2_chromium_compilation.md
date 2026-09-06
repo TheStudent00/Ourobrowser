@@ -35,7 +35,8 @@ sub_nodes:
 
 ## sub_nodes
 
-*(none yet)*
+- [gn_patch](node_0_0_gn_patch/CORE_0_0_gn_patch.md)
+- [build_runner](node_0_1_build_runner/CORE_0_1_build_runner.md)
 
 ## definition
 

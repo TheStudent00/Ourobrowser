@@ -36,7 +36,8 @@ sub_nodes:
 
 ## sub_nodes
 
-*(none yet)*
+- [depot_tools_setup](node_0_0_depot_tools_setup/CORE_0_0_depot_tools_setup.md)
+- [fetch_chromium](node_0_1_fetch_chromium/CORE_0_1_fetch_chromium.md)
 
 ## definition
 
