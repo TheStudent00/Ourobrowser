@@ -51,13 +51,19 @@ def transpile_file(rel_path):
 
     with open(abs_path, 'r') as f:
         content = f.read()
+        
+    includes = []
+    for line in content.split('\n'):
+        if line.strip().startswith('#'):
+            line = line.replace('#include "v8/include/v8.h"', '#include <Python.h>')
+            line = line.replace('#include "v8.h"', '#include <Python.h>')
+            includes.append(line)
     
     content = content.replace('#include "v8/include/v8.h"', '#include <Python.h>')
     content = content.replace('#include "v8.h"', '#include <Python.h>')
     content = content.replace(' PLATFORM_EXPORT ', ' ')
     content = content.replace(' CORE_EXPORT ', ' ')
     content = content.replace(' BLINK_PLATFORM_EXPORT ', ' ')
-    content = content.replace('}  // namespace blink', '// }  // namespace blink')
     
     with open(abs_path, 'w') as f:
         f.write(content)
@@ -83,7 +89,11 @@ def transpile_file(rel_path):
     out_ext = ".cpp"
     out_path = abs_path.rsplit('.', 1)[0] + out_ext
     if os.path.exists(out_path) and out_path != abs_path:
-        shutil.move(out_path, abs_path)
+        with open(out_path, 'r') as f:
+            out_content = f.read()
+        with open(abs_path, 'w') as f:
+            f.write('\n'.join(includes) + '\n\n' + out_content)
+        os.remove(out_path)
 
 files = get_failed_files()
 if not files:
