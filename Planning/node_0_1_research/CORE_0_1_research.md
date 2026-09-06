@@ -13,21 +13,21 @@ super_node:
     path: ../CORE_0.md
 sub_nodes:
     - name: pc_ingress
-      path: node_0_0_pc_ingress/CORE_0_0_pc_ingress.md
+      path: node_0_1_0_pc_ingress/CORE_0_1_0_pc_ingress.md
     - name: pc_egress
-      path: node_0_1_pc_egress/CORE_0_1_pc_egress.md
+      path: node_0_1_1_pc_egress/CORE_0_1_1_pc_egress.md
     - name: chromium_compilation
-      path: node_0_2_chromium_compilation/CORE_0_2_chromium_compilation.md
+      path: node_0_1_2_chromium_compilation/CORE_0_1_2_chromium_compilation.md
     - name: runtime_embedding
-      path: node_0_3_runtime_embedding/CORE_0_3_runtime_embedding.md
+      path: node_0_1_4_runtime_embedding/CORE_0_1_4_runtime_embedding.md
     - name: source_acquisition
-      path: node_0_4_source_acquisition/CORE_0_4_source_acquisition.md
+      path: node_0_1_5_source_acquisition/CORE_0_1_5_source_acquisition.md
     - name: mock_pipeline_test
-      path: node_0_5_mock_pipeline_test/CORE_0_5_mock_pipeline_test.md
+      path: node_0_1_6_mock_pipeline_test/CORE_0_1_6_mock_pipeline_test.md
     - name: incremental_compilation
-      path: node_0_6_incremental_compilation/CORE_0_6_incremental_compilation.md
+      path: node_0_1_7_incremental_compilation/CORE_0_1_7_incremental_compilation.md
     - name: api_mapping
-      path: node_0_7_api_mapping/CORE_0_7_api_mapping.md
+      path: node_0_1_8_api_mapping/CORE_0_1_8_api_mapping.md
 ---
 
 # CORE 0_1 — research

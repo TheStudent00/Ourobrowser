@@ -11,7 +11,7 @@ node:
     path: Planning/node_0_1_research/node_0_1_4_runtime_embedding/node_0_1_4_0_lifecycle_manager/CORE_0_1_4_0_lifecycle_manager.md
 super_node:
     name: runtime_embedding
-    path: ../CORE_0_3_runtime_embedding.md
+    path: ../CORE_0_1_4_runtime_embedding.md
 sub_nodes: []
 ---
 
@@ -28,7 +28,7 @@ sub_nodes: []
 
 ## super_node
 
-- [runtime_embedding](../CORE_0_3_runtime_embedding.md)
+- [runtime_embedding](../CORE_0_1_4_runtime_embedding.md)
 
 ## sub_nodes
 

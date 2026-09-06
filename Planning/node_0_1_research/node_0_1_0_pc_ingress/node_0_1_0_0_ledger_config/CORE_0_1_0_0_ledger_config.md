@@ -11,7 +11,7 @@ node:
     path: Planning/node_0_1_research/node_0_1_0_pc_ingress/node_0_1_0_0_ledger_config/CORE_0_1_0_0_ledger_config.md
 super_node:
     name: pc_ingress
-    path: ../CORE_0_0_pc_ingress.md
+    path: ../CORE_0_1_0_pc_ingress.md
 sub_nodes: []
 ---
 
@@ -28,7 +28,7 @@ sub_nodes: []
 
 ## super_node
 
-- [pc_ingress](../CORE_0_0_pc_ingress.md)
+- [pc_ingress](../CORE_0_1_0_pc_ingress.md)
 
 ## sub_nodes
 

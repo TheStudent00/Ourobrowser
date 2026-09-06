@@ -10,7 +10,7 @@ node:
     path: Planning/node_0_1_research/node_0_1_8_api_mapping/node_0_1_8_0_ledger_extension/node_0_1_8_0_0_schema_update/CORE_0_1_8_0_0_schema_update.md
 super_node:
     name: ledger_extension
-    path: ../CORE_0_0_ledger_extension.md
+    path: ../CORE_0_1_8_0_ledger_extension.md
 sub_nodes: []
 ---
 
@@ -27,7 +27,7 @@ sub_nodes: []
 
 ## super_node
 
-- [ledger_extension](../CORE_0_0_ledger_extension.md)
+- [ledger_extension](../CORE_0_1_8_0_ledger_extension.md)
 
 ## sub_nodes
 

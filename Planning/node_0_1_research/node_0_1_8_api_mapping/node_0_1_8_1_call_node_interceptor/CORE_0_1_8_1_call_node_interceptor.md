@@ -10,12 +10,12 @@ node:
     path: Planning/node_0_1_research/node_0_1_8_api_mapping/node_0_1_8_1_call_node_interceptor/CORE_0_1_8_1_call_node_interceptor.md
 super_node:
     name: api_mapping
-    path: ../CORE_0_7_api_mapping.md
+    path: ../CORE_0_1_8_api_mapping.md
 sub_nodes:
     - name: fqdn_resolver
-      path: node_0_0_fqdn_resolver/CORE_0_0_fqdn_resolver.md
+      path: node_0_1_8_1_0_fqdn_resolver/CORE_0_1_8_1_0_fqdn_resolver.md
     - name: format_evaluator
-      path: node_0_1_format_evaluator/CORE_0_1_format_evaluator.md
+      path: node_0_1_8_1_1_format_evaluator/CORE_0_1_8_1_1_format_evaluator.md
 ---
 
 # CORE 0_1_8_1 — call_node_interceptor
@@ -31,7 +31,7 @@ sub_nodes:
 
 ## super_node
 
-- [api_mapping](../CORE_0_7_api_mapping.md)
+- [api_mapping](../CORE_0_1_8_api_mapping.md)
 
 ## sub_nodes
 

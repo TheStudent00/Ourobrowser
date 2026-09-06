@@ -13,9 +13,9 @@ super_node:
     path: ../CORE_0_1_research.md
 sub_nodes:
     - name: lifecycle_manager
-      path: node_0_0_lifecycle_manager/CORE_0_0_lifecycle_manager.md
+      path: node_0_1_4_0_lifecycle_manager/CORE_0_1_4_0_lifecycle_manager.md
     - name: gil_wrapper
-      path: node_0_1_gil_wrapper/CORE_0_1_gil_wrapper.md
+      path: node_0_1_4_1_gil_wrapper/CORE_0_1_4_1_gil_wrapper.md
 ---
 
 # CORE 0_1_4 — runtime_embedding

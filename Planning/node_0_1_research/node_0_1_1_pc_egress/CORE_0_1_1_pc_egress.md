@@ -13,9 +13,9 @@ super_node:
     path: ../CORE_0_1_research.md
 sub_nodes:
     - name: emitter_config
-      path: node_0_0_emitter_config/CORE_0_0_emitter_config.md
+      path: node_0_1_1_0_emitter_config/CORE_0_1_1_0_emitter_config.md
     - name: runner_script
-      path: node_0_1_runner_script/CORE_0_1_runner_script.md
+      path: node_0_1_1_1_runner_script/CORE_0_1_1_1_runner_script.md
 ---
 
 # CORE 0_1_1 — pc_egress

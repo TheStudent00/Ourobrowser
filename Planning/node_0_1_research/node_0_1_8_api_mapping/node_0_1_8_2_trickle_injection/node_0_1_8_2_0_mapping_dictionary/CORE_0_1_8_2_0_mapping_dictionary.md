@@ -10,7 +10,7 @@ node:
     path: Planning/node_0_1_research/node_0_1_8_api_mapping/node_0_1_8_2_trickle_injection/node_0_1_8_2_0_mapping_dictionary/CORE_0_1_8_2_0_mapping_dictionary.md
 super_node:
     name: trickle_injection
-    path: ../CORE_0_2_trickle_injection.md
+    path: ../CORE_0_1_8_2_trickle_injection.md
 sub_nodes: []
 ---
 
@@ -27,7 +27,7 @@ sub_nodes: []
 
 ## super_node
 
-- [trickle_injection](../CORE_0_2_trickle_injection.md)
+- [trickle_injection](../CORE_0_1_8_2_trickle_injection.md)
 
 ## sub_nodes
 

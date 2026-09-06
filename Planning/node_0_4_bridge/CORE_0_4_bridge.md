@@ -13,7 +13,7 @@ super_node:
     path: ../CORE_0.md
 sub_nodes:
     - name: web_channel
-      path: node_1_0_web_channel/CORE_1_0_web_channel.md
+      path: node_0_4_0_web_channel/CORE_0_4_0_web_channel.md
 ---
 
 # CORE 0_4 — bridge
@@ -60,4 +60,4 @@ emitted a page Chromium refused to run.
   by the engine, so the bridge never imports the engine.
 
 Stated in full, with the values moving through it, in
-[web_channel](node_0_0_web_channel/CORE_0_0_web_channel.md).
+[web_channel](node_0_4_0_web_channel/CORE_0_4_0_web_channel.md).

@@ -11,7 +11,7 @@ node:
     path: Planning/node_0_1_research/node_0_1_1_pc_egress/node_0_1_1_0_emitter_config/CORE_0_1_1_0_emitter_config.md
 super_node:
     name: pc_egress
-    path: ../CORE_0_1_pc_egress.md
+    path: ../CORE_0_1_1_pc_egress.md
 sub_nodes: []
 ---
 
@@ -28,7 +28,7 @@ sub_nodes: []
 
 ## super_node
 
-- [pc_egress](../CORE_0_1_pc_egress.md)
+- [pc_egress](../CORE_0_1_1_pc_egress.md)
 
 ## sub_nodes
 
