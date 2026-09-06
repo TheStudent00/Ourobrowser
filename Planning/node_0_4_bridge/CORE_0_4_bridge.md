@@ -33,7 +33,7 @@ sub_nodes:
 
 ## sub_nodes
 
-- [web_channel](node_0_0_web_channel/CORE_0_0_web_channel.md)
+- [web_channel](node_0_4_0_web_channel/CORE_0_4_0_web_channel.md) — The `QWebChannel` wiring: `PythonBridge` is registered on the channel under the name `pyBridge`, the page's setup script builds the matching `QWebChannel` object, and the two ends talk.
 
 ## definition
 

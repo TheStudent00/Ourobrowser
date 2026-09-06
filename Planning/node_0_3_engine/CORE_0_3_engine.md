@@ -37,9 +37,9 @@ sub_nodes:
 
 ## sub_nodes
 
-- [browser_app](node_0_0_browser_app/CORE_0_0_browser_app.md)
-- [scheme_handler](node_0_1_scheme_handler/CORE_0_1_scheme_handler.md)
-- [executor](node_0_2_executor/CORE_0_2_executor.md)
+- [browser_app](node_0_3_0_browser_app/CORE_0_3_0_browser_app.md)
+- [scheme_handler](node_0_3_1_scheme_handler/CORE_0_3_1_scheme_handler.md) — `OurobrowserSchemeHandler` in `browser_engine.py`.
+- [executor](node_0_3_2_executor/CORE_0_3_2_executor.md) — The one shared Python execution context, and the two ways code enters it.
 
 ## definition
 
