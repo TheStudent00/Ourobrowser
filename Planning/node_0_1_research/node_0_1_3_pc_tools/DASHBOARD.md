@@ -10,9 +10,9 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 
 | field | value |
 | --- | --- |
-| id | `(none)` |
+| id | `ourobrowser.root.research.pc_tools` |
 | status | settled |
-| designation | pending |
+| designation | code (module) |
 
 ## sub-tree
 
@@ -28,7 +28,7 @@ sub-node count: 0
 
 | designation | count |
 | --- | --- |
-| pending | 1 |
+| code (module) | 1 |
 
 ## blocked
 

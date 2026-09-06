@@ -10,7 +10,7 @@ node:
     path: Planning/node_0_4_bridge/CORE_0_4_bridge.md
 super_node:
     name: Ourobrowser
-    path: ../CORE_0_planning.md
+    path: ../CORE_0.md
 sub_nodes:
     - name: web_channel
       path: node_0_4_0_web_channel/CORE_0_4_0_web_channel.md
@@ -29,7 +29,7 @@ sub_nodes:
 
 ## super_node
 
-- [Ourobrowser](../CORE_0_planning.md)
+- [Ourobrowser](../CORE_0.md)
 
 ## sub_nodes
 

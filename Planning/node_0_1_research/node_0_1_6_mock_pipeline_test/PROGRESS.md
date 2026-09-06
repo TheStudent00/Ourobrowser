@@ -9,3 +9,13 @@ status: living
   `~/Programming/PlanPlan/framework/generate_nodes.py` from the
   `nodes` register of `~/Programming/Ourobrowser/Planning/node_0_1_research/CORE_0_1_research.md`. Skeleton only — definition,
   designation, and content pending.
+
+- 2026-09-06: `mock_test_runner.sh` now runs every `.cc` in the folder,
+  not just one hard-coded file, and builds each ledger from
+  `transpiler_loop.py`'s own mapping tables rather than a copy — so what
+  the mocks show is what the trickle loop would do. Status: **done**.
+  Evidence: `bash ~/Programming/Ourobrowser/Research/mock_pipeline_test/mock_test_runner.sh`,
+  and `~/Programming/Ourobrowser/DevComms/log_002_transpiler_keeps_the_source.md` §4.
+
+- 2026-09-06: `v8_string_demo.cc` was made valid C++ — it declared
+  `void` and returned a value. Status: **done**.
