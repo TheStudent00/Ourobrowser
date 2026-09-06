@@ -16,7 +16,7 @@ sub_nodes:
       designation: code (method)
     - name: set_html
       designation: code (method)
-nodes: []
+
 ---
 
 # CORE 0_0 — web_channel
