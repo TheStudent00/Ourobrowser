@@ -10,7 +10,7 @@ node:
     path: Planning/node_0_1_research/CORE_0_1_research.md
 super_node:
     name: Ourobrowser
-    path: ../CORE_0.md
+    path: ../CORE_0_planning.md
 sub_nodes:
     - name: pc_ingress
       path: node_0_1_0_pc_ingress/CORE_0_1_0_pc_ingress.md
@@ -43,13 +43,18 @@ sub_nodes:
 
 ## super_node
 
-- [Ourobrowser](../CORE_0.md)
+- [Ourobrowser](../CORE_0_planning.md)
 
 ## sub_nodes
 
 - [pc_ingress](node_0_1_0_pc_ingress/CORE_0_1_0_pc_ingress.md) — Configure PseudoCoup (PC) to ingress the Chromium DOM-to-V8 bindings.
 - [pc_egress](node_0_1_1_pc_egress/CORE_0_1_1_pc_egress.md) — Configure PC to traverse the newly created UR-AST and emit Python C-API wrapper bindings in place of the original V8 bindings, generating native C++ files that seamlessly bridge Blink to CPython.
 - [chromium_compilation](node_0_1_2_chromium_compilation/CORE_0_1_2_chromium_compilation.md) — Modify the Chromium build system (GN/Ninja) to exclude V8 compilation, link the embedded CPython library, and compile our newly emitted `PyDOM` C++ bindings into the Blink renderer.
+- [runtime_embedding](node_0_1_4_runtime_embedding/CORE_0_1_4_runtime_embedding.md)
+- [source_acquisition](node_0_1_5_source_acquisition/CORE_0_1_5_source_acquisition.md)
+- [mock_pipeline_test](node_0_1_6_mock_pipeline_test/CORE_0_1_6_mock_pipeline_test.md)
+- [incremental_compilation](node_0_1_7_incremental_compilation/CORE_0_1_7_incremental_compilation.md)
+- [api_mapping](node_0_1_8_api_mapping/CORE_0_1_8_api_mapping.md)
 
 ## definition
 
