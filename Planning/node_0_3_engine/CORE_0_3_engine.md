@@ -37,9 +37,7 @@ sub_nodes:
 
 ## sub_nodes
 
-- [browser_app](node_0_0_browser_app/CORE_0_0_browser_app.md)
-- [scheme_handler](node_0_1_scheme_handler/CORE_0_1_scheme_handler.md)
-- [executor](node_0_2_executor/CORE_0_2_executor.md)
+*(none yet)*
 
 ## definition
 

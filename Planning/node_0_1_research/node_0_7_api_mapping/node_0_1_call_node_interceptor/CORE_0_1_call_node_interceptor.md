@@ -24,7 +24,7 @@ sub_nodes:
 
 - **id:** ourobrowser.root.research.api_mapping.call_node_interceptor
 - **level:** 3
-- **status:** draft
+- **status:** settled
 - **designation:** code (module)
 - **settled_by:** Dee
 - **supersedes:** null
@@ -35,8 +35,7 @@ sub_nodes:
 
 ## sub_nodes
 
-- [fqdn_resolver](node_0_0_fqdn_resolver/CORE_0_0_fqdn_resolver.md) — Flatten complex `AttributeNode` and `IdentifierNode` combinations into a single FQDN string before querying.
-- [format_evaluator](node_0_1_format_evaluator/CORE_0_1_format_evaluator.md) — Evaluate parameter string formatting so the transpiler can drop or rearrange arguments (e.g. mapping `{1}` to drop `{0}`).
+*(none yet)*
 
 ## definition
 

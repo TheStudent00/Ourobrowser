@@ -18,11 +18,16 @@ sub_nodes: []
 
 ## metadata
 
-*(pending)*
+- **id:** ourobrowser.root.research.mock_pipeline_test.mock_test_runner
+- **level:** 1
+- **status:** settled
+- **designation:** code (module)
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [mock_pipeline_test](../CORE_0_5_mock_pipeline_test.md)
 
 ## sub_nodes
 

@@ -19,18 +19,20 @@ sub_nodes: []
 
 ## metadata
 
-**Goal:** Define run_ingress.sh
-
-**Details:**
-Create the bash script executing `python3 -m pseudocoup.cli` with `--stage ingress-only` to output `ur_ast_chromium_bindings.json`.
+- **id:** ourobrowser.root.research.pc_ingress.runner_script
+- **level:** 1
+- **status:** settled
+- **designation:** code (module)
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [pc_ingress](../CORE_0_0_pc_ingress.md)
 
 ## sub_nodes
 
-*(none — leaf node)*
+*(none yet)*
 
 ## definition
 

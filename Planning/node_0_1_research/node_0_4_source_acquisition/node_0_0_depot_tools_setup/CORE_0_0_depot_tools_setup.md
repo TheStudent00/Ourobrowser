@@ -18,11 +18,16 @@ sub_nodes: []
 
 ## metadata
 
-*(pending)*
+- **id:** ourobrowser.root.research.source_acquisition.depot_tools_setup
+- **level:** 1
+- **status:** settled
+- **designation:** code (module)
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [source_acquisition](../CORE_0_4_source_acquisition.md)
 
 ## sub_nodes
 

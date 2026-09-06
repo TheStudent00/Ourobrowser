@@ -33,7 +33,7 @@ sub_nodes:
 
 ## sub_nodes
 
-- [web_channel](node_0_0_web_channel/CORE_0_0_web_channel.md)
+*(none yet)*
 
 ## definition
 

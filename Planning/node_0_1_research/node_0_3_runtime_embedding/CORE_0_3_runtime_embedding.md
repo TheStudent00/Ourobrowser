@@ -35,8 +35,7 @@ sub_nodes:
 
 ## sub_nodes
 
-- [lifecycle_manager](node_0_0_lifecycle_manager/CORE_0_0_lifecycle_manager.md)
-- [gil_wrapper](node_0_1_gil_wrapper/CORE_0_1_gil_wrapper.md)
+*(none yet)*
 
 ## definition
 

@@ -34,6 +34,16 @@ GLOBAL_FUNCTIONS = {
     ".ToLocalChecked": "{self}",
 }
 
+def write_ledger(ledger_path):
+    """The one place the mapping tables become a PCv3.1 ledger file. A type
+    key gets a leading `.`: the ledger's global-type key for a written type
+    (`.v8::Isolate*`), as opposed to a per-variable key (`Foo.isolate`)."""
+    ledger_data = {"types": {f".{k}": v for k, v in GLOBAL_TYPES.items()},
+                   "functions": dict(GLOBAL_FUNCTIONS)}
+    with open(ledger_path, 'w') as f:
+        json.dump(ledger_data, f, indent=4)
+
+
 def get_failed_files():
     files = set()
     try:
@@ -77,14 +87,7 @@ def transpile_file(rel_path):
     with open(abs_path, 'w') as f:
         f.write(content)
         
-    ledger_data = {"types": {}}
-    for v8_type, py_type in GLOBAL_TYPES.items():
-        ledger_data["types"][f".{v8_type}"] = py_type
-        
-    ledger_data["functions"] = GLOBAL_FUNCTIONS
-        
-    with open(ledger_path, 'w') as f:
-        json.dump(ledger_data, f, indent=4)
+    write_ledger(ledger_path)
         
     print(f"Transpiling {rel_path}...")
     try:
@@ -100,10 +103,15 @@ def transpile_file(rel_path):
     if os.path.exists(out_path) and out_path != abs_path:
         shutil.move(out_path, abs_path)
 
-files = get_failed_files()
-if not files:
-    print("No files to transpile!")
-else:
+def main():
+    files = get_failed_files()
+    if not files:
+        print("No files to transpile!")
+        return
     for f in files:
         transpile_file(f)
     print("Transpilation of failed files complete!")
+
+
+if __name__ == "__main__":
+    main()

@@ -18,11 +18,16 @@ sub_nodes: []
 
 ## metadata
 
-*(pending)*
+- **id:** ourobrowser.root.research.incremental_compilation.emitter_adjustment_loop
+- **level:** 1
+- **status:** draft
+- **designation:** code (module)
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [incremental_compilation](../CORE_0_6_incremental_compilation.md)
 
 ## sub_nodes
 

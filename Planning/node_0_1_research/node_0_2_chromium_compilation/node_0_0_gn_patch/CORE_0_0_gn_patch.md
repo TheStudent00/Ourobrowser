@@ -19,18 +19,20 @@ sub_nodes: []
 
 ## metadata
 
-**Goal:** Write build_v8_to_python.patch
-
-**Details:**
-Draft the unified diff modifying Chromium's `BUILD.gn` to remove `//v8` dependencies and inject `//build/config/python:embed`.
+- **id:** ourobrowser.root.research.chromium_compilation.gn_patch
+- **level:** 1
+- **status:** settled
+- **designation:** code (patch)
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [chromium_compilation](../CORE_0_2_chromium_compilation.md)
 
 ## sub_nodes
 
-*(none — leaf node)*
+*(none yet)*
 
 ## definition
 

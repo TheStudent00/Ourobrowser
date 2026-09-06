@@ -18,11 +18,16 @@ sub_nodes: []
 
 ## metadata
 
-*(pending)*
+- **id:** ourobrowser.root.tools
+- **level:** 1
+- **status:** draft
+- **designation:** pending
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [Ourobrowser](../CORE_0.md)
 
 ## sub_nodes
 

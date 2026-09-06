@@ -19,18 +19,20 @@ sub_nodes: []
 
 ## metadata
 
-**Goal:** Write build_chromium.sh
-
-**Details:**
-Draft the shell script wrapping `gn gen` (with `use_v8=false`) and `autoninja` to compile the final browser binary.
+- **id:** ourobrowser.root.research.chromium_compilation.build_runner
+- **level:** 1
+- **status:** settled
+- **designation:** code (module)
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [chromium_compilation](../CORE_0_2_chromium_compilation.md)
 
 ## sub_nodes
 
-*(none — leaf node)*
+*(none yet)*
 
 ## definition
 

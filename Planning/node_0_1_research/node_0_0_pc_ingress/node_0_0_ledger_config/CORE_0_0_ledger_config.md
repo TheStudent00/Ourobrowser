@@ -19,18 +19,20 @@ sub_nodes: []
 
 ## metadata
 
-**Goal:** Define pc_ledger_v8_sever.yaml
-
-**Details:**
-Create the yaml configuration file mapping `third_party/blink/renderer/bindings/core/v8/` and establishing exact dead-ends for V8 datatypes (e.g., `v8::Isolate`).
+- **id:** ourobrowser.root.research.pc_ingress.ledger_config
+- **level:** 1
+- **status:** settled
+- **designation:** code (config)
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [pc_ingress](../CORE_0_0_pc_ingress.md)
 
 ## sub_nodes
 
-*(none — leaf node)*
+*(none yet)*
 
 ## definition
 

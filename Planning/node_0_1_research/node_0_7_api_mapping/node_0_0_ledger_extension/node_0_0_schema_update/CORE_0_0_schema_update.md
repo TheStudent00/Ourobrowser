@@ -20,7 +20,7 @@ sub_nodes: []
 
 - **id:** ourobrowser.root.research.api_mapping.ledger_extension.schema_update
 - **level:** 4
-- **status:** draft
+- **status:** settled
 - **designation:** code (patch)
 - **settled_by:** Dee
 - **supersedes:** null
@@ -31,7 +31,7 @@ sub_nodes: []
 
 ## sub_nodes
 
-*(none)*
+*(none yet)*
 
 ## definition
 

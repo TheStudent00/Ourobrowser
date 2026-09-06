@@ -19,18 +19,20 @@ sub_nodes: []
 
 ## metadata
 
-**Goal:** Define run_egress.sh
-
-**Details:**
-Create the bash script taking the UR-AST and outputting natively compilable C++ bindings to `third_party/blink/renderer/bindings/core/python/`.
+- **id:** ourobrowser.root.research.pc_egress.runner_script
+- **level:** 1
+- **status:** settled
+- **designation:** code (module)
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [pc_egress](../CORE_0_1_pc_egress.md)
 
 ## sub_nodes
 
-*(none — leaf node)*
+*(none yet)*
 
 ## definition
 

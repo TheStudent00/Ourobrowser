@@ -19,18 +19,20 @@ sub_nodes: []
 
 ## metadata
 
-**Goal:** Implement ouro_gil_scope.h
-
-**Details:**
-Write the C++ RAII class `PyGILScope` that acquires and releases the Python Global Interpreter Lock during multithreaded DOM event callbacks.
+- **id:** ourobrowser.root.research.runtime_embedding.gil_wrapper
+- **level:** 1
+- **status:** settled
+- **designation:** code (class)
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [runtime_embedding](../CORE_0_3_runtime_embedding.md)
 
 ## sub_nodes
 
-*(none — leaf node)*
+*(none yet)*
 
 ## definition
 

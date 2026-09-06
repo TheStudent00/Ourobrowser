@@ -18,11 +18,16 @@ sub_nodes: []
 
 ## metadata
 
-*(pending)*
+- **id:** ourobrowser.root.research.incremental_compilation.ninja_error_parser
+- **level:** 1
+- **status:** settled
+- **designation:** code (module)
+- **settled_by:** Dee
+- **supersedes:** null
 
 ## super_node
 
-*(none)*
+- [incremental_compilation](../CORE_0_6_incremental_compilation.md)
 
 ## sub_nodes
 

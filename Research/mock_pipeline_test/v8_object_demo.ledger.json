@@ -1,12 +1,26 @@
 {
     "types": {
+        ".v8::Local<v8::Context>": "PyDictObject*",
+        ".v8::MaybeLocal<v8::Context>": "PyDictObject*",
+        ".v8::Isolate*": "PyInterpreterState*",
+        ".v8::Local<v8::Value>": "PyObject*",
+        ".v8::Local<v8::Object>": "PyObject*",
+        ".v8::Local<v8::String>": "PyObject*",
+        ".const v8::FunctionCallbackInfo<v8::Value>&": "PyObject*",
         ".CreateV8Object": "void",
-        "CreateV8Object.isolate": "PyInterpreterState*",
-        "CreateV8Object.context": "PyDictObject*",
-        "CreateV8Object.obj": "PyObject*",
-        "CreateV8Object.key": "PyObject*",
-        "CreateV8Object.value": "PyObject*"
+        "CreateV8Object.isolate": "v8::Isolate*",
+        "CreateV8Object.context": "v8::Local<v8::Context>",
+        "CreateV8Object.obj": "v8::Local<v8::Object>",
+        "CreateV8Object.key": "v8::Local<v8::String>",
+        "CreateV8Object.value": "v8::Local<v8::String>"
     },
     "wrappers": [],
-    "memory_erasure": {}
+    "memory_erasure": {},
+    "functions": {
+        "v8::String::NewFromUtf8": "PyUnicode_FromString({1})",
+        "v8::Isolate::GetCurrent": "PyInterpreterState_Get",
+        "v8::Exception::Error": "PyErr_SetString(PyExc_RuntimeError, {0})",
+        "v8::Exception::TypeError": "PyErr_SetString(PyExc_TypeError, {0})",
+        ".ToLocalChecked": "{self}"
+    }
 }

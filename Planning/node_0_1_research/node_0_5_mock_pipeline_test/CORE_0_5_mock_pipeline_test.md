@@ -36,8 +36,7 @@ sub_nodes:
 
 ## sub_nodes
 
-- [mock_v8_binding](node_0_0_mock_v8_binding/CORE_0_0_mock_v8_binding.md)
-- [mock_test_runner](node_0_1_mock_test_runner/CORE_0_1_mock_test_runner.md)
+*(none yet)*
 
 ## definition
 
