@@ -2,7 +2,7 @@
 id: ourobrowser.root.research.mock_pipeline_test.mock_v8_binding.check
 ---
 
-# CHECK — 0_0_mock_v8_binding
+# CHECK — 0_1_6_0_mock_v8_binding
 
 Node `ourobrowser.root.research.mock_pipeline_test.mock_v8_binding`. Status `draft`.
 

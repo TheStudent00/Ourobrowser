@@ -2,7 +2,7 @@
 id: ourobrowser.root.research.chromium_compilation.gn_patch.check
 ---
 
-# CHECK — 0_0_gn_patch
+# CHECK — 0_1_2_0_gn_patch
 
 Node `ourobrowser.root.research.chromium_compilation.gn_patch`. Status `draft`.
 

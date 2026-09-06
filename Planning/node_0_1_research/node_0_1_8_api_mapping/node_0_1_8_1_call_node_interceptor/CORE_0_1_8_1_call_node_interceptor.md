@@ -7,7 +7,7 @@ supersedes: null
 designation: code (module)
 node:
     name: call_node_interceptor
-    path: Planning/node_0_1_research/node_0_7_api_mapping/node_0_1_call_node_interceptor/CORE_0_1_call_node_interceptor.md
+    path: Planning/node_0_1_research/node_0_1_8_api_mapping/node_0_1_8_1_call_node_interceptor/CORE_0_1_8_1_call_node_interceptor.md
 super_node:
     name: api_mapping
     path: ../CORE_0_7_api_mapping.md
@@ -18,7 +18,7 @@ sub_nodes:
       path: node_0_1_format_evaluator/CORE_0_1_format_evaluator.md
 ---
 
-# CORE 0_7_1 — call_node_interceptor
+# CORE 0_1_8_1 — call_node_interceptor
 
 ## metadata
 

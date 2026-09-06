@@ -1,6 +1,6 @@
 ---
 id: ourobrowser.root.research.runtime_embedding.gil_wrapper
-level: 1
+level: 3
 status: settled
 settled_by: Dee
 supersedes: null
@@ -8,19 +8,19 @@ designation: code (class)
 decision: node_0_1_gil_wrapper/CORE_0_1_gil_wrapper.md#settled
 node:
     name: gil_wrapper
-    path: node_0_3_runtime_embedding/node_0_1_gil_wrapper/CORE_0_1_gil_wrapper.md
+    path: Planning/node_0_1_research/node_0_1_4_runtime_embedding/node_0_1_4_1_gil_wrapper/CORE_0_1_4_1_gil_wrapper.md
 super_node:
     name: runtime_embedding
     path: ../CORE_0_3_runtime_embedding.md
 sub_nodes: []
 ---
 
-# CORE 0_1 — gil_wrapper
+# CORE 0_1_4_1 — gil_wrapper
 
 ## metadata
 
 - **id:** ourobrowser.root.research.runtime_embedding.gil_wrapper
-- **level:** 1
+- **level:** 3
 - **status:** settled
 - **designation:** code (class)
 - **settled_by:** Dee

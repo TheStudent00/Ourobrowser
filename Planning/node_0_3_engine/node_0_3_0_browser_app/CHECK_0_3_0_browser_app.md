@@ -2,7 +2,7 @@
 id: ourobrowser.root.engine.browser_app.check
 ---
 
-# CHECK — 0_0_browser_app
+# CHECK — 0_3_0_browser_app
 
 Node `ourobrowser.root.engine.browser_app`. Status `draft`.
 

@@ -7,14 +7,14 @@ supersedes: null
 designation: code (patch)
 node:
     name: ledger_writer
-    path: Planning/node_0_1_research/node_0_7_api_mapping/node_0_2_trickle_injection/node_0_1_ledger_writer/CORE_0_1_ledger_writer.md
+    path: Planning/node_0_1_research/node_0_1_8_api_mapping/node_0_1_8_2_trickle_injection/node_0_1_8_2_1_ledger_writer/CORE_0_1_8_2_1_ledger_writer.md
 super_node:
     name: trickle_injection
     path: ../CORE_0_2_trickle_injection.md
 sub_nodes: []
 ---
 
-# CORE 0_1 — ledger_writer
+# CORE 0_1_8_2_1 — ledger_writer
 
 ## metadata
 

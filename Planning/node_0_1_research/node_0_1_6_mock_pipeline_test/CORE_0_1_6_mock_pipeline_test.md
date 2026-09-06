@@ -1,13 +1,13 @@
 ---
 id: ourobrowser.root.research.mock_pipeline_test
-level: 1
+level: 2
 status: draft
 settled_by: Dee
 supersedes: null
 designation: work
 node:
     name: mock_pipeline_test
-    path: node_0_1_research/node_0_5_mock_pipeline_test/CORE_0_5_mock_pipeline_test.md
+    path: Planning/node_0_1_research/node_0_1_6_mock_pipeline_test/CORE_0_1_6_mock_pipeline_test.md
 super_node:
     name: research
     path: ../CORE_0_1_research.md
@@ -19,12 +19,12 @@ sub_nodes:
 
 ---
 
-# CORE 0_5 — mock_pipeline_test
+# CORE 0_1_6 — mock_pipeline_test
 
 ## metadata
 
 - **id:** ourobrowser.root.research.mock_pipeline_test
-- **level:** 1
+- **level:** 2
 - **status:** draft
 - **designation:** work
 - **settled_by:** Dee

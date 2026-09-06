@@ -7,7 +7,7 @@ supersedes: null
 designation: pending
 node:
     name: pc_ingress
-    path: Planning/node_0_1_research/node_0_0_pc_ingress/CORE_0_0_pc_ingress.md
+    path: Planning/node_0_1_research/node_0_1_0_pc_ingress/CORE_0_1_0_pc_ingress.md
 super_node:
     name: research
     path: ../CORE_0_1_research.md
@@ -18,7 +18,7 @@ sub_nodes:
       path: node_0_1_runner_script/CORE_0_1_runner_script.md
 ---
 
-# CORE 0_0 — pc_ingress
+# CORE 0_1_0 — pc_ingress
 
 ## metadata
 

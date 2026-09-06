@@ -1,25 +1,25 @@
 ---
 id: ourobrowser.root.engine.executor
-level: 1
+level: 2
 status: draft
 settled_by: Dee
 supersedes: null
 designation: pending
 node:
     name: executor
-    path: node_0_3_engine/node_0_2_executor/CORE_0_2_executor.md
+    path: Planning/node_0_3_engine/node_0_3_2_executor/CORE_0_3_2_executor.md
 super_node:
     name: engine
     path: ../CORE_0_3_engine.md
 sub_nodes: []
 ---
 
-# CORE 0_2 — executor
+# CORE 0_3_2 — executor
 
 ## metadata
 
 - **id:** ourobrowser.root.engine.executor
-- **level:** 1
+- **level:** 2
 - **status:** draft
 - **designation:** pending
 - **settled_by:** Dee

@@ -1,25 +1,25 @@
 ---
 id: ourobrowser.root.research.incremental_compilation.ninja_error_parser
-level: 1
+level: 3
 status: settled
 settled_by: Dee
 supersedes: null
 designation: code (module)
 node:
     name: ninja_error_parser
-    path: node_0_6_incremental_compilation/node_0_0_ninja_error_parser/CORE_0_0_ninja_error_parser.md
+    path: Planning/node_0_1_research/node_0_1_7_incremental_compilation/node_0_1_7_0_ninja_error_parser/CORE_0_1_7_0_ninja_error_parser.md
 super_node:
     name: incremental_compilation
     path: ../CORE_0_6_incremental_compilation.md
 sub_nodes: []
 ---
 
-# CORE 0_0 — ninja_error_parser
+# CORE 0_1_7_0 — ninja_error_parser
 
 ## metadata
 
 - **id:** ourobrowser.root.research.incremental_compilation.ninja_error_parser
-- **level:** 1
+- **level:** 3
 - **status:** settled
 - **designation:** code (module)
 - **settled_by:** Dee

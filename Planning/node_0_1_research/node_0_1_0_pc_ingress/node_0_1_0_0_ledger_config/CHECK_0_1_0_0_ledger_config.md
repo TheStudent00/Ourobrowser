@@ -2,7 +2,7 @@
 id: ourobrowser.root.research.pc_ingress.ledger_config.check
 ---
 
-# CHECK — 0_0_ledger_config
+# CHECK — 0_1_0_0_ledger_config
 
 Node `ourobrowser.root.research.pc_ingress.ledger_config`. Status `draft`.
 

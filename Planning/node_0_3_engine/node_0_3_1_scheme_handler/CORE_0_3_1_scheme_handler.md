@@ -1,13 +1,13 @@
 ---
 id: ourobrowser.root.engine.scheme_handler
-level: 1
+level: 2
 status: draft
 settled_by: Dee
 supersedes: null
 designation: pending
 node:
     name: scheme_handler
-    path: node_0_3_engine/node_0_1_scheme_handler/CORE_0_1_scheme_handler.md
+    path: Planning/node_0_3_engine/node_0_3_1_scheme_handler/CORE_0_3_1_scheme_handler.md
 super_node:
     name: engine
     path: ../CORE_0_3_engine.md
@@ -21,7 +21,7 @@ sub_nodes:
 nodes: []
 ---
 
-# CORE 0_1 — scheme_handler
+# CORE 0_3_1 — scheme_handler
 
 ## metadata
 

@@ -1,25 +1,25 @@
 ---
 id: ourobrowser.root.research.source_acquisition.fetch_chromium
-level: 1
+level: 3
 status: settled
 settled_by: Dee
 supersedes: null
 designation: code (module)
 node:
     name: fetch_chromium
-    path: node_0_4_source_acquisition/node_0_1_fetch_chromium/CORE_0_1_fetch_chromium.md
+    path: Planning/node_0_1_research/node_0_1_5_source_acquisition/node_0_1_5_1_fetch_chromium/CORE_0_1_5_1_fetch_chromium.md
 super_node:
     name: source_acquisition
     path: ../CORE_0_4_source_acquisition.md
 sub_nodes: []
 ---
 
-# CORE 0_1 — fetch_chromium
+# CORE 0_1_5_1 — fetch_chromium
 
 ## metadata
 
 - **id:** ourobrowser.root.research.source_acquisition.fetch_chromium
-- **level:** 1
+- **level:** 3
 - **status:** settled
 - **designation:** code (module)
 - **settled_by:** Dee

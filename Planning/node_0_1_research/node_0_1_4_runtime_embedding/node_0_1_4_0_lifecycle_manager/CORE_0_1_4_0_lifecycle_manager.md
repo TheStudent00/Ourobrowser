@@ -1,6 +1,6 @@
 ---
 id: ourobrowser.root.research.runtime_embedding.lifecycle_manager
-level: 1
+level: 3
 status: settled
 settled_by: Dee
 supersedes: null
@@ -8,19 +8,19 @@ designation: code (module)
 decision: node_0_0_lifecycle_manager/CORE_0_0_lifecycle_manager.md#settled
 node:
     name: lifecycle_manager
-    path: node_0_3_runtime_embedding/node_0_0_lifecycle_manager/CORE_0_0_lifecycle_manager.md
+    path: Planning/node_0_1_research/node_0_1_4_runtime_embedding/node_0_1_4_0_lifecycle_manager/CORE_0_1_4_0_lifecycle_manager.md
 super_node:
     name: runtime_embedding
     path: ../CORE_0_3_runtime_embedding.md
 sub_nodes: []
 ---
 
-# CORE 0_0 — lifecycle_manager
+# CORE 0_1_4_0 — lifecycle_manager
 
 ## metadata
 
 - **id:** ourobrowser.root.research.runtime_embedding.lifecycle_manager
-- **level:** 1
+- **level:** 3
 - **status:** settled
 - **designation:** code (module)
 - **settled_by:** Dee

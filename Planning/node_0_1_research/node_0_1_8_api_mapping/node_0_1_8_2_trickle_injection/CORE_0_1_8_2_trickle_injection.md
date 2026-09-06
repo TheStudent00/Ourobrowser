@@ -7,7 +7,7 @@ supersedes: null
 designation: code (module)
 node:
     name: trickle_injection
-    path: Planning/node_0_1_research/node_0_7_api_mapping/node_0_2_trickle_injection/CORE_0_2_trickle_injection.md
+    path: Planning/node_0_1_research/node_0_1_8_api_mapping/node_0_1_8_2_trickle_injection/CORE_0_1_8_2_trickle_injection.md
 super_node:
     name: api_mapping
     path: ../CORE_0_7_api_mapping.md
@@ -18,7 +18,7 @@ sub_nodes:
       path: node_0_1_ledger_writer/CORE_0_1_ledger_writer.md
 ---
 
-# CORE 0_7_2 — trickle_injection
+# CORE 0_1_8_2 — trickle_injection
 
 ## metadata
 

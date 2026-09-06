@@ -1,13 +1,13 @@
 ---
 id: ourobrowser.root.research.incremental_compilation
-level: 1
+level: 2
 status: draft
 settled_by: Dee
 supersedes: null
 designation: work
 node:
     name: incremental_compilation
-    path: node_0_1_research/node_0_6_incremental_compilation/CORE_0_6_incremental_compilation.md
+    path: Planning/node_0_1_research/node_0_1_7_incremental_compilation/CORE_0_1_7_incremental_compilation.md
 super_node:
     name: research
     path: ../CORE_0_1_research.md
@@ -19,12 +19,12 @@ sub_nodes:
 
 ---
 
-# CORE 0_6 — incremental_compilation
+# CORE 0_1_7 — incremental_compilation
 
 ## metadata
 
 - **id:** ourobrowser.root.research.incremental_compilation
-- **level:** 1
+- **level:** 2
 - **status:** draft
 - **designation:** work
 - **settled_by:** Dee

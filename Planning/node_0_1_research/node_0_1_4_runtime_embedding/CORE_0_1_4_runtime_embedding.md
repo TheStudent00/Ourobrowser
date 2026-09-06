@@ -7,7 +7,7 @@ supersedes: null
 designation: pending
 node:
     name: runtime_embedding
-    path: Planning/node_0_1_research/node_0_3_runtime_embedding/CORE_0_3_runtime_embedding.md
+    path: Planning/node_0_1_research/node_0_1_4_runtime_embedding/CORE_0_1_4_runtime_embedding.md
 super_node:
     name: research
     path: ../CORE_0_1_research.md
@@ -18,7 +18,7 @@ sub_nodes:
       path: node_0_1_gil_wrapper/CORE_0_1_gil_wrapper.md
 ---
 
-# CORE 0_3 — runtime_embedding
+# CORE 0_1_4 — runtime_embedding
 
 ## metadata
 

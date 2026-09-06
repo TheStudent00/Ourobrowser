@@ -7,14 +7,14 @@ supersedes: null
 designation: code (module)
 node:
     name: format_evaluator
-    path: Planning/node_0_1_research/node_0_7_api_mapping/node_0_1_call_node_interceptor/node_0_1_format_evaluator/CORE_0_1_format_evaluator.md
+    path: Planning/node_0_1_research/node_0_1_8_api_mapping/node_0_1_8_1_call_node_interceptor/node_0_1_8_1_1_format_evaluator/CORE_0_1_8_1_1_format_evaluator.md
 super_node:
     name: call_node_interceptor
     path: ../CORE_0_1_call_node_interceptor.md
 sub_nodes: []
 ---
 
-# CORE 0_1 — format_evaluator
+# CORE 0_1_8_1_1 — format_evaluator
 
 ## metadata
 

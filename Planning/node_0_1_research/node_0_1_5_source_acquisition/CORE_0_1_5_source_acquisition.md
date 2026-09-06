@@ -1,13 +1,13 @@
 ---
 id: ourobrowser.root.research.source_acquisition
-level: 1
+level: 2
 status: draft
 settled_by: Dee
 supersedes: null
 designation: work
 node:
     name: source_acquisition
-    path: node_0_1_research/node_0_4_source_acquisition/CORE_0_4_source_acquisition.md
+    path: Planning/node_0_1_research/node_0_1_5_source_acquisition/CORE_0_1_5_source_acquisition.md
 super_node:
     name: research
     path: ../CORE_0_1_research.md
@@ -19,12 +19,12 @@ sub_nodes:
 
 ---
 
-# CORE 0_4 — source_acquisition
+# CORE 0_1_5 — source_acquisition
 
 ## metadata
 
 - **id:** ourobrowser.root.research.source_acquisition
-- **level:** 1
+- **level:** 2
 - **status:** draft
 - **designation:** work
 - **settled_by:** Dee

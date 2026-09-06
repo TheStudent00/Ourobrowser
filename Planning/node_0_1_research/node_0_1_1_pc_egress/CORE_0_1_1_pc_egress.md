@@ -7,7 +7,7 @@ supersedes: null
 designation: settled
 node:
     name: pc_egress
-    path: Planning/node_0_1_research/node_0_1_pc_egress/CORE_0_1_pc_egress.md
+    path: Planning/node_0_1_research/node_0_1_1_pc_egress/CORE_0_1_1_pc_egress.md
 super_node:
     name: research
     path: ../CORE_0_1_research.md
@@ -18,7 +18,7 @@ sub_nodes:
       path: node_0_1_runner_script/CORE_0_1_runner_script.md
 ---
 
-# CORE 0_1 — pc_egress
+# CORE 0_1_1 — pc_egress
 
 ## metadata
 

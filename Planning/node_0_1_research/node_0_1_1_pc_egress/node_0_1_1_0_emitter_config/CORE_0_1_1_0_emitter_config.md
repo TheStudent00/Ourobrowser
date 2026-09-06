@@ -1,6 +1,6 @@
 ---
 id: ourobrowser.root.research.pc_egress.emitter_config
-level: 1
+level: 3
 status: settled
 settled_by: Dee
 supersedes: null
@@ -8,19 +8,19 @@ designation: code (config)
 decision: node_0_0_emitter_config/CORE_0_0_emitter_config.md#settled
 node:
     name: emitter_config
-    path: node_0_1_pc_egress/node_0_0_emitter_config/CORE_0_0_emitter_config.md
+    path: Planning/node_0_1_research/node_0_1_1_pc_egress/node_0_1_1_0_emitter_config/CORE_0_1_1_0_emitter_config.md
 super_node:
     name: pc_egress
     path: ../CORE_0_1_pc_egress.md
 sub_nodes: []
 ---
 
-# CORE 0_0 — emitter_config
+# CORE 0_1_1_0 — emitter_config
 
 ## metadata
 
 - **id:** ourobrowser.root.research.pc_egress.emitter_config
-- **level:** 1
+- **level:** 3
 - **status:** settled
 - **designation:** code (config)
 - **settled_by:** Dee

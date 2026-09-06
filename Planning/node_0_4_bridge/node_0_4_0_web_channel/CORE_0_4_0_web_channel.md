@@ -1,13 +1,13 @@
 ---
 id: ourobrowser.root.bridge.web_channel
-level: 1
+level: 2
 status: draft
 settled_by: Dee
 supersedes: null
 designation: pending
 node:
     name: web_channel
-    path: node_0_4_bridge/node_0_0_web_channel/CORE_0_0_web_channel.md
+    path: Planning/node_0_4_bridge/node_0_4_0_web_channel/CORE_0_4_0_web_channel.md
 super_node:
     name: bridge
     path: ../CORE_0_4_bridge.md
@@ -19,7 +19,7 @@ sub_nodes:
 nodes: []
 ---
 
-# CORE 0_0 — web_channel
+# CORE 0_4_0 — web_channel
 
 ## metadata
 

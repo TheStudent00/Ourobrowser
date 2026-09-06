@@ -1,25 +1,25 @@
 ---
 id: ourobrowser.root.research.incremental_compilation.emitter_adjustment_loop
-level: 1
+level: 3
 status: draft
 settled_by: Dee
 supersedes: null
 designation: code (module)
 node:
     name: emitter_adjustment_loop
-    path: node_0_6_incremental_compilation/node_0_1_emitter_adjustment_loop/CORE_0_1_emitter_adjustment_loop.md
+    path: Planning/node_0_1_research/node_0_1_7_incremental_compilation/node_0_1_7_1_emitter_adjustment_loop/CORE_0_1_7_1_emitter_adjustment_loop.md
 super_node:
     name: incremental_compilation
     path: ../CORE_0_6_incremental_compilation.md
 sub_nodes: []
 ---
 
-# CORE 0_1 — emitter_adjustment_loop
+# CORE 0_1_7_1 — emitter_adjustment_loop
 
 ## metadata
 
 - **id:** ourobrowser.root.research.incremental_compilation.emitter_adjustment_loop
-- **level:** 1
+- **level:** 3
 - **status:** draft
 - **designation:** code (module)
 - **settled_by:** Dee

@@ -1,25 +1,25 @@
 ---
 id: ourobrowser.root.research.mock_pipeline_test.mock_v8_binding
-level: 1
+level: 3
 status: settled
 settled_by: Dee
 supersedes: null
 designation: code (module)
 node:
     name: mock_v8_binding
-    path: node_0_5_mock_pipeline_test/node_0_0_mock_v8_binding/CORE_0_0_mock_v8_binding.md
+    path: Planning/node_0_1_research/node_0_1_6_mock_pipeline_test/node_0_1_6_0_mock_v8_binding/CORE_0_1_6_0_mock_v8_binding.md
 super_node:
     name: mock_pipeline_test
     path: ../CORE_0_5_mock_pipeline_test.md
 sub_nodes: []
 ---
 
-# CORE 0_0 — mock_v8_binding
+# CORE 0_1_6_0 — mock_v8_binding
 
 ## metadata
 
 - **id:** ourobrowser.root.research.mock_pipeline_test.mock_v8_binding
-- **level:** 1
+- **level:** 3
 - **status:** settled
 - **designation:** code (module)
 - **settled_by:** Dee

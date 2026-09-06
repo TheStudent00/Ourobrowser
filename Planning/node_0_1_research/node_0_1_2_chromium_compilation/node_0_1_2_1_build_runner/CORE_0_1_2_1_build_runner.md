@@ -1,6 +1,6 @@
 ---
 id: ourobrowser.root.research.chromium_compilation.build_runner
-level: 1
+level: 3
 status: settled
 settled_by: Dee
 supersedes: null
@@ -8,19 +8,19 @@ designation: code (module)
 decision: node_0_1_build_runner/CORE_0_1_build_runner.md#settled
 node:
     name: build_runner
-    path: node_0_2_chromium_compilation/node_0_1_build_runner/CORE_0_1_build_runner.md
+    path: Planning/node_0_1_research/node_0_1_2_chromium_compilation/node_0_1_2_1_build_runner/CORE_0_1_2_1_build_runner.md
 super_node:
     name: chromium_compilation
     path: ../CORE_0_2_chromium_compilation.md
 sub_nodes: []
 ---
 
-# CORE 0_1 — build_runner
+# CORE 0_1_2_1 — build_runner
 
 ## metadata
 
 - **id:** ourobrowser.root.research.chromium_compilation.build_runner
-- **level:** 1
+- **level:** 3
 - **status:** settled
 - **designation:** code (module)
 - **settled_by:** Dee

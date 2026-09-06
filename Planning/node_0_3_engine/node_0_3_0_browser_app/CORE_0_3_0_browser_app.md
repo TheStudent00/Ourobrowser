@@ -1,13 +1,13 @@
 ---
 id: ourobrowser.root.engine.browser_app
-level: 1
+level: 2
 status: draft
 settled_by: Dee
 supersedes: null
 designation: pending
 node:
     name: browser_app
-    path: node_0_3_engine/node_0_0_browser_app/CORE_0_0_browser_app.md
+    path: Planning/node_0_3_engine/node_0_3_0_browser_app/CORE_0_3_0_browser_app.md
 super_node:
     name: engine
     path: ../CORE_0_3_engine.md
@@ -21,7 +21,7 @@ sub_nodes:
 nodes: []
 ---
 
-# CORE 0_0 — browser_app
+# CORE 0_3_0 — browser_app
 
 ## metadata
 
