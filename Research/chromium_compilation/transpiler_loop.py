@@ -4,6 +4,7 @@ import subprocess
 import json
 import shutil
 import re
+from collections import Counter
 
 # Use /projects/ paths since this runs inside the Airlock container
 CHROMIUM_SRC = os.environ.get("CHROMIUM_SRC", "/projects/chromium_src/src")
@@ -33,6 +34,37 @@ GLOBAL_FUNCTIONS = {
     "v8::Exception::TypeError": "PyErr_SetString(PyExc_TypeError, {0})",
     ".ToLocalChecked": "{self}",
 }
+
+IDENTIFIER = re.compile(r"[A-Za-z_][A-Za-z0-9_]*")
+
+
+def name_census(text):
+    """Every identifier in the text, with how many times it appears."""
+    return Counter(IDENTIFIER.findall(text))
+
+
+def losses(before, after):
+    """Identifiers the transpile DROPPED, and how many of each.
+
+    A name may legitimately disappear: it is the point of the exercise that
+    `v8::String::NewFromUtf8` stops appearing and `PyUnicode_FromString`
+    starts. So every name named on either side of a mapping is excused, and
+    what is left is loss the mapping does not account for.
+
+    This exists because a transpile that silently drops code looks exactly
+    like a transpile that worked. On 2026-09-05 seven Chromium headers were
+    rewritten in place down to their `#include` lines, and nothing reported
+    it -- `exception_state.h` went from 274 lines to 6 and the loop went on
+    to the next file. Measured, that run dropped 374 distinct identifiers
+    from that one file."""
+    excused = set()
+    for k, v in list(GLOBAL_TYPES.items()) + list(GLOBAL_FUNCTIONS.items()):
+        excused.update(IDENTIFIER.findall(k))
+        excused.update(IDENTIFIER.findall(v))
+    b, a = name_census(before), name_census(after)
+    return {n: b[n] - a.get(n, 0) for n in b
+            if b[n] > a.get(n, 0) and n not in excused}
+
 
 def write_ledger(ledger_path):
     """The one place the mapping tables become a PCv3.1 ledger file. A type
@@ -100,8 +132,29 @@ def transpile_file(rel_path):
         
     out_ext = ".cpp"
     out_path = abs_path.rsplit('.', 1)[0] + out_ext
-    if os.path.exists(out_path) and out_path != abs_path:
-        shutil.move(out_path, abs_path)
+    if not (os.path.exists(out_path) and out_path != abs_path):
+        return
+
+    # NOTHING is written over the source until the transpile is shown not to
+    # have lost anything the mapping does not account for.
+    with open(backup, 'r') as f:
+        original = f.read()
+    with open(out_path, 'r') as f:
+        produced = f.read()
+
+    dropped = losses(original, produced)
+    if dropped:
+        worst = sorted(dropped.items(), key=lambda kv: -kv[1])[:8]
+        print(f"REFUSED {rel_path}: the transpile dropped {len(dropped)} "
+              f"identifier(s) the mapping does not account for; "
+              f"worst: {worst}")
+        print(f"        the file is unchanged; what was produced is at {out_path}.rejected")
+        os.replace(out_path, out_path + ".rejected")
+        shutil.copy2(backup, abs_path)      # undo the include rewrite too
+        return
+
+    shutil.move(out_path, abs_path)
+    print(f"  wrote {rel_path}")
 
 def main():
     files = get_failed_files()
