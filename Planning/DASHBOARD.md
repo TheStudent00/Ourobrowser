@@ -22,8 +22,8 @@ sub-node count: 42
 
 | status | count |
 | --- | --- |
-| draft | 19 |
-| settled | 24 |
+| draft | 18 |
+| settled | 25 |
 
 ### designation breakdown
 
@@ -33,7 +33,8 @@ sub-node count: 42
 | code (config) | 3 |
 | code (module) | 19 |
 | code (patch) | 3 |
-| pending | 11 |
+| pending | 10 |
+| settled | 1 |
 | work | 6 |
 
 ## blocked
