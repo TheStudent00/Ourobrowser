@@ -13,9 +13,9 @@ super_node:
     path: ../CORE_0_1_research.md
 sub_nodes:
     - name: depot_tools_setup
-      path: node_0_0_depot_tools_setup/CORE_0_0_depot_tools_setup.md
+      path: node_0_1_5_0_depot_tools_setup/CORE_0_1_5_0_depot_tools_setup.md
     - name: fetch_chromium
-      path: node_0_1_fetch_chromium/CORE_0_1_fetch_chromium.md
+      path: node_0_1_5_1_fetch_chromium/CORE_0_1_5_1_fetch_chromium.md
 
 ---
 

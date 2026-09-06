@@ -10,7 +10,7 @@ node:
     path: Planning/node_0_1_research/node_0_1_7_incremental_compilation/node_0_1_7_0_ninja_error_parser/CORE_0_1_7_0_ninja_error_parser.md
 super_node:
     name: incremental_compilation
-    path: ../CORE_0_6_incremental_compilation.md
+    path: ../CORE_0_1_7_incremental_compilation.md
 sub_nodes: []
 ---
 
@@ -27,7 +27,7 @@ sub_nodes: []
 
 ## super_node
 
-- [incremental_compilation](../CORE_0_6_incremental_compilation.md)
+- [incremental_compilation](../CORE_0_1_7_incremental_compilation.md)
 
 ## sub_nodes
 

@@ -10,7 +10,7 @@ node:
     path: Planning/node_0_1_research/node_0_1_6_mock_pipeline_test/node_0_1_6_1_mock_test_runner/CORE_0_1_6_1_mock_test_runner.md
 super_node:
     name: mock_pipeline_test
-    path: ../CORE_0_5_mock_pipeline_test.md
+    path: ../CORE_0_1_6_mock_pipeline_test.md
 sub_nodes: []
 ---
 
@@ -27,7 +27,7 @@ sub_nodes: []
 
 ## super_node
 
-- [mock_pipeline_test](../CORE_0_5_mock_pipeline_test.md)
+- [mock_pipeline_test](../CORE_0_1_6_mock_pipeline_test.md)
 
 ## sub_nodes
 

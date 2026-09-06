@@ -13,9 +13,9 @@ super_node:
     path: ../CORE_0_1_research.md
 sub_nodes:
     - name: mock_v8_binding
-      path: node_0_0_mock_v8_binding/CORE_0_0_mock_v8_binding.md
+      path: node_0_1_6_0_mock_v8_binding/CORE_0_1_6_0_mock_v8_binding.md
     - name: mock_test_runner
-      path: node_0_1_mock_test_runner/CORE_0_1_mock_test_runner.md
+      path: node_0_1_6_1_mock_test_runner/CORE_0_1_6_1_mock_test_runner.md
 
 ---
 

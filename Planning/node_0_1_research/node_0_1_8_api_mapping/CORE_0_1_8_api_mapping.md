@@ -13,11 +13,11 @@ super_node:
     path: ../CORE_0_1_research.md
 sub_nodes:
     - name: ledger_extension
-      path: node_0_0_ledger_extension/CORE_0_0_ledger_extension.md
+      path: node_0_1_8_0_ledger_extension/CORE_0_1_8_0_ledger_extension.md
     - name: call_node_interceptor
-      path: node_0_1_call_node_interceptor/CORE_0_1_call_node_interceptor.md
+      path: node_0_1_8_1_call_node_interceptor/CORE_0_1_8_1_call_node_interceptor.md
     - name: trickle_injection
-      path: node_0_2_trickle_injection/CORE_0_2_trickle_injection.md
+      path: node_0_1_8_2_trickle_injection/CORE_0_1_8_2_trickle_injection.md
 ---
 
 # CORE 0_1_8 — api_mapping
