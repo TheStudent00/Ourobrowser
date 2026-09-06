@@ -11,8 +11,8 @@ A rollup over this node's own sub-tree (itself plus everything beneath it). Rege
 | field | value |
 | --- | --- |
 | id | `ourobrowser.root.research.pc_egress` |
-| status | draft |
-| designation | pending |
+| status | settled |
+| designation | settled |
 
 ## sub-tree
 
@@ -22,8 +22,7 @@ sub-node count: 2
 
 | status | count |
 | --- | --- |
-| draft | 1 |
-| settled | 2 |
+| settled | 3 |
 
 ### designation breakdown
 
@@ -31,7 +30,7 @@ sub-node count: 2
 | --- | --- |
 | code (config) | 1 |
 | code (module) | 1 |
-| pending | 1 |
+| settled | 1 |
 
 ## blocked
 
