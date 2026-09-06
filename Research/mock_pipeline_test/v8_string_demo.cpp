@@ -1,11 +1,6 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <unordered_map>
-#include <any>
-#include <stdexcept>
+#include "v8/include/v8.h"
 
-void ReturnV8String(PyInterpreterState* isolate, const char* str) {
-        PyObject* v8_str = v8::String::NewFromUtf8(isolate, str).ToLocalChecked();
-        return v8_str;
+PyObject* ReturnV8String(PyInterpreterState* isolate, const char* str) {
+    PyObject* v8_str = PyUnicode_FromString(str);
+    return v8_str;
 }

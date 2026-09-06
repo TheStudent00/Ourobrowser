@@ -35,8 +35,7 @@ sub_nodes:
 
 ## sub_nodes
 
-- [ledger_config](node_0_0_ledger_config/CORE_0_0_ledger_config.md)
-- [runner_script](node_0_1_runner_script/CORE_0_1_runner_script.md)
+*(none yet)*
 
 ## definition
 
