@@ -36,7 +36,7 @@ sub_nodes: []
 ## definition
 
 *(pending — generated 2026-09-04 from the register in
-~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_4_source_acquisition/CORE_0_4_source_acquisition.md; the definition and `designation` are Dee's to
+~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_1_5_source_acquisition/CORE_0_1_5_source_acquisition.md; the definition and `designation` are Dee's to
 write.)*
 
 ## settled

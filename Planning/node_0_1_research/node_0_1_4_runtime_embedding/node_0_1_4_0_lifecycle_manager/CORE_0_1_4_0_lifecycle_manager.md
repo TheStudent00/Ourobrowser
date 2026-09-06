@@ -37,7 +37,7 @@ sub_nodes: []
 ## definition
 
 *(pending — generated 2026-09-04 from the register in
-~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_3_runtime_embedding/CORE_0_3_runtime_embedding.md; the definition and `designation` are Dee's to
+~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_1_4_runtime_embedding/CORE_0_1_4_runtime_embedding.md; the definition and `designation` are Dee's to
 write.)*
 
 ## settled

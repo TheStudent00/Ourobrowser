@@ -36,5 +36,5 @@ sub_nodes: []
 ## definition
 
 *(pending — generated 2026-09-04 from the register in
-~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_6_incremental_compilation/CORE_0_6_incremental_compilation.md; the definition and `designation` are Dee's to
+~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_1_7_incremental_compilation/CORE_0_1_7_incremental_compilation.md; the definition and `designation` are Dee's to
 write.)*
