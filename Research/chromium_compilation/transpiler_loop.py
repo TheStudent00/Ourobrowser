@@ -10,20 +10,28 @@ CHROMIUM_SRC = os.environ.get("CHROMIUM_SRC", "/projects/chromium_src/src")
 PC_V3_CLI = os.environ.get("PC_V3_CLI", "/projects/Ourobrowser/Tools/PCv3.1/pseudocoup/cli.py")
 PC_V3_PYTHONPATH = os.environ.get("PC_V3_PYTHONPATH", "/projects/Ourobrowser/Tools/PCv3.1")
 
+# Written types -> Python C-API types. A key is the type exactly as it is
+# written in the source, pointers and qualifiers included; PCv3.1 reads a
+# declaration's full written type since 2026-09-06 (Ourobrowser log_002).
 GLOBAL_TYPES = {
     "v8::Local<v8::Context>": "PyDictObject*",
     "v8::MaybeLocal<v8::Context>": "PyDictObject*",
     "v8::Isolate*": "PyInterpreterState*",
     "v8::Local<v8::Value>": "PyObject*",
     "v8::Local<v8::Object>": "PyObject*",
-    "v8::Local<v8::String>": "PyObject*"
+    "v8::Local<v8::String>": "PyObject*",
+    "const v8::FunctionCallbackInfo<v8::Value>&": "PyObject*",
 }
 
+# Function calls -> Python C-API calls. `{0}`, `{1}` are the call's arguments
+# in order; a key starting with `.` names a METHOD by name alone, and `{self}`
+# is its receiver -- `.ToLocalChecked` -> `{self}` unwraps a v8::MaybeLocal.
 GLOBAL_FUNCTIONS = {
     "v8::String::NewFromUtf8": "PyUnicode_FromString({1})",
     "v8::Isolate::GetCurrent": "PyInterpreterState_Get",
     "v8::Exception::Error": "PyErr_SetString(PyExc_RuntimeError, {0})",
-    "v8::Exception::TypeError": "PyErr_SetString(PyExc_TypeError, {0})"
+    "v8::Exception::TypeError": "PyErr_SetString(PyExc_TypeError, {0})",
+    ".ToLocalChecked": "{self}",
 }
 
 def get_failed_files():
@@ -49,21 +57,22 @@ def transpile_file(rel_path):
         print(f"Skipping {abs_path}, file does not exist")
         return
 
+    # The file is rewritten IN PLACE. Keep the version that was there before
+    # the first pass, once, so a bad pass can be undone without git.
+    backup = abs_path + ".pc_orig"
+    if not os.path.exists(backup):
+        shutil.copy2(abs_path, backup)
+
     with open(abs_path, 'r') as f:
         content = f.read()
-        
-    includes = []
-    for line in content.split('\n'):
-        if line.strip().startswith('#'):
-            line = line.replace('#include "v8/include/v8.h"', '#include <Python.h>')
-            line = line.replace('#include "v8.h"', '#include <Python.h>')
-            includes.append(line)
-    
+
+    # Only the v8 include is rewritten here. Preprocessor lines, comments and
+    # export macros now pass through the transpiler unchanged (PCv3.1 carries
+    # unmapped constructs as RawNode text), so they are no longer stripped or
+    # re-prepended -- that re-prepending is what stacked five copies of the
+    # standard-library prelude onto exception_state.h on 2026-09-05.
     content = content.replace('#include "v8/include/v8.h"', '#include <Python.h>')
     content = content.replace('#include "v8.h"', '#include <Python.h>')
-    content = content.replace(' PLATFORM_EXPORT ', ' ')
-    content = content.replace(' CORE_EXPORT ', ' ')
-    content = content.replace(' BLINK_PLATFORM_EXPORT ', ' ')
     
     with open(abs_path, 'w') as f:
         f.write(content)
@@ -89,11 +98,7 @@ def transpile_file(rel_path):
     out_ext = ".cpp"
     out_path = abs_path.rsplit('.', 1)[0] + out_ext
     if os.path.exists(out_path) and out_path != abs_path:
-        with open(out_path, 'r') as f:
-            out_content = f.read()
-        with open(abs_path, 'w') as f:
-            f.write('\n'.join(includes) + '\n\n' + out_content)
-        os.remove(out_path)
+        shutil.move(out_path, abs_path)
 
 files = get_failed_files()
 if not files:
