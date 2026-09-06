@@ -11,13 +11,7 @@ node:
 super_node:
     name: engine
     path: ../CORE_0_3_engine.md
-sub_nodes:
-    - name: setup_ui
-      designation: code (method)
-    - name: navigate_to_url
-      designation: code (method)
-    - name: toggle_color_inversion
-      designation: code (method)
+sub_nodes: []
 nodes: []
 ---
 
@@ -40,3 +34,15 @@ nodes: []
 *(pending — generated 2026-09-03 from the register in
 ./Planning/node_0_3_engine/CORE_0_3_engine.md; the definition and `designation` are Dee's to
 write.)*
+
+## members
+
+The code members of this node, in `browser_engine.py`, class OurobrowserWindow. Each is a member of one
+file, not a planning node: a planning node is a folder carrying its
+own CORE, and none of these has one. They were written into the
+`sub_nodes` edge register, which the framework reads as edges to node
+folders; moved here 2026-09-06 so the register states only edges.
+
+- `setup_ui` — code (method)
+- `navigate_to_url` — code (method)
+- `toggle_color_inversion` — code (method)

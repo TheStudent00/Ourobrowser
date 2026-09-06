@@ -11,13 +11,7 @@ node:
 super_node:
     name: engine
     path: ../CORE_0_3_engine.md
-sub_nodes:
-    - name: requestStarted
-      designation: code (method)
-    - name: rewrite_python_onclick
-      designation: code (function)
-    - name: PAGE_EMIT_NAME
-      designation: code (constant)
+sub_nodes: []
 nodes: []
 ---
 
@@ -152,3 +146,15 @@ decision source, per PROTOCOL §5.)*
   `browser_engine.py`; changing a name is one edit. Decision:
   log_183's standing rule that architecture, ontology and naming are
   Dee's.
+
+## members
+
+The code members of this node, in `browser_engine.py`, class OurobrowserSchemeHandler. Each is a member of one
+file, not a planning node: a planning node is a folder carrying its
+own CORE, and none of these has one. They were written into the
+`sub_nodes` edge register, which the framework reads as edges to node
+folders; moved here 2026-09-06 so the register states only edges.
+
+- `requestStarted` — code (method)
+- `rewrite_python_onclick` — code (function)
+- `PAGE_EMIT_NAME` — code (constant)

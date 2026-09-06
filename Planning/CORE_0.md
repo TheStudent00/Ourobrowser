@@ -6,8 +6,8 @@ settled_by: Dee
 supersedes: null
 designation: work
 node:
-    name: Ourobrowser
-    path: Planning/CORE_0_planning.md
+    name: root
+    path: Planning/CORE_0.md
     repo: Ourobrowser
     remote: https://github.com/TheStudent00/Ourobrowser.git
 super_node: null
@@ -26,7 +26,7 @@ sub_nodes:
       path: node_0_5_test_page/CORE_0_5_test_page.md
 ---
 
-# CORE 0 — planning
+# CORE 0 — Ourobrowser
 
 ## metadata
 

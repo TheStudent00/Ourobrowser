@@ -9,3 +9,42 @@ status: living
   `../PlanPlan/framework/generate_nodes.py` from the
   `nodes` register of `./Planning/CORE_0.md`. Skeleton only — definition,
   designation, and content pending.
+
+- 2026-09-06: **the transpiler stopped discarding the source**. A C++
+  construct the ingress had no branch for returned `None` and the emitter
+  skipped it, so a file came out holding only what the ingress happened
+  to understand — seven Chromium headers had already been rewritten in
+  place down to their `#include` lines, `exception_state.h` from 274
+  lines to 61. Status: **done**. Evidence:
+  `~/Programming/Ourobrowser/DevComms/log_002_transpiler_keeps_the_source.md`
+  §2 and §4; four of those seven headers now come back identical from a
+  read-and-write-back with no ledger.
+
+- 2026-09-06: **a C++ loop that is not a counting loop keeps its three
+  clauses**. The ingress had one branch for `for` and assumed
+  `for (int v = start; v < end; v++)`, so
+  `for (const WrapperTypeInfo* current = this; current; current = current->parent_class)`
+  came out as `for (int current = this; current < 0; current++)` — a
+  pointer walk turned into a count that never runs. Status: **done**.
+  Evidence: log_002 §2.4 and §3.3.
+
+- 2026-09-06: **the loop refuses to write a file whose transpile lost
+  names**. Every identifier is counted before and after; names on either
+  side of a mapping are excused; anything still missing leaves the file
+  untouched and the output beside it as `.rejected`. Under this guard the
+  2026-09-05 run would have written nothing. Status: **done**. Evidence:
+  log_002 §5.
+
+- 2026-09-06: the seven damaged headers were restored with `git checkout`
+  in `~/Programming/chromium_src/src`; the damaged versions and the diff
+  are kept at `~/Programming/Ourobrowser/.archive/2026-09-05_damaged_headers/`.
+  Status: **done**.
+
+- 2026-09-06: **still open** — no Chromium build has been attempted. The
+  build that produced the damage stopped at
+  `fatal error: 'Python.h' file not found`, and the cause stands:
+  `third_party/blink/renderer/BUILD.gn` adds
+  `include_dirs = [ "/usr/include/python3.14" ]`, but the compile line
+  carries `--sysroot=.../debian_bullseye_amd64-sysroot` and no python
+  include path, and the header sits outside that sysroot. Status:
+  **blocked** on that decision. Evidence: log_002 §6.

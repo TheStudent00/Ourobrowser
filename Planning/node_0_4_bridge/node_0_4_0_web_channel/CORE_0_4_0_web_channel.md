@@ -11,11 +11,7 @@ node:
 super_node:
     name: bridge
     path: ../CORE_0_4_bridge.md
-sub_nodes:
-    - name: execute_python
-      designation: code (method)
-    - name: set_html
-      designation: code (method)
+sub_nodes: []
 nodes: []
 ---
 
@@ -105,3 +101,14 @@ decision source.)*
 - **The bridge does not import the engine.** The rewrite arrives as a
   constructor argument. Decision: this CORE, 2026-09-03; the engine
   already imports the bridge, so the other direction would be a cycle.
+
+## members
+
+The code members of this node, in `bridge.py`, class PythonBridge. Each is a member of one
+file, not a planning node: a planning node is a folder carrying its
+own CORE, and none of these has one. They were written into the
+`sub_nodes` edge register, which the framework reads as edges to node
+folders; moved here 2026-09-06 so the register states only edges.
+
+- `execute_python` — code (method)
+- `set_html` — code (method)

@@ -9,3 +9,13 @@ status: living
   `~/Programming/PlanPlan/framework/generate_nodes.py` from the
   `nodes` register of `~/Programming/Ourobrowser/Planning/node_0_1_research/CORE_0_1_research.md`. Skeleton only — definition,
   designation, and content pending.
+
+- 2026-09-06: `transpiler_loop.py` was made safe to run over real files.
+  Three changes: it keeps a `.pc_orig` copy of each file before its first
+  pass; it no longer strips export macros or re-prepends the `#include`
+  lines (that re-prepending is what stacked five copies of the emitter's
+  standard-library prelude onto `exception_state.h`); and it refuses to
+  write a file whose transpile dropped identifiers the mapping does not
+  account for. Status: **done**. Evidence:
+  `~/Programming/Ourobrowser/DevComms/log_002_transpiler_keeps_the_source.md`
+  §5, with the before-and-after identifier counts for all seven headers.

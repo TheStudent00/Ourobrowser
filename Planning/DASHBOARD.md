@@ -31,15 +31,15 @@ sub-node count: 42
 | --- | --- |
 | code (class) | 1 |
 | code (config) | 3 |
-| code (module) | 19 |
+| code (module) | 20 |
 | code (patch) | 3 |
-| pending | 10 |
+| pending | 9 |
 | settled | 1 |
 | work | 6 |
 
 ## blocked
 
-nothing in this sub-tree mentions "blocked".
+- `~/Programming/Ourobrowser/Planning/node_0_1_research/PROGRESS.md` line 50 — **blocked** on that decision. Evidence: log_002 §6.
 
 ## PROGRESS bullet statuses
 
