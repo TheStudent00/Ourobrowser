@@ -54,6 +54,9 @@ def transpile_file(rel_path):
     
     content = content.replace('#include "v8/include/v8.h"', '#include <Python.h>')
     content = content.replace('#include "v8.h"', '#include <Python.h>')
+    content = content.replace(' PLATFORM_EXPORT ', ' ')
+    content = content.replace(' CORE_EXPORT ', ' ')
+    content = content.replace(' BLINK_PLATFORM_EXPORT ', ' ')
     content = content.replace('}  // namespace blink', '// }  // namespace blink')
     
     with open(abs_path, 'w') as f:
