@@ -35,7 +35,7 @@ GLOBAL_FUNCTIONS = {
     "v8::Exception::TypeError": "PyErr_SetString(PyExc_TypeError, {0})",
     "v8::Context::New": "OuroPythonRuntime::CreateContext()",
     ".ToLocalChecked": "{self}",
-    ".IsEmpty": "{self} == nullptr",
+    ".IsEmpty": "({self} == nullptr)",
 }
 
 IDENTIFIER = re.compile(r"[A-Za-z_][A-Za-z0-9_]*")
