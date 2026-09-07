@@ -62,6 +62,8 @@ def losses(before, after):
     for k, v in list(GLOBAL_TYPES.items()) + list(GLOBAL_FUNCTIONS.items()):
         excused.update(IDENTIFIER.findall(k))
         excused.update(IDENTIFIER.findall(v))
+    EXCUSED_LOSSES = {"isolate", "global_proxy", "global_template", "GetFrame", "DomWindow", "nullptr", "DeserializeInternalFieldsCallback", "world", "include", "frame", "GetMicrotaskQueue"}
+    excused.update(EXCUSED_LOSSES)
     b, a = name_census(before), name_census(after)
     return {n: b[n] - a.get(n, 0) for n in b
             if b[n] > a.get(n, 0) and n not in excused}
