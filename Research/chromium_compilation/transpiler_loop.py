@@ -17,6 +17,7 @@ PC_V3_PYTHONPATH = os.environ.get("PC_V3_PYTHONPATH", "/projects/Ourobrowser/Too
 GLOBAL_TYPES = {
     "v8::Local<v8::Context>": "PyDictObject*",
     "v8::MaybeLocal<v8::Context>": "PyDictObject*",
+    "ScopedPersistent<v8::Context>": "PyDictObject*",
     "v8::Isolate*": "PyInterpreterState*",
     "v8::Local<v8::Value>": "PyObject*",
     "v8::Local<v8::Object>": "PyObject*",
@@ -34,6 +35,7 @@ GLOBAL_FUNCTIONS = {
     "v8::Exception::TypeError": "PyErr_SetString(PyExc_TypeError, {0})",
     "v8::Context::New": "OuroPythonRuntime::CreateContext()",
     ".ToLocalChecked": "{self}",
+    ".IsEmpty": "{self} == nullptr",
 }
 
 IDENTIFIER = re.compile(r"[A-Za-z_][A-Za-z0-9_]*")
