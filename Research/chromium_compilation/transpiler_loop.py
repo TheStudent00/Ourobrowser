@@ -32,6 +32,7 @@ GLOBAL_FUNCTIONS = {
     "v8::Isolate::GetCurrent": "PyInterpreterState_Get",
     "v8::Exception::Error": "PyErr_SetString(PyExc_RuntimeError, {0})",
     "v8::Exception::TypeError": "PyErr_SetString(PyExc_TypeError, {0})",
+    "v8::Context::New": "OuroPythonRuntime::CreateContext()",
     ".ToLocalChecked": "{self}",
 }
 
