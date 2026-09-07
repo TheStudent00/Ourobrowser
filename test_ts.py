@@ -5,9 +5,7 @@ parser = Parser(Language(ts.language()))
 
 src = b"void foo() { if (auto* iframe = DynamicTo<HTMLIFrameElement>(*element)) {} }"
 tree = parser.parse(src)
-def print_node(node, indent=0):
-    print("  "*indent + node.type + (" ("+node.type+")" if node.is_named else ""))
-    for child in node.children:
-        print_node(child, indent+1)
-
-print_node(tree.root_node)
+decl = tree.root_node.children[0].children[2].children[1].children[1].children[1]
+print("DECL:", decl.type)
+print("DECL value child:", decl.child_by_field_name('value'))
+print("DECL declarator child:", decl.child_by_field_name('declarator'))
