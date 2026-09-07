@@ -9,3 +9,16 @@ status: living
   `~/Programming/PlanPlan/framework/generate_nodes.py` from the
   `nodes` register of `~/Programming/Ourobrowser/Planning/node_0_1_research/CORE_0_1_research.md`. Skeleton only — definition,
   designation, and content pending.
+
+## September 6, 2026 (Continued) - Context Isolation & Transpiler Robustness
+
+*   **Python Context Creation:** Implemented `OuroPythonRuntime::CreateContext()` in `ouro_python_runtime.cc` which acquires the GIL and safely creates an isolated `PyDictObject*` mimicking `v8::Context`.
+*   **Transpiler Bug Fixes:**
+    *   Fixed a bug in `ingress/cpp.py` where function parameters were dropped if the function returned a pointer type (`pointer_declarator` unwrapping).
+    *   Fixed a bug where `if` condition initializations (e.g. `if (auto* x = ...)` ) were improperly parsed, causing variables and RHS initializers to drop.
+    *   Fixed a bug where constructor initialization lists (e.g., `: isolate(isolate)`) were completely omitted, dropping critical class fields.
+    *   Fixed unnamed parameters triggering C++ syntax errors (`const Type& const Type&`) by deduplicating type strings.
+    *   Preserved `= delete` and `= default` methods by bypassing `function_definition` deep mapping when `delete_method_clause` is present.
+*   **Losses Guard Bypass:** Added `EXCUSED_LOSSES` to `transpiler_loop.py` to allow intentional parameter drops. When `v8::Context::New` is rewritten to `OuroPythonRuntime::CreateContext()`, its 5 V8-specific arguments (like `global_proxy`, `global_template`, `DeserializeInternalFieldsCallback`) are dropped intentionally. The script now recognizes this without throwing a guard error.
+*   **ScopedPersistent Rewrite:** Added `ScopedPersistent<v8::Context>` to `GLOBAL_TYPES`, mapping it to `PyDictObject*`. Replaced `.IsEmpty()` with `({self} == nullptr)`.
+*   **Success:** `local_window_proxy.cc` and `script_state.h` are now successfully transpiled! The `trickle_loop.sh` build process has been resumed and is automatically churning through the invalidated Chromium targets.
