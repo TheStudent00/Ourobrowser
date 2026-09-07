@@ -1,5 +1,8 @@
 import os
 import sys
 sys.path.append("Ourobrowser/Research/chromium_compilation")
-from transpiler_loop import transpile_file
-transpile_file("../../third_party/blink/renderer/bindings/core/v8/local_window_proxy.cc")
+import transpiler_loop
+transpiler_loop.CHROMIUM_SRC = "chromium_src/src"
+transpiler_loop.PC_V3_CLI = "Ourobrowser/Tools/PCv3.1/pseudocoup/cli.py"
+transpiler_loop.PC_V3_PYTHONPATH = "Ourobrowser/Tools/PCv3.1"
+transpiler_loop.transpile_file("../../third_party/blink/renderer/bindings/core/v8/local_window_proxy.cc")
