@@ -17,7 +17,7 @@ status: living
 - 2026-09-06: the node arrived carrying no `id`, no `level`, no PROGRESS
   and no CHECK, so nothing above it could be answered; all four written.
   Status: **done**. Evidence: this file, and
-  `python3 ~/Programming/PlanPlan/framework/check_plans.py ~/Programming/Ourobrowser/Planning`.
+  `python3 ~/Programming/PRIVATE/PlanPlan/framework/check_plans.py ~/Programming/PUBLIC/Ourobrowser/Planning`.
 
 - 2026-09-06: the C++ ingress and the C++ emitter were rewritten so a C++
   source survives a round trip. Status: **done**. Evidence:

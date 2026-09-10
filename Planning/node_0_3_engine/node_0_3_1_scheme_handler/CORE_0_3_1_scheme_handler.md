@@ -121,11 +121,11 @@ decision source, per PROTOCOL §5.)*
   own setup script.** The click wire form is an attribute; the
   listener lives in the setup script. Decision: this CORE, 2026-09-03,
   extending the project's own stated feature — README.md,
-  `~/Programming/Ourobrowser/README.md`: "Standard `<script>` tags are
+  `~/Programming/PUBLIC/Ourobrowser/README.md`: "Standard `<script>` tags are
   completely stripped and ignored."
 - **The old inline rewrite was broken, measured, not asserted.** The
   literal the old code served to Chromium, printed by running the same
-  regular expression over `~/Programming/Ourobrowser/test_page.html`:
+  regular expression over `~/Programming/PUBLIC/Ourobrowser/test_page.html`:
 
   ```
   <button onclick="if(window.pyBridge) { window.pyBridge.execute_python(\'fetch_system_data()\'); }">Fetch System Data (Python)</button>

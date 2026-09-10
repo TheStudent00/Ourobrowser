@@ -10,7 +10,7 @@
   value stands for whatever the method was called on, so
   `".ToLocalChecked": "{self}"` unwraps a `v8::MaybeLocal` to the value
   inside it. Status: **done**. Evidence:
-  `~/Programming/Ourobrowser/DevComms/log_002_transpiler_keeps_the_source.md`
+  `~/Programming/PUBLIC/Ourobrowser/DevComms/log_002_transpiler_keeps_the_source.md`
   §4, where `v8::String::NewFromUtf8(isolate, str).ToLocalChecked()`
   becomes `PyUnicode_FromString(str)`.
 

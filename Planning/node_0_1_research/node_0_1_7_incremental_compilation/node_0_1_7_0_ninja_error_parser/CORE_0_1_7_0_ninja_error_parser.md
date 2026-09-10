@@ -36,7 +36,7 @@ sub_nodes: []
 ## definition
 
 *(pending — generated 2026-09-04 from the register in
-~/Programming/Ourobrowser/Planning/node_0_1_research/node_0_1_7_incremental_compilation/CORE_0_1_7_incremental_compilation.md; the definition and `designation` are the owner's to
+~/Programming/PUBLIC/Ourobrowser/Planning/node_0_1_research/node_0_1_7_incremental_compilation/CORE_0_1_7_incremental_compilation.md; the definition and `designation` are the owner's to
 write.)*
 
 ## settled

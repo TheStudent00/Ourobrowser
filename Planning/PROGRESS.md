@@ -9,7 +9,7 @@ The living record of the whole tree. A sub-node's own PROGRESS carries the
 detail; this file carries what changed about the PROJECT.
 
 - 2026-09-03: the planning tree was generated from `CORE_0.md`'s register
-  by `~/Programming/PlanPlan/framework/generate_nodes.py`, giving the six
+  by `~/Programming/PRIVATE/PlanPlan/framework/generate_nodes.py`, giving the six
   level-1 nodes: tools, research, api, engine, bridge, test_page. Status:
   **done**. Evidence: `git log --diff-filter=A -- Planning`.
 
@@ -38,9 +38,9 @@ detail; this file carries what changed about the PROJECT.
   instead of carrying the address of the branch it sits on
   (`node_0_1_research/node_0_1_0_pc_ingress`), which PROTOCOL §1 requires
   and which the checker reads as a level-versus-depth disagreement. Healed
-  by `~/Programming/PlanPlan/framework/heal_tree.py`, and every link
+  by `~/Programming/PRIVATE/PlanPlan/framework/heal_tree.py`, and every link
   repointed from what is on disk. Status: **done**. Evidence:
-  `python3 ~/Programming/PlanPlan/framework/check_plans.py ~/Programming/Ourobrowser/Planning`
+  `python3 ~/Programming/PRIVATE/PlanPlan/framework/check_plans.py ~/Programming/PUBLIC/Ourobrowser/Planning`
   went from 29 errors to 0; `DevComms/log_002_transpiler_keeps_the_source.md` §4.
 
 - 2026-09-06: the transpiler stopped discarding the source it was given.

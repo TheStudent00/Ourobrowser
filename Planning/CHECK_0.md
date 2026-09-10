@@ -38,8 +38,8 @@ the owner's to settle; PROTOCOL §2 reserves level-1 COREs to him.
 
 ## check 3 — does the tree conform?
 
-    python3 ~/Programming/PlanPlan/framework/check_plans.py \
-        ~/Programming/Ourobrowser/Planning
+    python3 ~/Programming/PRIVATE/PlanPlan/framework/check_plans.py \
+        ~/Programming/PUBLIC/Ourobrowser/Planning
 
 **Answer: yes**, as of 2026-09-06 — 0 errors. The one remaining warning,
 `## sub_nodes` not being the first section, is carried by every

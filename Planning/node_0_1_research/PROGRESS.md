@@ -16,7 +16,7 @@ status: living
   to understand — seven Chromium headers had already been rewritten in
   place down to their `#include` lines, `exception_state.h` from 274
   lines to 61. Status: **done**. Evidence:
-  `~/Programming/Ourobrowser/DevComms/log_002_transpiler_keeps_the_source.md`
+  `~/Programming/PUBLIC/Ourobrowser/DevComms/log_002_transpiler_keeps_the_source.md`
   §2 and §4; four of those seven headers now come back identical from a
   read-and-write-back with no ledger.
 
@@ -37,7 +37,7 @@ status: living
 
 - 2026-09-06: the seven damaged headers were restored with `git checkout`
   in `~/Programming/chromium_src/src`; the damaged versions and the diff
-  are kept at `~/Programming/Ourobrowser/.archive/2026-09-05_damaged_headers/`.
+  are kept at `~/Programming/PUBLIC/Ourobrowser/.archive/2026-09-05_damaged_headers/`.
   Status: **done**.
 
 - 2026-09-06: **still open** — no Chromium build has been attempted. The
