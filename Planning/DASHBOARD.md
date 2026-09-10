@@ -1,5 +1,5 @@
 <!-- GENERATED FILE — do not hand-edit. -->
-<!-- Produced by PlanPlan/framework/generate_dashboards.py from this node's own sub-tree. Hand edits are lost the -->
+<!-- Produced by PRIVATE/PlanPlan/framework/generate_dashboards.py from this node's own sub-tree. Hand edits are lost the -->
 <!-- next time the tool runs; re-run it instead of editing this file. -->
 
 # DASHBOARD — Planning
@@ -39,7 +39,7 @@ sub-node count: 42
 
 ## blocked
 
-- `Ourobrowser/Planning/node_0_1_research/PROGRESS.md` line 50 — **blocked** on that decision. Evidence: log_002 §6.
+- `PUBLIC/Ourobrowser/Planning/node_0_1_research/PROGRESS.md` line 50 — **blocked** on that decision. Evidence: log_002 §6.
 
 ## PROGRESS bullet statuses
 

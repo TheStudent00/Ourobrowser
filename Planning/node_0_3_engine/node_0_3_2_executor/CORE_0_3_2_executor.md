@@ -95,7 +95,7 @@ click on the pane-2 button
 decision source.)*
 
 - **One context, two entry times, never two contexts.** Decision: the
-  code as it already stands — `Ourobrowser/browser_engine.py`
+  code as it already stands — `PUBLIC/Ourobrowser/browser_engine.py`
   builds `self.python_context = {}` once and hands the same object to
   `PythonBridge` and to `OurobrowserSchemeHandler`.
 - **A name the engine binds into the context is bound at the moment it
